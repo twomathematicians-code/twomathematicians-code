@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 420" width="850">
+  <defs>
+    <filter id="chalk2" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise"/>
+      <feComposite in="SourceGraphic" in2="noise" operator="in"/>
+    </filter>
+    <filter id="chalkGlow2" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="dust2" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="textured"/>
+      <feComposite in="textured" in2="SourceGraphic" operator="over"/>
+    </filter>
+    <linearGradient id="wood2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5c3a1e"/>
+      <stop offset="15%" stop-color="#7a4e2d"/>
+      <stop offset="30%" stop-color="#6b4226"/>
+      <stop offset="50%" stop-color="#8b5e3c"/>
+      <stop offset="70%" stop-color="#6b4226"/>
+      <stop offset="85%" stop-color="#7a4e2d"/>
+      <stop offset="100%" stop-color="#5c3a1e"/>
+    </linearGradient>
+    <linearGradient id="woodV2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5c3a1e"/>
+      <stop offset="15%" stop-color="#7a4e2d"/>
+      <stop offset="30%" stop-color="#6b4226"/>
+      <stop offset="50%" stop-color="#8b5e3c"/>
+      <stop offset="70%" stop-color="#6b4226"/>
+      <stop offset="85%" stop-color="#7a4e2d"/>
+      <stop offset="100%" stop-color="#5c3a1e"/>
+    </linearGradient>
+    <radialGradient id="board2" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#2d5a2a"/>
+      <stop offset="50%" stop-color="#264d23"/>
+      <stop offset="100%" stop-color="#1e3d1b"/>
+    </radialGradient>
+    <linearGradient id="tray2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b4226"/>
+      <stop offset="50%" stop-color="#8b5e3c"/>
+      <stop offset="100%" stop-color="#5c3a1e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="0" y="0" width="850" height="420" rx="4" fill="#3a2210"/>
+  <rect x="0" y="0" width="850" height="20" fill="url(#wood2)" rx="4"/>
+  <rect x="0" y="8" width="850" height="12" fill="url(#wood2)"/>
+  <rect x="0" y="400" width="850" height="20" fill="url(#wood2)" rx="4"/>
+  <rect x="0" y="400" width="850" height="12" fill="url(#wood2)"/>
+  <rect x="0" y="0" width="20" height="420" fill="url(#woodV2)" rx="4"/>
+  <rect x="830" y="0" width="20" height="420" fill="url(#woodV2)" rx="4"/>
+  
+  <!-- Board surface -->
+  <rect x="20" y="20" width="810" height="380" fill="url(#board2)"/>
+
+  <!-- Smudge marks -->
+  <ellipse cx="300" cy="150" rx="90" ry="50" fill="#3a6a35" opacity="0.2"/>
+  <ellipse cx="600" cy="280" rx="80" ry="40" fill="#3a6a35" opacity="0.15"/>
+
+  <!-- Chalk tray -->
+  <rect x="100" y="385" width="650" height="14" fill="url(#tray2)" rx="2"/>
+  <rect x="102" y="383" width="646" height="4" fill="#9b7e5c" rx="1"/>
+  <!-- Chalk pieces -->
+  <rect x="200" y="388" width="25" height="6" rx="2" fill="#ffd966" opacity="0.9" transform="rotate(-2,212,391)"/>
+  <rect x="250" y="389" width="22" height="5" rx="2" fill="#e8e8e0" opacity="0.8"/>
+  <rect x="500" y="388" width="28" height="6" rx="2" fill="#ff9e80" opacity="0.85" transform="rotate(1,514,391)"/>
+  <rect x="570" y="389" width="20" height="5" rx="2" fill="#80d4ff" opacity="0.8"/>
+
+  <!-- ===== TITLE ===== -->
+  <text x="425" y="55" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#ffd966" filter="url(#chalkGlow2)" font-weight="bold">
+    ← Mathematical Toolkit →
+  </text>
+  <path d="M230,62 Q330,66 430,61 Q530,56 620,61" fill="none" stroke="#ffd966" stroke-width="1" opacity="0.5"/>
+
+  <!-- ===== LEFT SIDE: Equations ===== -->
+  
+  <!-- Euler's Identity -->
+  <text x="45" y="95" font-family="Georgia, serif" font-size="14" fill="#ffd966" filter="url(#chalkGlow2)" font-weight="bold" opacity="0.8">
+    Euler's Identity:
+  </text>
+  <text x="55" y="118" font-family="Georgia, serif" font-size="20" fill="#f0efe8" filter="url(#chalkGlow2)">
+    e<tspan baseline-shift="super" font-size="14">iπ</tspan> + 1 = 0
+  </text>
+
+  <!-- Fourier Transform -->
+  <text x="45" y="155" font-family="Georgia, serif" font-size="14" fill="#80d4ff" filter="url(#chalkGlow2)" font-weight="bold" opacity="0.8">
+    Fourier Transform:
+  </text>
+  <text x="55" y="178" font-family="Georgia, serif" font-size="16" fill="#f0efe8" filter="url(#chalkGlow2)">
+    F(ω) = ∫ f(t)·e<tspan baseline-shift="super" font-size="11">-iωt</tspan> dt
+  </text>
+
+  <!-- Gaussian Distribution -->
+  <text x="45" y="215" font-family="Georgia, serif" font-size="14" fill="#ff9e80" filter="url(#chalkGlow2)" font-weight="bold" opacity="0.8">
+    Gaussian Distribution:
+  </text>
+  <text x="55" y="238" font-family="Georgia, serif" font-size="15" fill="#f0efe8" filter="url(#chalkGlow2)">
+    f(x) = (1/σ√2π)·e<tspan baseline-shift="super" font-size="10">-(x-μ)²/2σ²</tspan>
+  </text>
+
+  <!-- Gradient Descent -->
+  <text x="45" y="275" font-family="Georgia, serif" font-size="14" fill="#b9f6ca" filter="url(#chalkGlow2)" font-weight="bold" opacity="0.8">
+    Gradient Descent:
+  </text>
+  <text x="55" y="298" font-family="Georgia, serif" font-size="15" fill="#f0efe8" filter="url(#chalkGlow2)">
+    θ := θ - α·∇ J(θ)
+  </text>
+
+  <!-- Graph Theory -->
+  <text x="45" y="335" font-family="Georgia, serif" font-size="14" fill="#ffd966" filter="url(#chalkGlow2)" font-weight="bold" opacity="0.8">
+    Graph Theory:
+  </text>
+  <text x="55" y="358" font-family="Georgia, serif" font-size="15" fill="#f0efe8" filter="url(#chalkGlow2)">
+    G = (V, E), |E| = O(|V|²)
+  </text>
+  <text x="55" y="378" font-family="Georgia, serif" font-size="13" fill="#c8d8c0" filter="url(#chalkGlow2)" opacity="0.7">
+    χ(G) ≥ ω(G) ≥ Δ(G) - α'(G) + 1
+  </text>
+
+  <!-- ===== RIGHT SIDE: Visualizations ===== -->
+  
+  <!-- Sine Wave Graph -->
+  <g filter="url(#dust2)">
+    <text x="490" y="85" font-family="Georgia, serif" font-size="13" fill="#80d4ff" filter="url(#chalkGlow2)" font-weight="bold">
+      f(t) = sin(ωt + φ)
+    </text>
+    <!-- Axes -->
+    <line x1="500" y1="120" x2="500" y2="185" stroke="#c8d8c0" stroke-width="1.2" opacity="0.7"/>
+    <line x1="490" y1="152" x2="810" y2="152" stroke="#c8d8c0" stroke-width="1.2" opacity="0.7"/>
+    <!-- Arrow tips -->
+    <path d="M500,118 L497,124 M500,118 L503,124" stroke="#c8d8c0" stroke-width="1" opacity="0.7"/>
+    <path d="M812,152 L806,149 M812,152 L806,155" stroke="#c8d8c0" stroke-width="1" opacity="0.7"/>
+    <!-- Axis labels -->
+    <text x="488" y="112" font-family="Georgia, serif" font-size="10" fill="#c8d8c0" text-anchor="end" opacity="0.7">y</text>
+    <text x="818" y="155" font-family="Georgia, serif" font-size="10" fill="#c8d8c0" opacity="0.7">t</text>
+    <!-- Sine wave - hand drawn style -->
+    <path d="M510,152 Q520,125 535,125 Q550,125 560,152 Q570,179 585,179 Q600,179 610,152 Q620,125 635,125 Q650,125 660,152 Q670,179 685,179 Q700,179 710,152 Q720,125 735,125 Q750,125 760,152 Q770,179 780,168" 
+          fill="none" stroke="#80d4ff" stroke-width="2" opacity="0.85" filter="url(#chalkGlow2)"/>
+    <!-- Tick marks -->
+    <line x1="535" y1="150" x2="535" y2="154" stroke="#c8d8c0" stroke-width="0.8" opacity="0.5"/>
+    <line x1="585" y1="150" x2="585" y2="154" stroke="#c8d8c0" stroke-width="0.8" opacity="0.5"/>
+    <line x1="635" y1="150" x2="635" y2="154" stroke="#c8d8c0" stroke-width="0.8" opacity="0.5"/>
+    <text x="535" y="164" font-family="Georgia, serif" font-size="8" fill="#c8d8c0" text-anchor="middle" opacity="0.5">π/2</text>
+    <text x="585" y="164" font-family="Georgia, serif" font-size="8" fill="#c8d8c0" text-anchor="middle" opacity="0.5">π</text>
+    <text x="635" y="164" font-family="Georgia, serif" font-size="8" fill="#c8d8c0" text-anchor="middle" opacity="0.5">3π/2</text>
+  </g>
+
+  <!-- Gaussian Curve -->
+  <g filter="url(#dust2)">
+    <text x="490" y="210" font-family="Georgia, serif" font-size="13" fill="#ff9e80" filter="url(#chalkGlow2)" font-weight="bold">
+      𝒩(μ, σ²)
+    </text>
+    <!-- Axes -->
+    <line x1="530" y1="240" x2="530" y2="310" stroke="#c8d8c0" stroke-width="1.2" opacity="0.7"/>
+    <line x1="520" y1="305" x2="800" y2="305" stroke="#c8d8c0" stroke-width="1.2" opacity="0.7"/>
+    <path d="M530,238 L527,244 M530,238 L533,244" stroke="#c8d8c0" stroke-width="1" opacity="0.7"/>
+    <!-- Bell curve - hand drawn -->
+    <path d="M540,304 Q555,303 570,298 Q585,288 595,268 Q605,248 615,242 Q625,238 635,242 Q645,248 655,268 Q665,288 680,298 Q695,303 710,304" 
+          fill="none" stroke="#ff9e80" stroke-width="2" opacity="0.85" filter="url(#chalkGlow2)"/>
+    <!-- Shaded area under curve -->
+    <path d="M540,304 Q555,303 570,298 Q585,288 595,268 Q605,248 615,242 Q625,238 635,242 Q645,248 655,268 Q665,288 680,298 Q695,303 710,304 L710,305 L540,305 Z" 
+          fill="#ff9e80" opacity="0.1"/>
+    <!-- μ and σ markers -->
+    <line x1="625" y1="305" x2="625" y2="240" stroke="#ff9e80" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.5"/>
+    <text x="625" y="318" font-family="Georgia, serif" font-size="10" fill="#ff9e80" text-anchor="middle" opacity="0.7">μ</text>
+    <text x="575" y="318" font-family="Georgia, serif" font-size="9" fill="#c8d8c0" text-anchor="middle" opacity="0.5">μ-σ</text>
+    <text x="675" y="318" font-family="Georgia, serif" font-size="9" fill="#c8d8c0" text-anchor="middle" opacity="0.5">μ+σ</text>
+  </g>
+
+  <!-- Matrix -->
+  <g filter="url(#dust2)">
+    <text x="720" y="100" font-family="Georgia, serif" font-size="13" fill="#b9f6ca" filter="url(#chalkGlow2)" font-weight="bold">
+      det(A)
+    </text>
+    <!-- Matrix brackets -->
+    <path d="M720,112 L715,112 L715,175 L720,175" fill="none" stroke="#b9f6ca" stroke-width="1.5" opacity="0.8"/>
+    <path d="M800,112 L805,112 L805,175 L800,175" fill="none" stroke="#b9f6ca" stroke-width="1.5" opacity="0.8"/>
+    <!-- Matrix entries -->
+    <text x="735" y="130" font-family="'Courier New', monospace" font-size="13" fill="#e8e8d8" text-anchor="middle" opacity="0.8">a₁₁</text>
+    <text x="775" y="130" font-family="'Courier New', monospace" font-size="13" fill="#e8e8d8" text-anchor="middle" opacity="0.8">a₁₂</text>
+    <text x="735" y="155" font-family="'Courier New', monospace" font-size="13" fill="#e8e8d8" text-anchor="middle" opacity="0.8">a₂₁</text>
+    <text x="775" y="155" font-family="'Courier New', monospace" font-size="13" fill="#e8e8d8" text-anchor="middle" opacity="0.8">a₂₂</text>
+    <!-- = sign and result -->
+    <text x="812" y="145" font-family="Georgia, serif" font-size="14" fill="#b9f6ca" opacity="0.7">=</text>
+    <text x="820" y="145" font-family="Georgia, serif" font-size="12" fill="#e8e8d8" opacity="0.6">Δ</text>
+  </g>
+
+  <!-- ===== Graph Network Visualization ===== -->
+  <g filter="url(#dust2)">
+    <text x="490" y="350" font-family="Georgia, serif" font-size="13" fill="#ffd966" filter="url(#chalkGlow2)" font-weight="bold">
+      G = (V, E)
+    </text>
+    <!-- Nodes -->
+    <circle cx="560" cy="375" r="10" fill="none" stroke="#ffd966" stroke-width="1.5" opacity="0.8"/>
+    <text x="560" y="379" font-family="'Courier New', monospace" font-size="9" fill="#ffd966" text-anchor="middle" font-weight="bold">v₁</text>
+    
+    <circle cx="640" cy="355" r="10" fill="none" stroke="#80d4ff" stroke-width="1.5" opacity="0.8"/>
+    <text x="640" y="359" font-family="'Courier New', monospace" font-size="9" fill="#80d4ff" text-anchor="middle" font-weight="bold">v₂</text>
+    
+    <circle cx="720" cy="375" r="10" fill="none" stroke="#ff9e80" stroke-width="1.5" opacity="0.8"/>
+    <text x="720" y="379" font-family="'Courier New', monospace" font-size="9" fill="#ff9e80" text-anchor="middle" font-weight="bold">v₃</text>
+    
+    <circle cx="640" cy="395" r="10" fill="none" stroke="#b9f6ca" stroke-width="1.5" opacity="0.8"/>
+    <text x="640" y="399" font-family="'Courier New', monospace" font-size="9" fill="#b9f6ca" text-anchor="middle" font-weight="bold">v₄</text>
+    
+    <!-- Edges -->
+    <line x1="570" y1="373" x2="630" y2="358" stroke="#c8d8c0" stroke-width="1" opacity="0.5"/>
+    <line x1="650" y1="358" x2="710" y2="373" stroke="#c8d8c0" stroke-width="1" opacity="0.5"/>
+    <line x1="635" y1="365" x2="635" y2="385" stroke="#c8d8c0" stroke-width="1" opacity="0.5"/>
+    <line x1="570" y1="380" x2="630" y2="393" stroke="#c8d8c0" stroke-width="1" opacity="0.5"/>
+    <line x1="650" y1="393" x2="710" y2="380" stroke="#c8d8c0" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Dividing line between left and right -->
+  <line x1="460" y1="70" x2="460" y2="370" stroke="#4a7a45" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
+  
+  <!-- Corner decorations -->
+  <g stroke="#7aaa70" stroke-width="1.2" fill="none" opacity="0.25">
+    <path d="M30,30 L30,45 M30,30 L45,30"/>
+    <path d="M820,30 L820,45 M820,30 L805,30"/>
+    <path d="M30,385 L30,370 M30,385 L45,385"/>
+    <path d="M820,385 L820,370 M820,385 L805,385"/>
+  </g>
+</svg>
