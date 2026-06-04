@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/assets/banner.svg" alt="Mahesh Solanki - Mathematician & Developer" width="900"/>
+  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/assets/banner.svg" alt="Mahesh Solanki - Mathematician & Computational Scientist" width="900"/>
 </h1>
 
 <p align="center">
