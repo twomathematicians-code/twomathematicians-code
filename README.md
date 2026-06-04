@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/assets/banner.svg" alt="Mahesh Solanki - Mathematician & Computational Scientist" width="900"/>
+  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/banner.svg" alt="Mahesh Solanki - Mathematician & Computational Scientist" width="900"/>
 </h1>
 
 <p align="center">
@@ -63,7 +63,7 @@
 | **Information Theory** | Entropy, KL divergence, mutual information | NumPy, TensorFlow |
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/assets/math-blackboard.svg" alt="Mathematical Toolkit - Equations, Graphs, Formulas on Chalkboard" width="850"/>
+  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/math-blackboard.svg" alt="Mathematical Toolkit - Equations, Graphs, Formulas on Chalkboard" width="850"/>
 </p>
 
 #### Graph: My Knowledge Domain
@@ -102,7 +102,7 @@ ORDER BY size(stack) DESC
 ### &lt;/&gt; Technology
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/assets/tech-blackboard.svg" alt="Technology Stack on Chalkboard" width="850"/>
+  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/tech-blackboard.svg" alt="Technology Stack on Chalkboard" width="850"/>
 </p>
 
 ```text
