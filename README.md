@@ -67,12 +67,6 @@
 ### 📊 GitHub Analytics
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=ffd966&icon_color=80d4ff&text_color=c9d1d9&ring_color=ffd966&include_all_commits=true&count_private=true" />
-  &nbsp;&nbsp;
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=donut-vertical&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=ffd966&text_color=c9d1d9&langs_count=10" />
-</p>
-
-<p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com?user=twomathematicians-code&theme=tokyonight&hide_border=true&background=0d1117&stroke=ffd966&ring=ffd966&fire=ff9e80&currStreakLabel=ffd966&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=c9d1d9&dates=555555" />
 </p>
 
