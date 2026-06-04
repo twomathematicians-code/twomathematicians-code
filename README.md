@@ -17,41 +17,6 @@
 > I model real-world problems as graphs, solve them with algorithms, and deploy them as scalable systems.
 > Every function I write is a theorem. Every test is a proof. Every deployment is a publication.
 
-```text
-  ╔══════════════════════════════════════════════════════════════╗
-  ║  Name      :  Mahesh Solanki                                ║
-  ║  Focus     :  Computational Mathematics + Graph ML          ║
-  ║  Approach  :  Model → Prove → Implement → Deploy            ║
-  ║  Belief    :  Every problem has an optimal solution —        ║
-  ║              you just need the right equation                ║
-  ╚══════════════════════════════════════════════════════════════╝
-```
-
----
-
-### ∫ Mathematics
-
-```text
-  ┌─────────────────────────────────────────────────────────────────┐
-  │                                                                 │
-  │   DEFINITION 1.0:  Mahesh = Developer ∩ Mathematician           │
-  │                                                                 │
-  │   Let  f : {Math, Code, Coffee} → {Solutions, Innovation}       │
-  │                                                                 │
-  │   THEOREM:  ∀ problem P ∈ ComplexitySpace,                      │
-  │              lim       Code(f, P)  =  Optimal_Solution           │
-  │             n→∞      ┌──────────────────┐                        │
-  │                      │  ∫ Knowledge dx  │  ∈  O(n log n)        │
-  │                      └──────────────────┘                        │
-  │                                                                 │
-  │   PROOF:  By induction on coffee cups consumed. ☕              │
-  │                                                                 │
-  │   COROLLARY:  Coffee ∪ Math ∪ Code → ∞ Productivity              │
-  │                                                                 │
-  │   Q.E.D.  □                                                     │
-  │                                                                 │
-  └─────────────────────────────────────────────────────────────────┘
-```
 
 | Domain | Focus Area | Key Tools |
 |:-------|:-----------|:----------|
@@ -68,36 +33,7 @@
 
 #### Graph: My Knowledge Domain
 
-```text
-  G = (V, E)  where V = { Python, Neo4j, TensorFlow, R, C++ }
-                  and   E = { queries, pipelines, models, proofs }
 
-        ┌──────────┐      ┌──────────┐      ┌──────────┐
-        │          │─────→│          │─────→│          │
-        │  Python   │      │  Neo4j   │      │TensorFlow│
-        │  (Core)   │←─────│ (Graph)  │←─────│  (ML)    │
-        │          │      │          │      │          │
-        └────┬─────┘      └──────────┘      └────┬─────┘
-             │                                    │
-             ▼                                    ▼
-        ┌──────────┐      ┌──────────┐      ┌──────────┐
-        │          │      │          │      │          │
-        │    R     │◄─────│PostgreSQL│      │  Docker  │
-        │ (Stats)  │      │  (Data)  │      │ (Deploy) │
-        │          │      │          │      │          │
-        └──────────┘      └──────────┘      └──────────┘
-```
-
-```cypher
-// Everything I do, expressed as a graph query
-MATCH (me:Mathematician {name: "Mahesh Solanki"})
-      -[:RESEARCHES]->(domain:Field)
-      -[:IMPLEMENTS_WITH]->(tool:Technology)
-RETURN domain.name, collect(tool.name) AS stack
-ORDER BY size(stack) DESC
-```
-
----
 
 ### &lt;/&gt; Technology
 
@@ -105,57 +41,13 @@ ORDER BY size(stack) DESC
   <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/tech-blackboard.svg" alt="Technology Stack on Chalkboard" width="850"/>
 </p>
 
-```text
-  ┌────────────────────────────────────────────────────────────────┐
-  │  TOOLCHAIN CONFIGURATION                                        │
-  │                                                                 │
-  │  [Languages]     Python  │  C++  │  R  │  Cypher  │  SQL      │
-  │  [Databases]     Neo4j   │  PostgreSQL  │  Redis              │
-  │  [ML/AI]        TensorFlow │ Scikit-learn │ NumPy │ Pandas     │
-  │  [DevOps]       Docker  │  Git  │  Linux  │  VS Code         │
-  │  [Visualization] Matplotlib │ Plotly │ Seaborn │ Plotly       │
-  │                                                                 │
-  │  Complexity Target: O(n log n) or better                        │
-  │  Uptime Goal:       lim reliability → 100%                      │
-  └────────────────────────────────────────────────────────────────┘
-```
 
-```python
-# My dev environment in one line
-stack = {
-    "languages":   ["Python", "C++", "R", "Cypher", "SQL"],
-    "databases":   ["Neo4j", "PostgreSQL"],
-    "ml_ai":       ["TensorFlow", "Scikit-learn", "NumPy", "Pandas"],
-    "devops":      ["Docker", "Git", "Linux", "VS Code"],
-    "visualization":["Matplotlib", "Plotly", "Seaborn"],
-}
-# All auto-updated from my GitHub repos
-```
-
----
 
 ### 🔬 Research
 
 > My research lives at the intersection of **mathematical modeling**, **graph-based machine learning**, and **computational statistics**. I explore how graph structures can capture complex relational patterns that traditional tabular data models fail to represent, then build production systems from those insights.
 
-```text
-  RESEARCH PIPELINE
-  ═══════════════════════════════════════════════════════════════════
 
-   ┌─────────────┐    ┌──────────────┐    ┌───────────────┐    ┌───────────┐
-   │             │    │              │    │               │    │           │
-   │  Problem    │───→│  Graph Model │───→│  Feature      │───→│ Predict & │
-   │  Formulate  │    │  G = (V, E)  │    │  Extraction   │    │ Validate │
-   │             │    │  in Neo4j    │    │  (Embeddings) │    │  p < 0.05 │
-   └─────────────┘    └──────────────┘    └───────────────┘    └───────────┘
-        │                   │                    │                    │
-        ▼                   ▼                    ▼                    ▼
-   ┌─────────────┐    ┌──────────────┐    ┌───────────────┐    ┌───────────┐
-   │  Math +     │    │  Cypher      │    │  Node2Vec /   │    │TensorFlow │
-   │  Domain     │    │  Traversals  │    │  GraphSAGE    │    │  + R      │
-   │  Knowledge  │    │  + Neo4j     │    │  + TensorFlow │    │  Reports  │
-   └─────────────┘    └──────────────┘    └───────────────┘    └───────────┘
-```
 
 #### Key Research Topics
 
@@ -169,82 +61,8 @@ stack = {
 
 * **Bayesian Inference** -- Probabilistic programming, prior/posterior analysis, and MCMC sampling for uncertainty quantification in predictions. Moving beyond point estimates to full distributional understanding of model outputs.
 
-```python
-# Current research focus
-research_agenda = {
-    "graph_ml": {
-        "hypothesis": "Graph embeddings improve classification accuracy by 15%+ over tabular features",
-        "method": "Node2Vec + GraphSAGE on Neo4j knowledge graphs",
-        "validation": "5-fold CV with p < 0.05 significance testing"
-    },
-    "statistical_tools": {
-        "hypothesis": "Automated pipelines reduce analysis time by 60%",
-        "method": "R + Python integration with reproducible workflows",
-        "validation": "A/B testing against manual analysis baselines"
-    }
-}
-```
 
----
 
-### ⚡ Code
-
-```python
-class Developer:
-    """
-    I don't just write code. I prove correctness, optimize complexity,
-    and model reality through algorithms.
-
-    Every function I write is a theorem.
-    Every test I write is a proof.
-    Every deployment is a publication.
-    """
-
-    name: str = "Mahesh Solanki"
-    role: str = "Mathematician + Developer"
-    approach: str = "Rigorous mathematical thinking"
-    complexity_target: str = "O(n log n) or better"
-
-    def solve(self, problem) -> Solution:
-        """Transform any problem into an optimal solution."""
-        model = self.model_as_graph(problem)
-        features = self.extract_features(model)
-        prediction = self.train_and_predict(features)
-        return self.validate(prediction, significance=0.05)
-
-    def model_as_graph(self, data) -> Graph:
-        """Represent data as G = (V, E) in Neo4j."""
-        return Neo4jGraph(data).build_schema().optimize_queries()
-
-    def always_learning(self) -> bool:
-        return True  # ∀ t ∈ Time : learning(t) == True
-```
-
-```python
-# Current projects — auto-synced from GitHub
-current_focus = {
-    "graph_ml": {
-        "description": "Graph-based ML pipelines for relational data",
-        "stack": ["Neo4j", "Python", "TensorFlow", "Cypher"],
-        "status": "In Progress",
-        "complexity": "O(V + E)"
-    },
-    "statistical_tools": {
-        "description": "Automated statistical analysis and reporting",
-        "stack": ["R", "Python", "Pandas", "SciPy"],
-        "status": "Active Development",
-        "significance": "p < 0.05"
-    },
-    "data_pipelines": {
-        "description": "End-to-end data engineering with Docker",
-        "stack": ["Docker", "PostgreSQL", "Python"],
-        "status": "Planning",
-        "scalability": "horizontal"
-    }
-}
-```
-
----
 
 ### 📊 GitHub Analytics
 
