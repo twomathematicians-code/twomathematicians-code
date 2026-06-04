@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="850">
+  <defs>
+    <filter id="chalk3" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise"/>
+      <feComposite in="SourceGraphic" in2="noise" operator="in"/>
+    </filter>
+    <filter id="chalkGlow3" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="dust3" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="textured"/>
+      <feComposite in="textured" in2="SourceGraphic" operator="over"/>
+    </filter>
+    <linearGradient id="wood3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5c3a1e"/>
+      <stop offset="15%" stop-color="#7a4e2d"/>
+      <stop offset="30%" stop-color="#6b4226"/>
+      <stop offset="50%" stop-color="#8b5e3c"/>
+      <stop offset="70%" stop-color="#6b4226"/>
+      <stop offset="85%" stop-color="#7a4e2d"/>
+      <stop offset="100%" stop-color="#5c3a1e"/>
+    </linearGradient>
+    <linearGradient id="woodV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5c3a1e"/>
+      <stop offset="15%" stop-color="#7a4e2d"/>
+      <stop offset="30%" stop-color="#6b4226"/>
+      <stop offset="50%" stop-color="#8b5e3c"/>
+      <stop offset="70%" stop-color="#6b4226"/>
+      <stop offset="85%" stop-color="#7a4e2d"/>
+      <stop offset="100%" stop-color="#5c3a1e"/>
+    </linearGradient>
+    <radialGradient id="board3" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#2d5a2a"/>
+      <stop offset="50%" stop-color="#264d23"/>
+      <stop offset="100%" stop-color="#1e3d1b"/>
+    </radialGradient>
+    <linearGradient id="tray3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b4226"/>
+      <stop offset="50%" stop-color="#8b5e3c"/>
+      <stop offset="100%" stop-color="#5c3a1e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="0" y="0" width="850" height="320" rx="4" fill="#3a2210"/>
+  <rect x="0" y="0" width="850" height="18" fill="url(#wood3)" rx="4"/>
+  <rect x="0" y="8" width="850" height="10" fill="url(#wood3)"/>
+  <rect x="0" y="302" width="850" height="18" fill="url(#wood3)" rx="4"/>
+  <rect x="0" y="0" width="18" height="320" fill="url(#woodV3)" rx="4"/>
+  <rect x="832" y="0" width="18" height="320" fill="url(#woodV3)" rx="4"/>
+  
+  <!-- Board -->
+  <rect x="18" y="18" width="814" height="284" fill="url(#board3)"/>
+
+  <!-- Smudges -->
+  <ellipse cx="425" cy="150" rx="150" ry="80" fill="#3a6a35" opacity="0.15"/>
+
+  <!-- Chalk tray -->
+  <rect x="120" y="288" width="610" height="12" fill="url(#tray3)" rx="2"/>
+  <rect x="122" y="286" width="606" height="3" fill="#9b7e5c" rx="1"/>
+  <rect x="250" y="290" width="20" height="5" rx="2" fill="#e8e8e0" opacity="0.8"/>
+  <rect x="400" y="291" width="18" height="4" rx="2" fill="#ffd966" opacity="0.85"/>
+  <rect x="550" y="290" width="22" height="5" rx="2" fill="#ff9e80" opacity="0.8"/>
+
+  <!-- Title -->
+  <text x="425" y="50" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#80d4ff" filter="url(#chalkGlow3)" font-weight="bold">
+    &lt;/&gt; Technology Stack &lt;/&gt;
+  </text>
+  <path d="M250,57 Q340,60 425,56 Q510,52 600,56" fill="none" stroke="#80d4ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Languages Row -->
+  <text x="50" y="90" font-family="Georgia, serif" font-size="13" fill="#ffd966" filter="url(#chalkGlow3)" font-weight="bold">Languages:</text>
+  
+  <!-- Python -->
+  <g filter="url(#dust3)">
+    <rect x="50" y="100" width="140" height="30" rx="3" fill="none" stroke="#3776AB" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="68" cy="115" r="8" fill="none" stroke="#ffd43b" stroke-width="1.2" opacity="0.8"/>
+    <text x="86" y="120" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" opacity="0.85">Python</text>
+  </g>
+  
+  <!-- C++ -->
+  <g filter="url(#dust3)">
+    <rect x="210" y="100" width="140" height="30" rx="3" fill="none" stroke="#00599C" stroke-width="1.5" opacity="0.7"/>
+    <text x="237" y="120" font-family="'Courier New', monospace" font-size="13" fill="#00599C" opacity="0.9">C</text>
+    <text x="247" y="115" font-family="'Courier New', monospace" font-size="9" fill="#00599C" opacity="0.9">++</text>
+    <text x="262" y="120" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" opacity="0.85">  C++</text>
+  </g>
+
+  <!-- R -->
+  <g filter="url(#dust3)">
+    <rect x="370" y="100" width="140" height="30" rx="3" fill="none" stroke="#276DC3" stroke-width="1.5" opacity="0.7"/>
+    <text x="430" y="120" font-family="Georgia, serif" font-size="16" fill="#276DC3" text-anchor="middle" font-weight="bold" font-style="italic">R</text>
+    <text x="448" y="120" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" opacity="0.85">R</text>
+  </g>
+
+  <!-- Cypher -->
+  <g filter="url(#dust3)">
+    <rect x="530" y="100" width="140" height="30" rx="3" fill="none" stroke="#018BFF" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="548" cy="115" r="7" fill="none" stroke="#018BFF" stroke-width="1.2" opacity="0.8"/>
+    <text x="562" y="120" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" opacity="0.85">Cypher</text>
+  </g>
+
+  <!-- SQL -->
+  <g filter="url(#dust3)">
+    <rect x="690" y="100" width="110" height="30" rx="3" fill="none" stroke="#4169E1" stroke-width="1.5" opacity="0.7"/>
+    <text x="730" y="120" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">SQL</text>
+  </g>
+
+  <!-- Databases & Frameworks Row -->
+  <text x="50" y="165" font-family="Georgia, serif" font-size="13" fill="#ff9e80" filter="url(#chalkGlow3)" font-weight="bold">Databases &amp; Frameworks:</text>
+  
+  <g filter="url(#dust3)">
+    <rect x="50" y="175" width="120" height="28" rx="3" fill="none" stroke="#018BFF" stroke-width="1.5" opacity="0.7"/>
+    <text x="110" y="194" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">Neo4j</text>
+  </g>
+  <g filter="url(#dust3)">
+    <rect x="185" y="175" width="150" height="28" rx="3" fill="none" stroke="#4169E1" stroke-width="1.5" opacity="0.7"/>
+    <text x="260" y="194" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">PostgreSQL</text>
+  </g>
+  <g filter="url(#dust3)">
+    <rect x="350" y="175" width="140" height="28" rx="3" fill="none" stroke="#FF6F00" stroke-width="1.5" opacity="0.7"/>
+    <text x="420" y="194" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">TensorFlow</text>
+  </g>
+  <g filter="url(#dust3)">
+    <rect x="505" y="175" width="120" height="28" rx="3" fill="none" stroke="#56B3B4" stroke-width="1.5" opacity="0.7"/>
+    <text x="565" y="194" font-family="'Courier New', monospace" font-size="12" fill="#f0efe8" text-anchor="middle" opacity="0.85">Scikit-learn</text>
+  </g>
+
+  <!-- Tools Row -->
+  <text x="50" y="235" font-family="Georgia, serif" font-size="13" fill="#b9f6ca" filter="url(#chalkGlow3)" font-weight="bold">Tools &amp; Environments:</text>
+  
+  <g filter="url(#dust3)">
+    <rect x="50" y="245" width="100" height="28" rx="3" fill="none" stroke="#F05032" stroke-width="1.5" opacity="0.7"/>
+    <text x="100" y="264" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">Git</text>
+  </g>
+  <g filter="url(#dust3)">
+    <rect x="165" y="245" width="100" height="28" rx="3" fill="none" stroke="#2496ED" stroke-width="1.5" opacity="0.7"/>
+    <text x="215" y="264" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">Docker</text>
+  </g>
+  <g filter="url(#dust3)">
+    <rect x="280" y="245" width="100" height="28" rx="3" fill="none" stroke="#007ACC" stroke-width="1.5" opacity="0.7"/>
+    <text x="330" y="264" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">VS Code</text>
+  </g>
+  <g filter="url(#dust3)">
+    <rect x="395" y="245" width="100" height="28" rx="3" fill="none" stroke="#FCC624" stroke-width="1.5" opacity="0.7"/>
+    <text x="445" y="264" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">Linux</text>
+  </g>
+  <g filter="url(#dust3)">
+    <rect x="510" y="245" width="120" height="28" rx="3" fill="none" stroke="#F37626" stroke-width="1.5" opacity="0.7"/>
+    <text x="570" y="264" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">Jupyter</text>
+  </g>
+  <g filter="url(#dust3)">
+    <rect x="645" y="245" width="100" height="28" rx="3" fill="none" stroke="#013243" stroke-width="1.5" opacity="0.7"/>
+    <text x="695" y="264" font-family="'Courier New', monospace" font-size="13" fill="#f0efe8" text-anchor="middle" opacity="0.85">NumPy</text>
+  </g>
+
+  <!-- Hand-drawn connecting arrows -->
+  <g stroke="#7aaa70" stroke-width="0.8" fill="none" opacity="0.3">
+    <path d="M190,130 Q200,150 210,175"/>
+    <path d="M350,130 Q355,150 355,175"/>
+    <path d="M520,130 Q525,150 510,175"/>
+    <path d="M660,130 Q660,150 645,175"/>
+  </g>
+
+  <!-- Corner decorations -->
+  <g stroke="#7aaa70" stroke-width="1.2" fill="none" opacity="0.25">
+    <path d="M28,28 L28,40 M28,28 L40,28"/>
+    <path d="M822,28 L822,40 M822,28 L810,28"/>
+    <path d="M28,290 L28,278 M28,290 L40,290"/>
+    <path d="M822,290 L822,278 M822,290 L810,290"/>
+  </g>
+</svg>
