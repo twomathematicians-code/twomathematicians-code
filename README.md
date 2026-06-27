@@ -96,7 +96,7 @@
   <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-twomathematicians--code-2d5a2a?style=for-the-badge&logo=github&logoColor=ffd966" /></a>
   <a href="https://www.linkedin.com/in/mahesh-solanki-16b9a6a5/"><img src="https://img.shields.io/badge/LinkedIn-Mahesh_Solanki-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:twomathematicians@gmail.com"><img src="https://img.shields.io/badge/Email-twomathematicians-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Email-maheshsinh1910-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Email-mahesh-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 <p align="center">
