@@ -1,85 +1,34 @@
-<h1 align="center">
-  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/banner.svg" alt="Mahesh Solanki - Mathematician & Computational Scientist" width="900"/>
-</h1>
+# Forward Deployment Engineer | Gen AI | ML | Data
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&color=ffd966&style=flat-square&label=BOARD+VIEWS" alt="views" />
-  <img src="https://img.shields.io/github/followers/twomathematicians-code?style=flat-square&label=FOLLOWERS&color=2d5a2a" alt="followers" />
-  <img src="https://img.shields.io/github/stars/twomathematicians-code?style=flat-square&label=STARS&color=ff9e80" alt="stars" />
-  <img src="https://img.shields.io/badge/Status-Always_Learning-80d4ff?style=flat-square" alt="status" />
+  <img src="https://img.shields.io/badge/ROLE-Forward%20Deployment%20Engineer-black?style=for-the-badge&logo=github&logoColor=white" alt="role" />
+  <img src="https://img.shields.io/badge/FOCUS-GenAI%20%7C%20ML%20%7C%20Data-white?style=for-the-badge&logo=openai&logoColor=black&labelColor=black&color=white" alt="focus" />
 </p>
+
+Minimal black-and-white profile built around live repository signals.
 
 ---
 
-### ↳ About Me
+## Profile Objects
 
-> A mathematician who builds at the intersection of **abstract theory** and **production code**.
-> I model real-world problems as graphs, solve them with algorithms, and deploy them as scalable systems.
-> Every function I write is a theorem. Every test is a proof. Every deployment is a publication.
+| Object | What I Deliver |
+|:--|:--|
+| **Data** | Data acquisition, quality, modeling, and domain-aware analytics |
+| **Compute** | Reliable pipelines, scalable processing, and production performance |
+| **Technology** | End-to-end systems using Gen AI, ML, APIs, and cloud workflows |
 
+## Domain Positioning
 
-| Domain | Focus Area | Key Tools |
-|:-------|:-----------|:----------|
-| **Graph Theory** | Network analysis, centrality, shortest paths, coloring | Neo4j, Cypher, NetworkX |
-| **Linear Algebra** | Matrices, eigenvalues, SVD, PCA, spectral methods | NumPy, SciPy, TensorFlow |
-| **Probability & Statistics** | Bayesian inference, hypothesis testing, estimation | R, scipy.stats, Pandas |
-| **Optimization** | Convex optimization, gradient descent, LP/QP | TensorFlow, CVXPY |
-| **Numerical Methods** | ODE/PDE solvers, interpolation, quadrature | SciPy, NumPy |
-| **Information Theory** | Entropy, KL divergence, mutual information | NumPy, TensorFlow |
+I work as a **Forward Deployment Engineer** across domains, translating research and business constraints into deployed AI/ML/data systems with measurable outcomes.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/math-blackboard.svg" alt="Mathematical Toolkit - Equations, Graphs, Formulas on Chalkboard" width="850"/>
-</p>
+---
 
-#### Graph: My Knowledge Domain
+## Dynamic Repository Intelligence
 
-
-
-### &lt;/&gt; Technology
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/main/tech-blackboard.svg" alt="Technology Stack on Chalkboard" width="850"/>
-</p>
-
-
-
-### 🔬 Research
-
-> My research lives at the intersection of **mathematical modeling**, **graph-based machine learning**, and **computational statistics**. I explore how graph structures can capture complex relational patterns that traditional tabular data models fail to represent, then build production systems from those insights.
-
-
-
-#### Key Research Topics
-
-* **Graph Neural Networks (GNNs)** -- Learning from relational data structures using message passing and graph convolution operations on Neo4j-stored graphs. Building end-to-end pipelines from raw graph data to actionable predictions with interpretable results.
-
-* **Statistical Hypothesis Testing** -- Rigorous validation with proper significance levels, confidence intervals, and effect sizes using R. Ensuring every research claim is backed by sound statistical evidence rather than mere correlation.
-
-* **Dimensionality Reduction & Embeddings** -- PCA, t-SNE, UMAP for high-dimensional mathematical data visualization and feature engineering. Transforming abstract mathematical spaces into interpretable low-dimensional representations.
-
-* **Optimization Theory** -- Gradient descent variants, convex optimization, and their applications in training deep learning models efficiently. Bridging the gap between theoretical convergence guarantees and practical training speed.
-
-* **Bayesian Inference** -- Probabilistic programming, prior/posterior analysis, and MCMC sampling for uncertainty quantification in predictions. Moving beyond point estimates to full distributional understanding of model outputs.
-
-
-
-
-### 📊 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=twomathematicians-code&theme=tokyonight&hide_border=true&background=0d1117&stroke=ffd966&ring=ffd966&fire=ff9e80&currStreakLabel=ffd966&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=c9d1d9&dates=555555" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=twomathematicians-code&bg_color=0d1117&color=ffd966&line=ff9e80&point=80d4ff&area=true&hide_border=true&radius=8" />
-</p>
-
-### ⚡ Future Tech Dynamic Dashboard
-
-> This section is automatically generated from live GitHub data and updates daily.
+This dashboard is generated from live GitHub API data and refreshed automatically.
 
 <!-- AUTO-STATS:START -->
-<p align="center"><img src="https://img.shields.io/badge/AI%20SYNC-ACTIVE-00d4ff?style=for-the-badge&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/LIVE%20SOURCE-GitHub%20API-7c3aed?style=for-the-badge&logo=github&logoColor=white" /></p>
+<p align="center"><img src="https://img.shields.io/badge/AUTO%20SYNC-ACTIVE-black?style=for-the-badge&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/DATA%20SOURCE-GitHub%20API-white?style=for-the-badge&logo=github&logoColor=black&labelColor=black&color=white" /></p>
 
 | Metric | Live Value |
 |:--|--:|
@@ -90,13 +39,14 @@
 | Total Watchers | 0 |
 | Open Issues Across Projects | 0 |
 | Top Languages by Repo Count | N/A |
+| Domain Signals | Gen AI (0), ML (0), Data (0), Deployment (0) |
 
-#### 🚀 Most Starred Repositories
+#### Most Starred Repositories
 
-| Repository | ⭐ Stars | Last Push |
+| Repository | Stars | Last Push |
 |:--|--:|:--|
 
-#### 🛰️ Latest Updated Repositories
+#### Latest Updated Repositories
 
 | Repository | Primary Language | Last Push |
 |:--|:--|:--|
@@ -107,29 +57,8 @@
 
 ---
 
-### 💡 Quotes I Live By
+## Connect
 
-> "Mathematics is not about numbers, equations, or algorithms: it is about understanding."
-> — William Paul Thurston
-
-> "The only way to learn mathematics is to do mathematics." — Paul Halmos
-
-> "Pure mathematics is, in its way, the poetry of logical ideas." — Albert Einstein
-
-> "Mathematics is the queen of the sciences and number theory is the queen of mathematics."
-> — Carl Friedrich Gauss
-
----
-
-### ✉️ Connect
-
-<p align="center">
-  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-twomathematicians--code-2d5a2a?style=for-the-badge&logo=github&logoColor=ffd966" /></a>
-  <a href="https://www.linkedin.com/in/mahesh-solanki-16b9a6a5/"><img src="https://img.shields.io/badge/LinkedIn-Mahesh_Solanki-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:twomathematicians@gmail.com"><img src="https://img.shields.io/badge/Email-twomathematicians-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Email-mahesh-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2d5a2a&height=80&section=footer" width="100%"/>
-</p>
+- GitHub: https://github.com/twomathematicians-code
+- LinkedIn: https://www.linkedin.com/in/mahesh-solanki-16b9a6a5/
+- Email: twomathematicians@gmail.com

@@ -56,12 +56,36 @@ def build_section(username: str, profile: dict[str, Any], repos: list[dict[str, 
 
     languages = Counter(repo.get("language") for repo in non_forks if repo.get("language"))
     top_languages = ", ".join(f"{lang} ({count})" for lang, count in languages.most_common(6)) or "N/A"
+    keywords = {
+        "gen ai": ("gen ai", "genai", "llm", "gpt", "rag"),
+        "ml": ("ml", "machine learning", "deep learning", "neural"),
+        "data": ("data", "analytics", "etl", "warehouse", "feature"),
+        "deployment": ("deploy", "deployment", "infra", "kubernetes", "pipeline"),
+    }
+    signals = Counter()
+    for repo in non_forks:
+        corpus = " ".join(
+            [
+                str(repo.get("name", "")),
+                str(repo.get("description", "")),
+                " ".join(repo.get("topics") or []),
+            ]
+        ).lower()
+        for signal, terms in keywords.items():
+            if any(term in corpus for term in terms):
+                signals[signal] += 1
+    domain_signals = (
+        f"Gen AI ({signals.get('gen ai', 0)}), "
+        f"ML ({signals.get('ml', 0)}), "
+        f"Data ({signals.get('data', 0)}), "
+        f"Deployment ({signals.get('deployment', 0)})"
+    )
 
     updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     lines = [
-        f'<p align="center"><img src="https://img.shields.io/badge/AI%20SYNC-ACTIVE-00d4ff?style=for-the-badge&logo=githubactions&logoColor=white" /> '
-        f'<img src="https://img.shields.io/badge/LIVE%20SOURCE-GitHub%20API-7c3aed?style=for-the-badge&logo=github&logoColor=white" /></p>',
+        f'<p align="center"><img src="https://img.shields.io/badge/AUTO%20SYNC-ACTIVE-black?style=for-the-badge&logo=githubactions&logoColor=white" /> '
+        f'<img src="https://img.shields.io/badge/DATA%20SOURCE-GitHub%20API-white?style=for-the-badge&logo=github&logoColor=black&labelColor=black&color=white" /></p>',
         "",
         "| Metric | Live Value |",
         "|:--|--:|",
@@ -72,10 +96,11 @@ def build_section(username: str, profile: dict[str, Any], repos: list[dict[str, 
         f"| Total Watchers | {watchers} |",
         f"| Open Issues Across Projects | {open_issues} |",
         f"| Top Languages by Repo Count | {top_languages} |",
+        f"| Domain Signals | {domain_signals} |",
         "",
-        "#### 🚀 Most Starred Repositories",
+        "#### Most Starred Repositories",
         "",
-        "| Repository | ⭐ Stars | Last Push |",
+        "| Repository | Stars | Last Push |",
         "|:--|--:|:--|",
     ]
 
@@ -83,11 +108,13 @@ def build_section(username: str, profile: dict[str, Any], repos: list[dict[str, 
         lines.append(
             f"| [{repo['name']}]({repo['html_url']}) | {repo.get('stargazers_count', 0)} | {repo.get('pushed_at', 'N/A')[:10]} |"
         )
+    if not top_starred:
+        lines.append("| N/A | 0 | N/A |")
 
     lines.extend(
         [
             "",
-            "#### 🛰️ Latest Updated Repositories",
+            "#### Latest Updated Repositories",
             "",
             "| Repository | Primary Language | Last Push |",
             "|:--|:--|:--|",
@@ -98,6 +125,8 @@ def build_section(username: str, profile: dict[str, Any], repos: list[dict[str, 
         lines.append(
             f"| [{repo['name']}]({repo['html_url']}) | {repo.get('language') or 'N/A'} | {repo.get('pushed_at', 'N/A')[:10]} |"
         )
+    if not latest_repos:
+        lines.append("| N/A | N/A | N/A |")
 
     lines.extend(
         [
