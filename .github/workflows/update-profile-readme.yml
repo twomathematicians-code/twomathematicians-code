@@ -2,8 +2,15 @@ name: Update Dynamic Profile README
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - scripts/update_profile_readme.py
+      - .github/workflows/update-profile-readme.yml
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: write
