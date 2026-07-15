@@ -36,6 +36,7 @@ This dashboard is generated from live GitHub API data and refreshed automaticall
 | Total Forks | 0 |
 | Total Watchers | 0 |
 | Open Issues Across Projects | 0 |
+| Open Pull Requests Tracker | 0 |
 | Top Languages by Repo Count | N/A |
 | Domain Signals | Gen AI (0), ML (0), Data (0), Deployment (0) |
 
@@ -51,7 +52,12 @@ This dashboard is generated from live GitHub API data and refreshed automaticall
 |:--|:--|:--|
 | N/A | N/A | N/A |
 
-> Last auto-sync: **2026-07-15 23:03 UTC**
+> Last auto-sync: **2026-07-15 23:05 UTC**
+
+#### Deep Learning & Neural Networks Number Streams
+
+<p align="center"><img src="assets/deep-learning-numbers.gif" alt="Black and white floating numbers for deep learning" width="420" /> <img src="assets/neural-networks-numbers.gif" alt="Black and white floating numbers for neural networks" width="420" /></p>
+
 > Powered by `/scripts/update_profile_readme.py` and GitHub Actions for @twomathematicians-code.
 <!-- AUTO-STATS:END -->
 

@@ -40,7 +40,12 @@ def replace_section(content: str, replacement: str) -> str:
     return content[:start_index] + block + content[end_index:]
 
 
-def build_section(username: str, profile: dict[str, Any], repos: list[dict[str, Any]]) -> str:
+def build_section(
+    username: str,
+    profile: dict[str, Any],
+    repos: list[dict[str, Any]],
+    open_pull_requests: int,
+) -> str:
     non_forks = [repo for repo in repos if not repo.get("fork")]
     stars = sum(repo.get("stargazers_count", 0) for repo in non_forks)
     forks = sum(repo.get("forks_count", 0) for repo in non_forks)
@@ -95,6 +100,7 @@ def build_section(username: str, profile: dict[str, Any], repos: list[dict[str, 
         f"| Total Forks | {forks} |",
         f"| Total Watchers | {watchers} |",
         f"| Open Issues Across Projects | {open_issues} |",
+        f"| Open Pull Requests Tracker | {open_pull_requests} |",
         f"| Top Languages by Repo Count | {top_languages} |",
         f"| Domain Signals | {domain_signals} |",
         "",
@@ -132,6 +138,12 @@ def build_section(username: str, profile: dict[str, Any], repos: list[dict[str, 
         [
             "",
             f"> Last auto-sync: **{updated_at}**",
+            "",
+            "#### Deep Learning & Neural Networks Number Streams",
+            "",
+            '<p align="center"><img src="assets/deep-learning-numbers.gif" alt="Black and white floating numbers for deep learning" width="420" /> '
+            '<img src="assets/neural-networks-numbers.gif" alt="Black and white floating numbers for neural networks" width="420" /></p>',
+            "",
             f"> Powered by `/scripts/update_profile_readme.py` and GitHub Actions for @{username}.",
         ]
     )
@@ -148,10 +160,15 @@ def main() -> None:
             f"https://api.github.com/users/{username}/repos?per_page={MAX_REPOS}&sort=updated",
             token=token,
         )
+        open_pull_requests = fetch_json(
+            f"https://api.github.com/search/issues?q=user:{username}+type:pr+state:open",
+            token=token,
+        ).get("total_count", 0)
     except (HTTPError, URLError, TimeoutError):
         profile = {"public_repos": 0}
         repos = []
-    section = build_section(username, profile, repos)
+        open_pull_requests = 0
+    section = build_section(username, profile, repos, open_pull_requests)
     readme = README_PATH.read_text(encoding="utf-8")
     updated = replace_section(readme, section)
     README_PATH.write_text(updated, encoding="utf-8")
