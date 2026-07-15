@@ -5,8 +5,6 @@
   <img src="https://img.shields.io/badge/FOCUS-GenAI%20%7C%20ML%20%7C%20Data-white?style=for-the-badge&logo=openai&logoColor=black&labelColor=black&color=white" alt="focus" />
 </p>
 
-Minimal black-and-white profile built around live repository signals.
-
 ---
 
 ## Profile Objects
