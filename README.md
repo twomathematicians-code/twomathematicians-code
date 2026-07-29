@@ -1,6 +1,6 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=2800&pause=1200&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B+I'm+Mahesh+Solanki;%24+whoami+%E2%86%92+ML+Engineer+%7C+Production+AI;%24+location+%E2%86%92+Ghent%2C+Belgium" alt="Terminal Intro" />
-</h1>
+<p align="center">
+  <img src="assets/banner.svg" alt="Mahesh Solanki — ML Engineer" width="100%" />
+</p>
 
 <p align="center">
   <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
@@ -13,10 +13,9 @@
 
 ### 👤 About Me
 
-> Building production-grade ML systems with **Python**, **FastAPI**, **Docker**, and **PostgreSQL**.
-> Focused on end-to-end MLOps: containerized deployments, CI/CD pipelines (GitLab CI + GitHub Actions),
-> experiment tracking with MLflow, and scalable inference APIs.
-> Currently exploring **LLMs**, **RAG architectures**, and **edge deployment** for financial AI.
+> I build **production ML systems** the way a mathematician solves a problem — from first principles.
+> **Python** · **FastAPI** · **Docker** · **PostgreSQL**, wired into CI/CD pipelines that ship.
+> My notebooks move between calculus, probability, and deployed inference APIs.
 
 ```python
 class Mahesh:
@@ -34,6 +33,50 @@ class Mahesh:
             "Deep Learning — PyTorch, XGBoost, LightGBM",
         ]
 ```
+
+---
+
+### 📐 The Notebook — math, models & learning in motion
+
+<p align="center">
+  <img src="assets/equations.svg" alt="Equations cycling: Bayes, gradient descent, attention, normal distribution" width="100%" />
+</p>
+
+<table align="center">
+<tr>
+<td width="33%" align="center">
+  <b>perceptron</b><br/>
+  <img src="assets/perceptron.svg" width="100%" />
+</td>
+<td width="33%" align="center">
+  <b>neural network — forward pass</b><br/>
+  <img src="assets/nn-firing.svg" width="100%" />
+</td>
+<td width="33%" align="center">
+  <b>backpropagation</b><br/>
+  <img src="assets/backprop.svg" width="100%" />
+</td>
+</tr>
+<tr>
+<td width="33%" align="center">
+  <b>training loss</b><br/>
+  <img src="assets/loss-curve.svg" width="100%" />
+</td>
+<td width="33%" align="center">
+  <b>decision boundary</b><br/>
+  <img src="assets/decision-boundary.svg" width="100%" />
+</td>
+<td width="33%" align="center">
+  <b>distribution</b><br/>
+  <img src="assets/distribution.svg" width="100%" />
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <b>large language model — attention</b><br/>
+  <img src="assets/llm-attention.svg" alt="LLM attention flow with token embeddings" width="100%" />
+</p>
 
 ---
 
