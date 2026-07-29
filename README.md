@@ -79,89 +79,73 @@
 <td width="50%">
   <h3 align="center">
     <a href="https://github.com/twomathematicians-code/ml-engineer-credit-risk">
-      🏦 ML Credit Risk API
+      🏦 Credit Risk Pipeline
     </a>
   </h3>
-  <p align="center">
-    Production ML pipeline — FastAPI • PostgreSQL • Docker • CI/CD • MLflow • DVC
-  </p>
-  <p align="center">
-    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-    <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" />
-  </p>
+  <p align="center">End-to-end MLOps — FastAPI • PostgreSQL • MLflow • DVC • Alembic • 380+ lines of tests</p>
 </td>
 <td width="50%">
   <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/EcoDrive-Net_finalized">
-      🚗 EcoDrive-Net ADAS
+    <a href="https://github.com/twomathematicians-code/ml-fraud-detection">
+      🛡️ Fraud Detection Engine
     </a>
   </h3>
-  <p align="center">
-    Edge-vision ADAS — lane detection • vehicle ranging • predictive TTC
-  </p>
-  <p align="center">
-    <img src="https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white" />
-    <img src="https://img.shields.io/badge/Computer_Vision-FF6F00?style=flat-square&logo=opencv&logoColor=white" />
-    <img src="https://img.shields.io/badge/Deep_Learning-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
-    <img src="https://img.shields.io/badge/ADAS-000000?style=flat-square&logo=tesla&logoColor=white" />
-  </p>
+  <p align="center">Real-time scoring — XGBoost + Isolation Forest • Redis • SMOTE • &lt;20ms latency</p>
 </td>
 </tr>
 <tr>
 <td width="50%">
   <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/Manifold-DB-Repo">
-      🔢 Manifold DB
+    <a href="https://github.com/twomathematicians-code/ml-chatbot-deployment">
+      🤖 Chatbot + RAG Platform
     </a>
   </h3>
-  <p align="center">
-    Numerical methods & manifold computations — Python & C++
-  </p>
-  <p align="center">
-    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
-    <img src="https://img.shields.io/badge/Mathematics-FF6F00?style=flat-square&logo=wolfram&logoColor=white" />
-  </p>
+  <p align="center">LangChain • ChromaDB • Telegram & WhatsApp webhooks • Intent classification</p>
 </td>
 <td width="50%">
   <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/mantis_optimization">
-      🤖 Hybrid AI Optimizer
+    <a href="https://github.com/twomathematicians-code/ml-computer-vision">
+      👁️ Computer Vision API
     </a>
   </h3>
-  <p align="center">
-    Local-first + Cloud AI — 5 architecture patterns for cost optimization
-  </p>
-  <p align="center">
-    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-    <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
-    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-    <img src="https://img.shields.io/badge/Ollama-FFFFFF?style=flat-square&logo=ollama&logoColor=black" />
-  </p>
+  <p align="center">YOLO detection • Face recognition • Classification • Segmentation • OpenCV</p>
 </td>
 </tr>
 </table>
 
 <details>
-<summary><b>🔭 Explore All Projects (10+)</b></summary>
+<summary><b>🧠 ML Portfolio — 10 Production repos</b></summary>
 <br/>
 <table>
 <tr>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/bartlett-correction-sem"><b>Bartlett Correction SEM</b></a><br/><sub>R • lavaan • Monte Carlo • Statistics</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/post-quantum-computations"><b>Post-Quantum Cryptography</b></a><br/><sub>Python • Cryptography • Research</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/maisuclaw"><b>MAISUCLAW Agent Swarm</b></a><br/><sub>Python • 7 LLM Providers • Auto-Failover</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/ml-financial-forecasting"><b>📈 Financial Forecasting</b></a><br/><sub>LSTM • Prophet • WebSocket streaming</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/ml-customer-analytics"><b>👥 Customer Analytics</b></a><br/><sub>Churn • RFM • SHAP • CLV</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/ml-sentiment-analysis-suite"><b>💬 Sentiment Suite</b></a><br/><sub>Emotions • Aspect-based • NLP</sub></td>
 </tr>
 <tr>
-  <td><a href="https://github.com/twomathematicians-code/multi-lang-viz-repo"><b>Multi-Language Viz</b></a><br/><sub>Python • R • MATLAB • D3.js</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/interactive-visualizations-demo"><b>Interactive Viz Demo</b></a><br/><sub>D3.js • React • Data Viz</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/python-calculus-analysis"><b>Python Calculus Analysis</b></a><br/><sub>Python • Calculus • NumPy • SciPy</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/ml-recommender-systems"><b>🎯 Recommender Systems</b></a><br/><sub>FAISS • Hybrid • A/B testing</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/ml-nlp-toolkit"><b>🧠 NLP Toolkit</b></a><br/><sub>NER • Summarize • Translate</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/ml-healthcare-analytics"><b>🏥 Healthcare ML</b></a><br/><sub>Heart • Cancer • HIPAA</sub></td>
 </tr>
 <tr>
-  <td><a href="https://github.com/twomathematicians-code/ollama-rstudio-assistant"><b>Ollama RStudio Assistant</b></a><br/><sub>R • Ollama • LLM • IDE Plugin</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/chen"><b>Chen Theory</b></a><br/><sub>Python • Mathematics • Research</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/mahesh-portfolio"><b>Portfolio</b></a><br/><sub>Jupyter • Data Science • Showcase</sub></td>
+  <td colspan="3"><a href="https://github.com/twomathematicians-code/ml-demand-forecasting"><b>📊 Demand Forecasting</b></a> — Supply chain: LightGBM + Prophet + SARIMA</td>
+</tr>
+</table>
+</details>
+
+<details>
+<summary><b>🔭 Other Projects</b></summary>
+<br/>
+<table>
+<tr>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/mantis_optimization"><b>Hybrid AI Optimizer</b></a><br/><sub>TypeScript • Next.js • Ollama</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/EcoDrive-Net_finalized"><b>EcoDrive-Net ADAS</b></a><br/><sub>MATLAB • Deep Learning • ADAS</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/bartlett-correction-sem"><b>Bartlett Correction</b></a><br/><sub>R • Statistics • SEM</sub></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/twomathematicians-code/chen"><b>CHEN Theory</b></a><br/><sub>Python • Distributed AI • Research</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/post-quantum-computations"><b>Post-Quantum Crypto</b></a><br/><sub>Python • Cryptography</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/maisuclaw"><b>MAISUCLAW</b></a><br/><sub>Python • LLM Swarm</sub></td>
 </tr>
 </table>
 </details>
