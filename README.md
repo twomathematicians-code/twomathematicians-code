@@ -13,11 +13,11 @@
   <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=Views&color=6366F1&style=for-the-badge&abbreviated=true" />
 </p>
 
-<br/>
+---
 
 <table align="center">
 <tr>
-<td width="50%">
+<td width="45%">
 
 ```yaml
 ┌─────────────────────────────────┐
@@ -35,9 +35,9 @@
 ```
 
 </td>
-<td width="50%">
+<td width="55%">
 
-<img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&count_private=true&hide_border=true&title_color=6366F1&icon_color=6366F1&text_color=C9D1D9&bg_color=0D1117&include_all_commits=true&hide=stars&rank_icon=github" width="100%" />
+<img src="https://streak-stats.demolab.com?user=twomathematicians-code&theme=transparent&hide_border=true&background=0D1117&stroke=6366F1&ring=6366F1&fire=6366F1&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=C9D1D9&sideLabels=C9D1D9&dates=8B949E" width="100%" />
 
 </td>
 </tr>
@@ -52,40 +52,19 @@
     <img src="https://skillicons.dev/icons?i=python,r,postgres,matlab,bash,typescript&theme=dark&perline=6" />
   </a>
 </p>
-
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,fastapi,docker,git,githubactions,linux&theme=dark&perline=8" />
   </a>
 </p>
-
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=latex,anaconda,vscode,stackoverflow,powershell,regex&theme=dark&perline=6" />
+  <a href="https://skillicons.dev/icons?i=latex,vscode,anaconda,stackoverflow,regex,powershell&theme=dark&perline=6" />
   </a>
 </p>
 
 ---
 
-## 📊 Live Analytics
-
-<table align="center">
-<tr>
-  <td width="33%">
-    <img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&hide_border=true&title_color=6366F1&icon_color=6366F1&text_color=C9D1D9&bg_color=0D1117&hide=stars&include_all_commits=true&rank_icon=github" width="100%" />
-  </td>
-  <td width="33%">
-    <img src="https://streak-stats.demolab.com?user=twomathematicians-code&theme=transparent&hide_border=true&background=0D1117&stroke=6366F1&ring=6366F1&fire=6366F1&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=C9D1D9&sideLabels=C9D1D9&dates=8B949E" width="100%" />
-  </td>
-  <td width="33%">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&hide_border=true&title_color=6366F1&text_color=C9D1D9&bg_color=0D1117&langs_count=8&hide=jupyter%20notebook,tex,html,css" width="100%" />
-  </td>
-</tr>
-</table>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=algolia&no-frame=true&no-bg=true&column=8&margin-w=8" width="100%" />
-</p>
+## 📈 Contribution Pulse
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=twomathematicians-code&theme=react-dark&hide_border=true&bg_color=0D1117&color=6366F1&line=6366F1&point=FFFFFF&area=true&area_color=6366F1&title_color=FFFFFF" width="100%" />
@@ -93,49 +72,95 @@
 
 ---
 
-## 🚀 Launchpad
+## 🚀 Featured Projects
 
 <table align="center">
 <tr>
 <td width="50%">
-  <a href="https://github.com/twomathematicians-code/ml-engineer-credit-risk">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=ml-engineer-credit-risk&theme=dark&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=6366F1&text_color=C9D1D9" width="100%" />
-  </a>
+  <h3 align="center">
+    <a href="https://github.com/twomathematicians-code/ml-engineer-credit-risk">
+      🏦 ML Credit Risk API
+    </a>
+  </h3>
+  <p align="center">
+    Production ML pipeline — FastAPI • PostgreSQL • Docker • CI/CD • MLflow • DVC
+  </p>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+    <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" />
+  </p>
 </td>
 <td width="50%">
-  <a href="https://github.com/twomathematicians-code/EcoDrive-Net_finalized">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=EcoDrive-Net_finalized&theme=dark&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=6366F1&text_color=C9D1D9" width="100%" />
-  </a>
+  <h3 align="center">
+    <a href="https://github.com/twomathematicians-code/EcoDrive-Net_finalized">
+      🚗 EcoDrive-Net ADAS
+    </a>
+  </h3>
+  <p align="center">
+    Edge-vision ADAS — lane detection • vehicle ranging • predictive TTC
+  </p>
+  <p align="center">
+    <img src="https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white" />
+    <img src="https://img.shields.io/badge/Computer_Vision-FF6F00?style=flat-square&logo=opencv&logoColor=white" />
+    <img src="https://img.shields.io/badge/Deep_Learning-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+    <img src="https://img.shields.io/badge/ADAS-000000?style=flat-square&logo=tesla&logoColor=white" />
+  </p>
 </td>
 </tr>
 <tr>
 <td width="50%">
-  <a href="https://github.com/twomathematicians-code/Manifold-DB-Repo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=Manifold-DB-Repo&theme=dark&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=6366F1&text_color=C9D1D9" width="100%" />
-  </a>
+  <h3 align="center">
+    <a href="https://github.com/twomathematicians-code/Manifold-DB-Repo">
+      🔢 Manifold DB
+    </a>
+  </h3>
+  <p align="center">
+    Numerical methods & manifold computations — Python & C++
+  </p>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
+    <img src="https://img.shields.io/badge/Mathematics-FF6F00?style=flat-square&logo=wolfram&logoColor=white" />
+  </p>
 </td>
 <td width="50%">
-  <a href="https://github.com/twomathematicians-code/maisuclaw">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=maisuclaw&theme=dark&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=6366F1&text_color=C9D1D9" width="100%" />
-  </a>
+  <h3 align="center">
+    <a href="https://github.com/twomathematicians-code/mantis_optimization">
+      🤖 Hybrid AI Optimizer
+    </a>
+  </h3>
+  <p align="center">
+    Local-first + Cloud AI — 5 architecture patterns for cost optimization
+  </p>
+  <p align="center">
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+    <img src="https://img.shields.io/badge/Ollama-FFFFFF?style=flat-square&logo=ollama&logoColor=black" />
+  </p>
 </td>
 </tr>
 </table>
 
 <details>
-<summary><b>🔭 Explore All Projects</b></summary>
+<summary><b>🔭 Explore All Projects (10+)</b></summary>
 <br/>
 <table>
 <tr>
-  <td><a href="https://github.com/twomathematicians-code/bartlett-correction-sem"><b>Bartlett Correction SEM</b></a><br/><sub>R • lavaan • Monte Carlo • Statistics</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/post-quantum-computations"><b>Post-Quantum Cryptography</b></a><br/><sub>Python • Cryptography • Research</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/bartlett-correction-sem"><b>Bartlett Correction SEM</b></a><br/><sub>R • lavaan • Monte Carlo • Statistics</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/post-quantum-computations"><b>Post-Quantum Cryptography</b></a><br/><sub>Python • Cryptography • Research</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/maisuclaw"><b>MAISUCLAW Agent Swarm</b></a><br/><sub>Python • 7 LLM Providers • Auto-Failover</sub></td>
 </tr>
 <tr>
-  <td><a href="https://github.com/twomathematicians-code/mantis_optimization"><b>Hybrid AI Optimizer</b></a><br/><sub>Next.js • Docker • Ollama • 5 Patterns</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/multi-lang-viz-repo"><b>Multi-Language Viz</b></a><br/><sub>Python • R • MATLAB • Visualization</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/multi-lang-viz-repo"><b>Multi-Language Viz</b></a><br/><sub>Python • R • MATLAB • D3.js</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/interactive-visualizations-demo"><b>Interactive Viz Demo</b></a><br/><sub>D3.js • React • Data Viz</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/python-calculus-analysis"><b>Python Calculus Analysis</b></a><br/><sub>Python • Calculus • NumPy • SciPy</sub></td>
 </tr>
 <tr>
-  <td><a href="https://github.com/twomathematicians-code/python-calculus-analysis"><b>Python Calculus Analysis</b></a><br/><sub>Python • Calculus • Numerical Methods</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/ollama-rstudio-assistant"><b>Ollama RStudio Assistant</b></a><br/><sub>R • Ollama • LLM • IDE Plugin</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/chen"><b>Chen Theory</b></a><br/><sub>Python • Mathematics • Research</sub></td>
   <td><a href="https://github.com/twomathematicians-code/mahesh-portfolio"><b>Portfolio</b></a><br/><sub>Jupyter • Data Science • Showcase</sub></td>
 </tr>
 </table>
@@ -146,21 +171,24 @@
 ## ⚙️ Live Repo Telemetry
 
 <!-- AUTO-STATS:START -->
-<p align="center"><img src="https://img.shields.io/badge/AUTO%20SYNC-ACTIVE-black?style=for-the-badge&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/DATA%20SOURCE-GitHub%20API-white?style=for-the-badge&logo=github&logoColor=black&labelColor=black&color=white" /></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/SYNC-AUTO_6H-6366F1?style=for-the-badge&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/SOURCE-GitHub_API-0D1117?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
-| Metric | Live Value |
-|:--|--:|
+| Metric | Value |
+|:--|:--|
 | Public Repositories | 22 |
 | Non-Fork Projects | 22 |
 | Total Stars | 1 |
 | Total Forks | 0 |
 | Total Watchers | 1 |
-| Open Issues Across Projects | 5 |
-| Open Pull Requests Tracker | 5 |
-| Top Languages by Repo Count | Python (11), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
+| Open Issues | 5 |
+| Open Pull Requests | 5 |
+| Top Languages | Python (11), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
 | Domain Signals | Gen AI (0), ML (2), Data (1), Deployment (0) |
 
-#### Most Starred Repositories
+#### Most Starred
 
 | Repository | Stars | Last Push |
 |:--|--:|:--|
@@ -170,9 +198,9 @@
 | [bartlett-correction-sem](https://github.com/twomathematicians-code/bartlett-correction-sem) | 0 | 2026-07-29 |
 | [chen](https://github.com/twomathematicians-code/chen) | 0 | 2026-07-19 |
 
-#### Latest Updated Repositories
+#### Recently Updated
 
-| Repository | Primary Language | Last Push |
+| Repository | Language | Last Push |
 |:--|:--|:--|
 | [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-29 |
 | [ml-engineer-credit-risk](https://github.com/twomathematicians-code/ml-engineer-credit-risk) | Python | 2026-07-29 |
@@ -180,13 +208,14 @@
 | [chen](https://github.com/twomathematicians-code/chen) | Python | 2026-07-19 |
 | [mahesh-portfolio](https://github.com/twomathematicians-code/mahesh-portfolio) | Jupyter Notebook | 2026-07-15 |
 
-> Last auto-sync: **2026-07-29 09:12 UTC**
+> Last sync: 2026-07-29 09:12 UTC
 
-#### Deep Learning & Neural Networks Number Streams
+<p align="center">
+  <img src="assets/deep-learning-numbers.gif" width="400" />
+  <img src="assets/neural-networks-numbers.gif" width="400" />
+</p>
 
-<p align="center"><img src="assets/deep-learning-numbers.gif" alt="Black and white floating numbers for deep learning" width="420" /> <img src="assets/neural-networks-numbers.gif" alt="Black and white floating numbers for neural networks" width="420" /></p>
-
-> Powered by `/scripts/update_profile_readme.py` and GitHub Actions for @twomathematicians-code.
+> Powered by `/scripts/update_profile_readme.py` + GitHub Actions
 <!-- AUTO-STATS:END -->
 
 ---
