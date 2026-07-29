@@ -1,73 +1,57 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Mahesh%20Solanki&fontSize=48&fontAlignY=35&animation=fadeIn&fontColor=000000&desc=ML%20Engineer%20%7C%20Data%20Scientist%20%7C%20Production%20AI&descAlignY=55&descSize=16" width="100%" />
-</p>
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=2800&pause=1200&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B+I'm+Mahesh+Solanki;%24+whoami+%E2%86%92+ML+Engineer+%7C+Production+AI;%24+location+%E2%86%92+Ghent%2C+Belgium" alt="Terminal Intro" />
+</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1500&color=6366F1&center=true&vCenter=true&width=500&lines=%24+whoami+%E2%86%92+Mahesh+Solanki;%24+role+%E2%86%92+ML+Engineer+%7C+Data+Scientist;%24+focus+%E2%86%92+Production+AI+%7C+MLOps+%7C+GenAI;%24+passion+%E2%86%92+Mathematics+%E2%8A%95+Code+%3D+%E2%9D%A4%EF%B8%8F" alt="Typing SVG" />
-</p>
-
-<p align="center">
-  <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=Views&color=6366F1&style=for-the-badge&abbreviated=true" />
+  <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
+  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=58A6FF&style=flat-square" alt="Profile Views" />
 </p>
 
 ---
 
-<table align="center">
-<tr>
-<td width="45%">
+### 👤 About Me
 
-```yaml
-┌─────────────────────────────────┐
-│  🧠  NEURAL  CORE               │
-└─────────────────────────────────┘
+> Building production-grade ML systems with **Python**, **FastAPI**, **Docker**, and **PostgreSQL**.
+> Focused on end-to-end MLOps: containerized deployments, CI/CD pipelines (GitLab CI + GitHub Actions),
+> experiment tracking with MLflow, and scalable inference APIs.
+> Currently exploring **LLMs**, **RAG architectures**, and **edge deployment** for financial AI.
 
-  engine    : Python • R • SQL • MATLAB
-  ml        : PyTorch • XGBoost • scikit-learn
-  mldev     : MLflow • DVC • HuggingFace
-  infra     : Docker • FastAPI • PostgreSQL
-  bigdata   : PySpark • ETL Pipelines
-  viz       : Tableau • Power BI • Plotly
-  devops    : Git • GitHub Actions • Linux
-  research  : Causal ML • DL • SEM • Crypto
+```python
+class Mahesh:
+    name = "Mahesh Solanki"
+    role = "ML Engineer"
+    location = "Ghent, Belgium"
+
+    def focus(self) -> list[str]:
+        return [
+            "Containerization & Docker Compose",
+            "CI/CD — GitLab CI & GitHub Actions",
+            "Advanced Python — async, type-hints, Pydantic",
+            "PostgreSQL & SQLAlchemy async ORM",
+            "MLOps — MLflow, DVC, experiment tracking",
+            "Deep Learning — PyTorch, XGBoost, LightGBM",
+        ]
 ```
 
-</td>
-<td width="55%">
-
-<img src="https://streak-stats.demolab.com?user=twomathematicians-code&theme=transparent&hide_border=true&background=0D1117&stroke=6366F1&ring=6366F1&fire=6366F1&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=C9D1D9&sideLabels=C9D1D9&dates=8B949E" width="100%" />
-
-</td>
-</tr>
-</table>
-
 ---
 
-## ⚡ Tech Stack
+### 🛠️ Tech Stack
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,r,postgres,matlab,bash,typescript&theme=dark&perline=6" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,fastapi,docker,git,githubactions,linux&theme=dark&perline=8" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://skillicons.dev/icons?i=latex,vscode,anaconda,stackoverflow,regex,powershell&theme=dark&perline=6" />
-  </a>
+#### Core
+<p>
+  <img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,git,linux&theme=dark" />
 </p>
 
----
+#### ML & Data
+<p>
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,anaconda&theme=dark" />
+</p>
 
-## 📈 Contribution Pulse
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=twomathematicians-code&theme=react-dark&hide_border=true&bg_color=0D1117&color=6366F1&line=6366F1&point=FFFFFF&area=true&area_color=6366F1&title_color=FFFFFF" width="100%" />
+#### Tooling
+<p>
+  <img src="https://skillicons.dev/icons?i=vscode,latex,stackoverflow,regex&theme=dark" />
 </p>
 
 ---
@@ -152,7 +136,7 @@
 
 ---
 
-## ⚙️ Live Repo Telemetry
+## 📡 Live Repo Telemetry
 
 <!-- AUTO-STATS:START -->
 <p align="center"><img src="https://img.shields.io/badge/AUTO%20SYNC-ACTIVE-black?style=for-the-badge&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/DATA%20SOURCE-GitHub%20API-white?style=for-the-badge&logo=github&logoColor=black&labelColor=black&color=white" /></p>
@@ -201,19 +185,15 @@
 ---
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" width="80%" />
-</p>
-
-<p align="center">
   <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/output/snake.svg" alt="Contribution Snake" />
 </p>
 
 <p align="center">
   <samp>
-    <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5">linkedin</a> •
-    <a href="mailto:maheshsinh1910@gmail.com">email</a> •
+    <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5">linkedin</a>
+    &nbsp;•&nbsp;
+    <a href="mailto:maheshsinh1910@gmail.com">email</a>
+    &nbsp;•&nbsp;
     <a href="https://github.com/twomathematicians-code">github</a>
   </samp>
 </p>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
