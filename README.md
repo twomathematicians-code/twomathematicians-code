@@ -175,15 +175,15 @@
 
 | Metric | Live Value |
 |:--|--:|
-| Public Repositories | 22 |
-| Non-Fork Projects | 22 |
+| Public Repositories | 27 |
+| Non-Fork Projects | 27 |
 | Total Stars | 1 |
 | Total Forks | 0 |
 | Total Watchers | 1 |
 | Open Issues Across Projects | 5 |
 | Open Pull Requests Tracker | 5 |
-| Top Languages by Repo Count | Python (11), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
-| Domain Signals | Gen AI (0), ML (2), Data (1), Deployment (0) |
+| Top Languages by Repo Count | Python (16), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
+| Domain Signals | Gen AI (0), ML (7), Data (2), Deployment (5) |
 
 #### Most Starred Repositories
 
@@ -191,21 +191,21 @@
 |:--|--:|:--|
 | [Manifold-DB-Repo](https://github.com/twomathematicians-code/Manifold-DB-Repo) | 1 | 2026-06-02 |
 | [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | 0 | 2026-07-29 |
-| [ml-engineer-credit-risk](https://github.com/twomathematicians-code/ml-engineer-credit-risk) | 0 | 2026-07-29 |
-| [bartlett-correction-sem](https://github.com/twomathematicians-code/bartlett-correction-sem) | 0 | 2026-07-29 |
-| [chen](https://github.com/twomathematicians-code/chen) | 0 | 2026-07-19 |
+| [ml-recommender-systems](https://github.com/twomathematicians-code/ml-recommender-systems) | 0 | 2026-07-29 |
+| [ml-sentiment-analysis-suite](https://github.com/twomathematicians-code/ml-sentiment-analysis-suite) | 0 | 2026-07-29 |
+| [ml-customer-analytics](https://github.com/twomathematicians-code/ml-customer-analytics) | 0 | 2026-07-29 |
 
 #### Latest Updated Repositories
 
 | Repository | Primary Language | Last Push |
 |:--|:--|:--|
 | [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-29 |
-| [ml-engineer-credit-risk](https://github.com/twomathematicians-code/ml-engineer-credit-risk) | Python | 2026-07-29 |
-| [bartlett-correction-sem](https://github.com/twomathematicians-code/bartlett-correction-sem) | TeX | 2026-07-29 |
-| [chen](https://github.com/twomathematicians-code/chen) | Python | 2026-07-19 |
-| [mahesh-portfolio](https://github.com/twomathematicians-code/mahesh-portfolio) | Jupyter Notebook | 2026-07-15 |
+| [ml-recommender-systems](https://github.com/twomathematicians-code/ml-recommender-systems) | Python | 2026-07-29 |
+| [ml-sentiment-analysis-suite](https://github.com/twomathematicians-code/ml-sentiment-analysis-suite) | Python | 2026-07-29 |
+| [ml-customer-analytics](https://github.com/twomathematicians-code/ml-customer-analytics) | Python | 2026-07-29 |
+| [ml-financial-forecasting](https://github.com/twomathematicians-code/ml-financial-forecasting) | Python | 2026-07-29 |
 
-> Last auto-sync: **2026-07-29 09:18 UTC**
+> Last auto-sync: **2026-07-29 09:43 UTC**
 
 #### Deep Learning & Neural Networks Number Streams
 
