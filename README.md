@@ -171,24 +171,21 @@
 ## ⚙️ Live Repo Telemetry
 
 <!-- AUTO-STATS:START -->
-<p align="center">
-  <img src="https://img.shields.io/badge/SYNC-AUTO_6H-6366F1?style=for-the-badge&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/SOURCE-GitHub_API-0D1117?style=for-the-badge&logo=github&logoColor=white" />
-</p>
+<p align="center"><img src="https://img.shields.io/badge/AUTO%20SYNC-ACTIVE-black?style=for-the-badge&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/DATA%20SOURCE-GitHub%20API-white?style=for-the-badge&logo=github&logoColor=black&labelColor=black&color=white" /></p>
 
-| Metric | Value |
-|:--|:--|
+| Metric | Live Value |
+|:--|--:|
 | Public Repositories | 22 |
 | Non-Fork Projects | 22 |
 | Total Stars | 1 |
 | Total Forks | 0 |
 | Total Watchers | 1 |
-| Open Issues | 5 |
-| Open Pull Requests | 5 |
-| Top Languages | Python (11), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
+| Open Issues Across Projects | 5 |
+| Open Pull Requests Tracker | 5 |
+| Top Languages by Repo Count | Python (11), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
 | Domain Signals | Gen AI (0), ML (2), Data (1), Deployment (0) |
 
-#### Most Starred
+#### Most Starred Repositories
 
 | Repository | Stars | Last Push |
 |:--|--:|:--|
@@ -198,9 +195,9 @@
 | [bartlett-correction-sem](https://github.com/twomathematicians-code/bartlett-correction-sem) | 0 | 2026-07-29 |
 | [chen](https://github.com/twomathematicians-code/chen) | 0 | 2026-07-19 |
 
-#### Recently Updated
+#### Latest Updated Repositories
 
-| Repository | Language | Last Push |
+| Repository | Primary Language | Last Push |
 |:--|:--|:--|
 | [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-29 |
 | [ml-engineer-credit-risk](https://github.com/twomathematicians-code/ml-engineer-credit-risk) | Python | 2026-07-29 |
@@ -208,14 +205,13 @@
 | [chen](https://github.com/twomathematicians-code/chen) | Python | 2026-07-19 |
 | [mahesh-portfolio](https://github.com/twomathematicians-code/mahesh-portfolio) | Jupyter Notebook | 2026-07-15 |
 
-> Last sync: 2026-07-29 09:12 UTC
+> Last auto-sync: **2026-07-29 09:18 UTC**
 
-<p align="center">
-  <img src="assets/deep-learning-numbers.gif" width="400" />
-  <img src="assets/neural-networks-numbers.gif" width="400" />
-</p>
+#### Deep Learning & Neural Networks Number Streams
 
-> Powered by `/scripts/update_profile_readme.py` + GitHub Actions
+<p align="center"><img src="assets/deep-learning-numbers.gif" alt="Black and white floating numbers for deep learning" width="420" /> <img src="assets/neural-networks-numbers.gif" alt="Black and white floating numbers for neural networks" width="420" /></p>
+
+> Powered by `/scripts/update_profile_readme.py` and GitHub Actions for @twomathematicians-code.
 <!-- AUTO-STATS:END -->
 
 ---
