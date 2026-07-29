@@ -1,155 +1,169 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=600&lines=%E2%96%B6+Mahesh+Solanki;%E2%96%B6+ML+Engineer+%7C+Data+Scientist;%E2%96%B6+Building+Production+AI+Systems;%E2%96%B6+Mathematics+%2B+Code+%3D+%E2%9D%A4%EF%B8%8F" alt="Typing SVG" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Mahesh%20Solanki&fontSize=48&fontAlignY=35&animation=fadeIn&fontColor=FFFFFF&desc=ML%20Engineer%20%7C%20Data%20Scientist%20%7C%20Production%20AI&descAlignY=55&descSize=16" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=Profile+Views&color=0e75b6&style=for-the-badge" alt="Profile views" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1500&color=6366F1&center=true&vCenter=true&width=500&lines=%24+whoami+%E2%86%92+Mahesh+Solanki;%24+role+%E2%86%92+ML+Engineer+%7C+Data+Scientist;%24+focus+%E2%86%92+Production+AI+%7C+MLOps+%7C+GenAI;%24+passion+%E2%86%92+Mathematics+%E2%8A%95+Code+%3D+%E2%9D%A4%EF%B8%8F" alt="Typing SVG" />
 </p>
 
----
+<p align="center">
+  <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=Views&color=6366F1&style=for-the-badge&abbreviated=true" />
+</p>
 
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=FF6E96&text_color=C9D1D9&rank_icon=github&include_all_commits=true" width="48%" />
+<br/>
+
+<table align="center">
+<tr>
+<td width="50%">
 
 ```yaml
-╔══════════════════════════════════╗
-║  $ whoami                        ║
-╚══════════════════════════════════╝
+┌─────────────────────────────────┐
+│  🧠  NEURAL  CORE               │
+└─────────────────────────────────┘
 
-> name      : Mahesh Solanki
-> role      : ML Engineer | Data Scientist
-> focus     : Production AI, MLOps, GenAI
-> stack     : Python, R, SQL, MATLAB
-> infra     : Docker, PostgreSQL, PySpark
-> interests : Deep Learning, Causal ML, 
-              Big Data, Computer Vision
-> fun_fact  : Pure Mathematician turned 
-              ML Engineer 🔬
+  engine    : Python • R • SQL • MATLAB
+  ml        : PyTorch • XGBoost • scikit-learn
+  mldev     : MLflow • DVC • HuggingFace
+  infra     : Docker • FastAPI • PostgreSQL
+  bigdata   : PySpark • ETL Pipelines
+  viz       : Tableau • Power BI • Plotly
+  devops    : Git • GitHub Actions • Linux
+  research  : Causal ML • DL • SEM • Crypto
 ```
 
-<br clear="right"/>
+</td>
+<td width="50%">
+
+<img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&count_private=true&hide_border=true&title_color=6366F1&icon_color=6366F1&text_color=C9D1D9&bg_color=0D1117&include_all_commits=true&hide=stars&rank_icon=github" width="100%" />
+
+</td>
+</tr>
+</table>
 
 ---
 
-## ⚡ Tech Arsenal
+## ⚡ Tech Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B" />
-  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,r,postgres,matlab,bash,typescript&theme=dark&perline=6" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/XGBoost-3377B0?style=for-the-badge&logo=xgboost&logoColor=white" />
-  <img src="https://img.shields.io/badge/🤗_HuggingFace-FFD21E?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/DVC-13ADC7?style=for-the-badge&logo=dvc&logoColor=white" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,fastapi,docker,git,githubactions,linux&theme=dark&perline=8" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" />
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" />
-  <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=latex,anaconda,vscode,stackoverflow,powershell,regex&theme=dark&perline=6" />
+  </a>
 </p>
 
 ---
 
-## 📊 Live Dashboard
+## 📊 Live Analytics
+
+<table align="center">
+<tr>
+  <td width="33%">
+    <img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&hide_border=true&title_color=6366F1&icon_color=6366F1&text_color=C9D1D9&bg_color=0D1117&hide=stars&include_all_commits=true&rank_icon=github" width="100%" />
+  </td>
+  <td width="33%">
+    <img src="https://streak-stats.demolab.com?user=twomathematicians-code&theme=transparent&hide_border=true&background=0D1117&stroke=6366F1&ring=6366F1&fire=6366F1&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=C9D1D9&sideLabels=C9D1D9&dates=8B949E" width="100%" />
+  </td>
+  <td width="33%">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&hide_border=true&title_color=6366F1&text_color=C9D1D9&bg_color=0D1117&langs_count=8&hide=jupyter%20notebook,tex,html,css" width="100%" />
+  </td>
+</tr>
+</table>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=twomathematicians-code&theme=radical&hide_border=true&background=0D1117&stroke=FF6E96&ring=FF6E96&fire=FF6E96&currStreakLabel=FFFFFF" alt="GitHub Streak" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=FFFFFF&text_color=C9D1D9&langs_count=8&hide=jupyter%20notebook,tex" alt="Top Languages" width="49%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=algolia&no-frame=true&no-bg=true&column=8&margin-w=8" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=5" alt="Trophy Cabinet" width="98%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=twomathematicians-code&theme=react-dark&hide_border=true&bg_color=0D1117&color=6366F1&line=6366F1&point=FFFFFF&area=true&area_color=6366F1&title_color=FFFFFF" width="100%" />
 </p>
 
 ---
 
-## 🚀 Launchpad — Featured Repos
+## 🚀 Launchpad
 
-<p align="center">
+<table align="center">
+<tr>
+<td width="50%">
   <a href="https://github.com/twomathematicians-code/ml-engineer-credit-risk">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=ml-engineer-credit-risk&theme=radical&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=FF6E96&text_color=C9D1D9" width="32%" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=ml-engineer-credit-risk&theme=dark&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=6366F1&text_color=C9D1D9" width="100%" />
   </a>
+</td>
+<td width="50%">
   <a href="https://github.com/twomathematicians-code/EcoDrive-Net_finalized">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=EcoDrive-Net_finalized&theme=radical&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=FF6E96&text_color=C9D1D9" width="32%" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=EcoDrive-Net_finalized&theme=dark&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=6366F1&text_color=C9D1D9" width="100%" />
   </a>
+</td>
+</tr>
+<tr>
+<td width="50%">
   <a href="https://github.com/twomathematicians-code/Manifold-DB-Repo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=Manifold-DB-Repo&theme=radical&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=FF6E96&text_color=C9D1D9" width="32%" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=Manifold-DB-Repo&theme=dark&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=6366F1&text_color=C9D1D9" width="100%" />
   </a>
-</p>
+</td>
+<td width="50%">
+  <a href="https://github.com/twomathematicians-code/maisuclaw">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=maisuclaw&theme=dark&hide_border=true&bg_color=0D1117&title_color=FFFFFF&icon_color=6366F1&text_color=C9D1D9" width="100%" />
+  </a>
+</td>
+</tr>
+</table>
 
 <details>
-  <summary><b>🔭 More Projects</b></summary>
-  <br/>
-  <table>
-    <tr>
-      <td width="50%">
-        <a href="https://github.com/twomathematicians-code/bartlett-correction-sem"><b>Bartlett Correction SEM</b></a><br/>
-        <sub>R • lavaan • Statistics • Monte Carlo</sub>
-      </td>
-      <td width="50%">
-        <a href="https://github.com/twomathematicians-code/post-quantum-computations"><b>Post-Quantum Cryptography</b></a><br/>
-        <sub>Python • Cryptography • Research</sub>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%">
-        <a href="https://github.com/twomathematicians-code/mantis_optimization"><b>Hybrid AI Optimizer</b></a><br/>
-        <sub>Next.js • Docker • Ollama • AI Routing</sub>
-      </td>
-      <td width="50%">
-        <a href="https://github.com/twomathematicians-code/maisuclaw"><b>MAISUCLAW Agent Swarm</b></a><br/>
-        <sub>Python • Multi-Agent • Free LLM Providers</sub>
-      </td>
-    </tr>
-  </table>
+<summary><b>🔭 Explore All Projects</b></summary>
+<br/>
+<table>
+<tr>
+  <td><a href="https://github.com/twomathematicians-code/bartlett-correction-sem"><b>Bartlett Correction SEM</b></a><br/><sub>R • lavaan • Monte Carlo • Statistics</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/post-quantum-computations"><b>Post-Quantum Cryptography</b></a><br/><sub>Python • Cryptography • Research</sub></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/twomathematicians-code/mantis_optimization"><b>Hybrid AI Optimizer</b></a><br/><sub>Next.js • Docker • Ollama • 5 Patterns</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/multi-lang-viz-repo"><b>Multi-Language Viz</b></a><br/><sub>Python • R • MATLAB • Visualization</sub></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/twomathematicians-code/python-calculus-analysis"><b>Python Calculus Analysis</b></a><br/><sub>Python • Calculus • Numerical Methods</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/mahesh-portfolio"><b>Portfolio</b></a><br/><sub>Jupyter • Data Science • Showcase</sub></td>
+</tr>
+</table>
 </details>
 
 ---
 
-## ⚙️ Live Repo Monitor
+## ⚙️ Live Repo Telemetry
 
 <!-- AUTO-STATS:START -->
-<p align="center"><img src="https://img.shields.io/badge/AUTO%20SYNC-ACTIVE-black?style=for-the-badge&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/DATA%20SOURCE-GitHub%20API-white?style=for-the-badge&logo=github&logoColor=black&labelColor=black&color=white" /></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/SYNC-AUTO_6H-6366F1?style=for-the-badge&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/SOURCE-GitHub_API-0D1117?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
-| Metric | Live Value |
-|:--|--:|
+| Metric | Value |
+|:--|:--|
 | Public Repositories | 22 |
 | Non-Fork Projects | 22 |
 | Total Stars | 1 |
 | Total Forks | 0 |
 | Total Watchers | 1 |
-| Open Issues Across Projects | 5 |
-| Open Pull Requests Tracker | 5 |
-| Top Languages by Repo Count | Python (11), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
+| Open Issues | 5 |
+| Open Pull Requests | 5 |
+| Top Languages | Python (11), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
 | Domain Signals | Gen AI (0), ML (2), Data (1), Deployment (0) |
 
-#### Most Starred Repositories
+#### Most Starred
 
 | Repository | Stars | Last Push |
 |:--|--:|:--|
@@ -159,9 +173,9 @@
 | [bartlett-correction-sem](https://github.com/twomathematicians-code/bartlett-correction-sem) | 0 | 2026-07-29 |
 | [chen](https://github.com/twomathematicians-code/chen) | 0 | 2026-07-19 |
 
-#### Latest Updated Repositories
+#### Recently Updated
 
-| Repository | Primary Language | Last Push |
+| Repository | Language | Last Push |
 |:--|:--|:--|
 | [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-29 |
 | [ml-engineer-credit-risk](https://github.com/twomathematicians-code/ml-engineer-credit-risk) | Python | 2026-07-29 |
@@ -169,22 +183,25 @@
 | [chen](https://github.com/twomathematicians-code/chen) | Python | 2026-07-19 |
 | [mahesh-portfolio](https://github.com/twomathematicians-code/mahesh-portfolio) | Jupyter Notebook | 2026-07-15 |
 
-> Last auto-sync: **2026-07-29 09:09 UTC**
+> Last sync: 2026-07-29 09:05 UTC
 
-#### Deep Learning & Neural Networks Number Streams
+<p align="center">
+  <img src="assets/deep-learning-numbers.gif" width="400" />
+  <img src="assets/neural-networks-numbers.gif" width="400" />
+</p>
 
-<p align="center"><img src="assets/deep-learning-numbers.gif" alt="Black and white floating numbers for deep learning" width="420" /> <img src="assets/neural-networks-numbers.gif" alt="Black and white floating numbers for neural networks" width="420" /></p>
-
-> Powered by `/scripts/update_profile_readme.py` and GitHub Actions for @twomathematicians-code.
+> Powered by `/scripts/update_profile_readme.py` + GitHub Actions
 <!-- AUTO-STATS:END -->
 
 ---
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" width="80%" />
 </p>
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/output/snake.svg" alt="Contribution Snake" />
+</p>
 
 <p align="center">
   <samp>
@@ -194,6 +211,4 @@
   </samp>
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/output/snake.svg" alt="Snake animation" />
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
