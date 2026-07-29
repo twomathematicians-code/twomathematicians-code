@@ -78,7 +78,7 @@
 <tr>
 <td width="50%">
   <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/ml-engineer-credit-risk">
+    <a href="https://github.com/twomathematicians-code/engineer-credit-risk">
       🏦 Credit Risk Pipeline
     </a>
   </h3>
@@ -86,7 +86,7 @@
 </td>
 <td width="50%">
   <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/ml-fraud-detection">
+    <a href="https://github.com/twomathematicians-code/fraud-detection">
       🛡️ Fraud Detection Engine
     </a>
   </h3>
@@ -96,7 +96,7 @@
 <tr>
 <td width="50%">
   <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/ml-chatbot-deployment">
+    <a href="https://github.com/twomathematicians-code/chatbot-deployment">
       🤖 Chatbot + RAG Platform
     </a>
   </h3>
@@ -104,7 +104,7 @@
 </td>
 <td width="50%">
   <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/ml-computer-vision">
+    <a href="https://github.com/twomathematicians-code/computer-vision">
       👁️ Computer Vision API
     </a>
   </h3>
@@ -118,17 +118,17 @@
 <br/>
 <table>
 <tr>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/ml-financial-forecasting"><b>📈 Financial Forecasting</b></a><br/><sub>LSTM • Prophet • WebSocket streaming</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/ml-customer-analytics"><b>👥 Customer Analytics</b></a><br/><sub>Churn • RFM • SHAP • CLV</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/ml-sentiment-analysis-suite"><b>💬 Sentiment Suite</b></a><br/><sub>Emotions • Aspect-based • NLP</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/financial-forecasting"><b>📈 Financial Forecasting</b></a><br/><sub>LSTM • Prophet • WebSocket streaming</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/customer-analytics"><b>👥 Customer Analytics</b></a><br/><sub>Churn • RFM • SHAP • CLV</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/sentiment-analysis-suite"><b>💬 Sentiment Suite</b></a><br/><sub>Emotions • Aspect-based • NLP</sub></td>
 </tr>
 <tr>
-  <td><a href="https://github.com/twomathematicians-code/ml-recommender-systems"><b>🎯 Recommender Systems</b></a><br/><sub>FAISS • Hybrid • A/B testing</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/ml-nlp-toolkit"><b>🧠 NLP Toolkit</b></a><br/><sub>NER • Summarize • Translate</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/ml-healthcare-analytics"><b>🏥 Healthcare ML</b></a><br/><sub>Heart • Cancer • HIPAA</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/recommender-systems"><b>🎯 Recommender Systems</b></a><br/><sub>FAISS • Hybrid • A/B testing</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/nlp-toolkit"><b>🧠 NLP Toolkit</b></a><br/><sub>NER • Summarize • Translate</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/healthcare-analytics"><b>🏥 Healthcare ML</b></a><br/><sub>Heart • Cancer • HIPAA</sub></td>
 </tr>
 <tr>
-  <td colspan="3"><a href="https://github.com/twomathematicians-code/ml-demand-forecasting"><b>📊 Demand Forecasting</b></a> — Supply chain: LightGBM + Prophet + SARIMA</td>
+  <td colspan="3"><a href="https://github.com/twomathematicians-code/demand-forecasting"><b>📊 Demand Forecasting</b></a> — Supply chain: LightGBM + Prophet + SARIMA</td>
 </tr>
 </table>
 </details>
@@ -174,20 +174,20 @@
 | Repository | Stars | Last Push |
 |:--|--:|:--|
 | [Manifold-DB-Repo](https://github.com/twomathematicians-code/Manifold-DB-Repo) | 1 | 2026-06-02 |
-| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | 0 | 2026-07-29 |
-| [ml-chatbot-deployment](https://github.com/twomathematicians-code/ml-chatbot-deployment) | 0 | 2026-07-29 |
-| [ml-healthcare-analytics](https://github.com/twomathematicians-code/ml-healthcare-analytics) | 0 | 2026-07-29 |
-| [ml-demand-forecasting](https://github.com/twomathematicians-code/ml-demand-forecasting) | 0 | 2026-07-29 |
+| [chatbot-deployment](https://github.com/twomathematicians-code/chatbot-deployment) | 0 | 2026-07-29 |
+| [healthcare-analytics](https://github.com/twomathematicians-code/healthcare-analytics) | 0 | 2026-07-29 |
+| [demand-forecasting](https://github.com/twomathematicians-code/demand-forecasting) | 0 | 2026-07-29 |
+| [computer-vision](https://github.com/twomathematicians-code/computer-vision) | 0 | 2026-07-29 |
 
 #### Latest Updated Repositories
 
 | Repository | Primary Language | Last Push |
 |:--|:--|:--|
-| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-29 |
-| [ml-chatbot-deployment](https://github.com/twomathematicians-code/ml-chatbot-deployment) | Python | 2026-07-29 |
-| [ml-healthcare-analytics](https://github.com/twomathematicians-code/ml-healthcare-analytics) | Python | 2026-07-29 |
-| [ml-demand-forecasting](https://github.com/twomathematicians-code/ml-demand-forecasting) | Python | 2026-07-29 |
-| [ml-computer-vision](https://github.com/twomathematicians-code/ml-computer-vision) | Python | 2026-07-29 |
+| [chatbot-deployment](https://github.com/twomathematicians-code/chatbot-deployment) | Python | 2026-07-29 |
+| [healthcare-analytics](https://github.com/twomathematicians-code/healthcare-analytics) | Python | 2026-07-29 |
+| [demand-forecasting](https://github.com/twomathematicians-code/demand-forecasting) | Python | 2026-07-29 |
+| [computer-vision](https://github.com/twomathematicians-code/computer-vision) | Python | 2026-07-29 |
+| [nlp-toolkit](https://github.com/twomathematicians-code/nlp-toolkit) | Python | 2026-07-29 |
 
 > Last auto-sync: **2026-07-29 19:58 UTC**
 
