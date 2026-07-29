@@ -7,18 +7,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/📍_Ghent%2C_Belgium-000000?style=flat-square" alt="Location" />
-  <img src="https://img.shields.io/badge/🎓_Ghent_University-Statistical_Data_Analysis-1E90FF?style=flat-square" alt="Education" />
-  <img src="https://img.shields.io/badge/💼_Open_To-ML_Engineer_%7C_Data_Scientist-success?style=flat-square" alt="Open To Work" />
+  <img src="https://img.shields.io/badge/Role-ML_Engineer_%7C_Data_Scientist-black?style=flat-square" alt="Role" />
+  <img src="https://img.shields.io/badge/Focus-GenAI_%7C_ML_%7C_Data_%7C_Deployment-white?style=flat-square" alt="Focus" />
 </p>
-
----
-
-## 🎯 About Me
-
-Results-driven **Data Analyst & ML Engineer** with **7+ years of experience** in business analytics, machine learning, and data-driven decision-making. Pursuing an Advanced Master's in Statistical Data Analysis at **Ghent University** with a focus on deep learning, causal ML, and big data engineering.
-
-I combine **strong mathematical foundations** (M.Sc. Pure Mathematics) with hands-on engineering skills to build production-ready ML systems — from data pipelines to deployed APIs.
 
 ---
 
@@ -70,34 +61,14 @@ I combine **strong mathematical foundations** (M.Sc. Pure Mathematics) with hand
 
 ## 🚀 Featured Projects
 
-| Project | Description | Tech Stack |
+| Project | Description | Tech |
 |:--|:--|:--|
-| **[ML Credit Risk API](https://github.com/twomathematicians-code/ml-engineer-credit-risk)** | Production-grade ML pipeline for credit risk assessment — FastAPI, PostgreSQL, Docker, CI/CD, MLflow, DVC | `Python` `FastAPI` `Docker` `MLflow` `PostgreSQL` |
-| **[Bartlett Correction SEM](https://github.com/twomathematicians-code/bartlett-correction-sem)** | Monte Carlo simulation for reducing SEM chi-square bias — 12% Type I error improvement, 60% faster runtime | `R` `lavaan` `Monte Carlo` `Statistics` |
-| **[EcoDrive-Net](https://github.com/twomathematicians-code/EcoDrive-Net_finalized)** | Intelligent edge-vision ADAS system: lane detection, vehicle ranging, predictive TTC — production MATLAB | `MATLAB` `Computer Vision` `ADAS` `Deep Learning` |
-| **[Manifold DB](https://github.com/twomathematicians-code/Manifold-DB-Repo)** | Numerical methods & manifold computations — Python & C++ implementations | `Python` `C++` `Numerical Methods` |
-| **[Post-Quantum Cryptography](https://github.com/twomathematicians-code/post-quantum-computations)** | Technical analysis & computations for post-quantum cryptographic systems | `Python` `Cryptography` `Research` |
-| **[RAG Pipeline](https://github.com/twomathematicians-code)** | Open-source Retrieval-Augmented Generation for textbook QA with embedding, reranking & vector indexing | `LlamaIndex` `HuggingFace` `FAISS` |
-
----
-
-## 💼 Experience
-
-| Role | Company | Period | Highlights |
-|:--|:--|:--|:--|
-| **Business Analytics & Graph SME** | LearningMate | Jul 2022 – Aug 2025 | 200+ interactive simulations, 50K+ students, 99% accuracy |
-| **Data Entrepreneur & Analyst** | SUSTANIX | Jun 2018 – May 2022 | Demand forecasting across 5 categories, 25% accuracy improvement, €0.5M+ portfolio |
-| **Mathematics Faculty** | Navrachana University | Aug 2014 – May 2018 | 15 courses, 1,000+ students, 85%+ pass rate |
-
----
-
-## 🎓 Education
-
-| Degree | Institution | Year |
-|:--|:--|:--|
-| **Advanced M.Sc. Statistical Data Analysis** *(Computational Track)* | Ghent University, Belgium | 2025 – 2026 |
-| **M.Sc. Pure Mathematics** | The Maharaja Sayajirao University of Baroda | 2012 – 2014 |
-| **B.Sc. Mathematics, Chemistry, Physics** | The Maharaja Sayajirao University of Baroda | 2009 – 2012 |
+| **[ML Credit Risk API](https://github.com/twomathematicians-code/ml-engineer-credit-risk)** | Production ML pipeline: FastAPI, PostgreSQL, Docker, CI/CD, MLflow, DVC | `Python` `FastAPI` `Docker` `MLflow` |
+| **[Bartlett Correction SEM](https://github.com/twomathematicians-code/bartlett-correction-sem)** | Monte Carlo SEM bias reduction — 12% Type I error improvement, 60% faster | `R` `lavaan` `Statistics` |
+| **[EcoDrive-Net](https://github.com/twomathematicians-code/EcoDrive-Net_finalized)** | Edge-vision ADAS: lane detection, vehicle ranging, predictive TTC | `MATLAB` `Computer Vision` `ADAS` |
+| **[Manifold DB](https://github.com/twomathematicians-code/Manifold-DB-Repo)** | Numerical methods & manifold computations — Python & C++ | `Python` `C++` `Numerical Methods` |
+| **[Post-Quantum Cryptography](https://github.com/twomathematicians-code/post-quantum-computations)** | Technical analysis for post-quantum cryptographic systems | `Python` `Cryptography` `Research` |
+| **[RAG Pipeline](https://github.com/twomathematicians-code)** | Retrieval-Augmented Generation for textbook QA with vector indexing | `LlamaIndex` `HuggingFace` `FAISS` |
 
 ---
 
@@ -149,14 +120,10 @@ I combine **strong mathematical foundations** (M.Sc. Pure Mathematics) with hand
 
 ---
 
-## 📬 Let's Connect
+## 📬 Connect
 
 <p align="center">
   <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-maheshsolanki-blue?style=for-the-badge&logo=linkedin" /></a>
   <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-maheshsinh1910-red?style=for-the-badge&logo=gmail" /></a>
   <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-twomathematicians--code-black?style=for-the-badge&logo=github" /></a>
-</p>
-
-<p align="center">
-  <sub>📍 Based in Ghent, Belgium — Open to ML Engineer & Data Science roles across Europe</sub>
 </p>
