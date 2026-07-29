@@ -167,29 +167,29 @@
 | Open Issues Across Projects | 5 |
 | Open Pull Requests Tracker | 5 |
 | Top Languages by Repo Count | Python (21), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
-| Domain Signals | Gen AI (1), ML (13), Data (3), Deployment (2) |
+| Domain Signals | Gen AI (1), ML (5), Data (4), Deployment (2) |
 
 #### Most Starred Repositories
 
 | Repository | Stars | Last Push |
 |:--|--:|:--|
 | [Manifold-DB-Repo](https://github.com/twomathematicians-code/Manifold-DB-Repo) | 1 | 2026-06-02 |
-| [chatbot-deployment](https://github.com/twomathematicians-code/chatbot-deployment) | 0 | 2026-07-29 |
+| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | 0 | 2026-07-29 |
+| [recommender-systems](https://github.com/twomathematicians-code/recommender-systems) | 0 | 2026-07-29 |
+| [nlp-toolkit](https://github.com/twomathematicians-code/nlp-toolkit) | 0 | 2026-07-29 |
 | [healthcare-analytics](https://github.com/twomathematicians-code/healthcare-analytics) | 0 | 2026-07-29 |
-| [demand-forecasting](https://github.com/twomathematicians-code/demand-forecasting) | 0 | 2026-07-29 |
-| [computer-vision](https://github.com/twomathematicians-code/computer-vision) | 0 | 2026-07-29 |
 
 #### Latest Updated Repositories
 
 | Repository | Primary Language | Last Push |
 |:--|:--|:--|
-| [chatbot-deployment](https://github.com/twomathematicians-code/chatbot-deployment) | Python | 2026-07-29 |
-| [healthcare-analytics](https://github.com/twomathematicians-code/healthcare-analytics) | Python | 2026-07-29 |
-| [demand-forecasting](https://github.com/twomathematicians-code/demand-forecasting) | Python | 2026-07-29 |
-| [computer-vision](https://github.com/twomathematicians-code/computer-vision) | Python | 2026-07-29 |
+| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-29 |
+| [recommender-systems](https://github.com/twomathematicians-code/recommender-systems) | Python | 2026-07-29 |
 | [nlp-toolkit](https://github.com/twomathematicians-code/nlp-toolkit) | Python | 2026-07-29 |
+| [healthcare-analytics](https://github.com/twomathematicians-code/healthcare-analytics) | Python | 2026-07-29 |
+| [fraud-detection](https://github.com/twomathematicians-code/fraud-detection) | Python | 2026-07-29 |
 
-> Last auto-sync: **2026-07-29 19:58 UTC**
+> Last auto-sync: **2026-07-29 20:25 UTC**
 
 #### Deep Learning & Neural Networks Number Streams
 
