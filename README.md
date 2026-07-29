@@ -30,37 +30,37 @@ This dashboard is generated from live GitHub API data and refreshed automaticall
 
 | Metric | Live Value |
 |:--|--:|
-| Public Repositories | 20 |
-| Non-Fork Projects | 20 |
+| Public Repositories | 22 |
+| Non-Fork Projects | 22 |
 | Total Stars | 1 |
 | Total Forks | 0 |
 | Total Watchers | 1 |
 | Open Issues Across Projects | 5 |
 | Open Pull Requests Tracker | 5 |
-| Top Languages by Repo Count | Python (10), R (2), C++ (2), Jupyter Notebook (1), TeX (1), MATLAB (1) |
-| Domain Signals | Gen AI (0), ML (1), Data (1), Deployment (0) |
+| Top Languages by Repo Count | Python (11), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
+| Domain Signals | Gen AI (0), ML (2), Data (1), Deployment (0) |
 
 #### Most Starred Repositories
 
 | Repository | Stars | Last Push |
 |:--|--:|:--|
 | [Manifold-DB-Repo](https://github.com/twomathematicians-code/Manifold-DB-Repo) | 1 | 2026-06-02 |
-| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | 0 | 2026-07-28 |
+| [ml-engineer-credit-risk](https://github.com/twomathematicians-code/ml-engineer-credit-risk) | 0 | 2026-07-29 |
+| [bartlett-correction-sem](https://github.com/twomathematicians-code/bartlett-correction-sem) | 0 | 2026-07-29 |
+| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | 0 | 2026-07-29 |
 | [chen](https://github.com/twomathematicians-code/chen) | 0 | 2026-07-19 |
-| [mahesh-portfolio](https://github.com/twomathematicians-code/mahesh-portfolio) | 0 | 2026-07-15 |
-| [CDL-Monograph-Markdown](https://github.com/twomathematicians-code/CDL-Monograph-Markdown) | 0 | 2026-07-13 |
 
 #### Latest Updated Repositories
 
 | Repository | Primary Language | Last Push |
 |:--|:--|:--|
-| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-28 |
+| [ml-engineer-credit-risk](https://github.com/twomathematicians-code/ml-engineer-credit-risk) | Python | 2026-07-29 |
+| [bartlett-correction-sem](https://github.com/twomathematicians-code/bartlett-correction-sem) | TeX | 2026-07-29 |
+| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-29 |
 | [chen](https://github.com/twomathematicians-code/chen) | Python | 2026-07-19 |
 | [mahesh-portfolio](https://github.com/twomathematicians-code/mahesh-portfolio) | Jupyter Notebook | 2026-07-15 |
-| [CDL-Monograph-Markdown](https://github.com/twomathematicians-code/CDL-Monograph-Markdown) | TeX | 2026-07-13 |
-| [post-quantum-computations](https://github.com/twomathematicians-code/post-quantum-computations) | Python | 2026-06-20 |
 
-> Last auto-sync: **2026-07-29 03:14 UTC**
+> Last auto-sync: **2026-07-29 08:48 UTC**
 
 #### Deep Learning & Neural Networks Number Streams
 
