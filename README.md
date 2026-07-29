@@ -167,29 +167,29 @@
 | Open Issues Across Projects | 5 |
 | Open Pull Requests Tracker | 5 |
 | Top Languages by Repo Count | Python (21), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
-| Domain Signals | Gen AI (0), ML (12), Data (3), Deployment (10) |
+| Domain Signals | Gen AI (1), ML (13), Data (3), Deployment (2) |
 
 #### Most Starred Repositories
 
 | Repository | Stars | Last Push |
 |:--|--:|:--|
 | [Manifold-DB-Repo](https://github.com/twomathematicians-code/Manifold-DB-Repo) | 1 | 2026-06-02 |
+| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | 0 | 2026-07-29 |
 | [ml-chatbot-deployment](https://github.com/twomathematicians-code/ml-chatbot-deployment) | 0 | 2026-07-29 |
 | [ml-healthcare-analytics](https://github.com/twomathematicians-code/ml-healthcare-analytics) | 0 | 2026-07-29 |
 | [ml-demand-forecasting](https://github.com/twomathematicians-code/ml-demand-forecasting) | 0 | 2026-07-29 |
-| [ml-computer-vision](https://github.com/twomathematicians-code/ml-computer-vision) | 0 | 2026-07-29 |
 
 #### Latest Updated Repositories
 
 | Repository | Primary Language | Last Push |
 |:--|:--|:--|
+| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-29 |
 | [ml-chatbot-deployment](https://github.com/twomathematicians-code/ml-chatbot-deployment) | Python | 2026-07-29 |
 | [ml-healthcare-analytics](https://github.com/twomathematicians-code/ml-healthcare-analytics) | Python | 2026-07-29 |
 | [ml-demand-forecasting](https://github.com/twomathematicians-code/ml-demand-forecasting) | Python | 2026-07-29 |
 | [ml-computer-vision](https://github.com/twomathematicians-code/ml-computer-vision) | Python | 2026-07-29 |
-| [ml-nlp-toolkit](https://github.com/twomathematicians-code/ml-nlp-toolkit) | Python | 2026-07-29 |
 
-> Last auto-sync: **2026-07-29 19:24 UTC**
+> Last auto-sync: **2026-07-29 19:58 UTC**
 
 #### Deep Learning & Neural Networks Number Streams
 
