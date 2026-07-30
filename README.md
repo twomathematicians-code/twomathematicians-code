@@ -130,10 +130,26 @@
   <p align="center">YOLO detection • Face recognition • Classification • Segmentation • OpenCV</p>
 </td>
 </tr>
+<tr>
+<td width="100%" colspan="2">
+  <h3 align="center">
+    <a href="https://github.com/twomathematicians-code/fingraph-sentinel">
+      🔷 FinGraph Sentinel — Graph Engineering + GenAI Agent
+    </a>
+  </h3>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Neo4j-5.x-4581C3?style=flat-square&logo=neo4j&logoColor=white" />
+    <img src="https://img.shields.io/badge/LangChain-Agent-blue?style=flat-square" />
+    <img src="https://img.shields.io/badge/GNN-GraphSAGE%2FRGCN-FF6F00?style=flat-square" />
+    <img src="https://img.shields.io/badge/BFSI-AML%7CCredit%7CInsurance%7CKYC-6366F1?style=flat-square" />
+  </p>
+  <p align="center">Neo4j · LangChain · Graph RAG · GNN · AML · credit risk · insurance claims · KYC</p>
+</td>
+</tr>
 </table>
 
 <details>
-<summary><b>🧠 ML Portfolio — 10 Production repos</b></summary>
+<summary><b>🧠 ML Portfolio — 11 Production repos</b></summary>
 <br/>
 <table>
 <tr>
@@ -145,6 +161,9 @@
   <td><a href="https://github.com/twomathematicians-code/recommender-systems"><b>🎯 Recommender Systems</b></a><br/><sub>FAISS • Hybrid • A/B testing</sub></td>
   <td><a href="https://github.com/twomathematicians-code/nlp-toolkit"><b>🧠 NLP Toolkit</b></a><br/><sub>NER • Summarize • Translate</sub></td>
   <td><a href="https://github.com/twomathematicians-code/healthcare-analytics"><b>🏥 Healthcare ML</b></a><br/><sub>Heart • Cancer • HIPAA</sub></td>
+</tr>
+<tr>
+  <td colspan="3"><a href="https://github.com/twomathematicians-code/fingraph-sentinel"><b>🔷 FinGraph Sentinel</b></a> — Neo4j · Graph RAG · GNN · LangChain Agent · AML/Credit/Insurance/KYC</td>
 </tr>
 <tr>
   <td colspan="3"><a href="https://github.com/twomathematicians-code/demand-forecasting"><b>📊 Demand Forecasting</b></a> — Supply chain: LightGBM + Prophet + SARIMA</td>
