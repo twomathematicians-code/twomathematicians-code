@@ -218,12 +218,7 @@ class Mahesh:
 
 > Last auto-sync: **2026-07-30 02:46 UTC**
 
-#### Deep Learning & Neural Networks Number Streams
 
-<p align="center"><img src="assets/deep-learning-numbers.gif" alt="Black and white floating numbers for deep learning" width="420" /> <img src="assets/neural-networks-numbers.gif" alt="Black and white floating numbers for neural networks" width="420" /></p>
-
-> Powered by `/scripts/update_profile_readme.py` and GitHub Actions for @twomathematicians-code.
-<!-- AUTO-STATS:END -->
 
 ---
 
