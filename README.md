@@ -11,32 +11,20 @@
 
 ---
 
-### 👤 About Me
+<p align="center">
+  <img src="assets/about-me.svg" alt="About me — hand-written note" width="90%" />
+</p>
 
-> I build **production ML systems** the way a mathematician solves a problem — from first principles.
-> **Python** · **FastAPI** · **Docker** · **PostgreSQL**, wired into CI/CD pipelines that ship.
-> My notebooks move between calculus, probability, and deployed inference APIs.
-
-```python
-class Mahesh:
-    name = "Mahesh Solanki"
-    role = "ML Engineer"
-    location = "Ghent, Belgium"
-
-    def focus(self) -> list[str]:
-        return [
-            "Containerization & Docker Compose",
-            "CI/CD — GitLab CI & GitHub Actions",
-            "Advanced Python — async, type-hints, Pydantic",
-            "PostgreSQL & SQLAlchemy async ORM",
-            "MLOps — MLflow, DVC, experiment tracking",
-            "Deep Learning — PyTorch, XGBoost, LightGBM",
-        ]
-```
+<p align="center">
+  <img src="assets/code-card.svg" alt="Mahesh's focus areas — hand-written Python class" width="60%" />
+</p>
 
 ---
 
-### 📐 The Notebook — math, models & learning in motion
+<p align="center">
+  <img src="assets/section-notebook.svg" alt="The Notebook section header" width="65%" />
+</p>
+<p align="center"><i>math, models &amp; learning in motion</i></p>
 
 <p align="center">
   <img src="assets/equations.svg" alt="Equations cycling: Bayes, gradient descent, attention, normal distribution" width="100%" />
@@ -80,26 +68,30 @@ class Mahesh:
 
 ---
 
-### 🛠️ Tech Stack
+<p align="center">
+  <img src="assets/section-tech.svg" alt="Tech Stack section header" width="55%" />
+</p>
 
-#### Core
-<p>
+<p align="center">
+  <img src="assets/label-core.svg" alt="Core label" width="32%" /><br/>
   <img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,git,linux&theme=dark" />
 </p>
 
-#### ML & Data
-<p>
+<p align="center">
+  <img src="assets/label-ml.svg" alt="ML & Data label" width="32%" /><br/>
   <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,anaconda&theme=dark" />
 </p>
 
-#### Tooling
-<p>
+<p align="center">
+  <img src="assets/label-tooling.svg" alt="Tooling label" width="32%" /><br/>
   <img src="https://skillicons.dev/icons?i=vscode,latex,stackoverflow,regex&theme=dark" />
 </p>
 
 ---
 
-## 🚀 Featured Projects
+<p align="center">
+  <img src="assets/section-projects.svg" alt="Featured Projects section header" width="60%" />
+</p>
 
 <table align="center">
 <tr>
@@ -179,7 +171,9 @@ class Mahesh:
 
 ---
 
-## 📡 Live Repo Telemetry
+<p align="center">
+  <img src="assets/section-telemetry.svg" alt="Live Telemetry section header" width="60%" />
+</p>
 
 <!-- AUTO-STATS:START -->
 <p align="center"><img src="https://img.shields.io/badge/AUTO%20SYNC-ACTIVE-black?style=for-the-badge&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/DATA%20SOURCE-GitHub%20API-white?style=for-the-badge&logo=github&logoColor=black&labelColor=black&color=white" /></p>
