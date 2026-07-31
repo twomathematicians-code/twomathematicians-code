@@ -206,10 +206,11 @@
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Achievements-YOLO-ff69b4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Quickdraw-ff69b4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Heart_On_Sleeve-❤️-ff69b4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Pull_Shark-6/16-1f6feb?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Achievement-YOLO-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Achievement-Quickdraw-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Achievement-Heart_On_Sleeve-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Achievement-Pull_Shark_16/16-1f6feb?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Achievement-Galaxy_Brain-pending-9ca3af?style=for-the-badge" />
 </p>
 
 ---
