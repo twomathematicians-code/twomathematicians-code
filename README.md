@@ -146,6 +146,21 @@
   <p align="center">Neo4j · LangChain · Graph RAG · GNN · AML · credit risk · insurance claims · KYC</p>
 </td>
 </tr>
+<tr>
+<td width="100%" colspan="2">
+  <h3 align="center">
+    <a href="https://github.com/twomathematicians-code/raix">
+      ⚡ raix — R + AI + eXperience
+    </a>
+  </h3>
+  <p align="center">
+    <img src="https://img.shields.io/badge/R_Package-42_functions-276DC3?style=flat-square&logo=r" />
+    <img src="https://img.shields.io/badge/AI-13+_providers-6366F1?style=flat-square" />
+    <img src="https://img.shields.io/github/v/release/twomathematicians-code/raix?style=flat-square&color=22c55e" />
+  </p>
+  <p align="center">AI coding assistant for RStudio — chat, debug, generate code, run Python, compile C++, simulate. 42 functions. Self-configuring dashboard.</p>
+</td>
+</tr>
 </table>
 
 <details>
@@ -187,6 +202,15 @@
 </tr>
 </table>
 </details>
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Achievements-YOLO-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Quickdraw-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Heart_On_Sleeve-❤️-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Pull_Shark-6/16-1f6feb?style=for-the-badge" />
+</p>
 
 ---
 
