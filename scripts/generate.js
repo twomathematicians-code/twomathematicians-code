@@ -400,7 +400,7 @@ function generateLanguages(repos) {
     <circle cx="24" cy="${y + barH / 2 + 1}" r="4" fill="${color}"/>
     <text x="36" y="${y + barH / 2 + 4}" font-family="${DS.font}" font-size="11" fill="${DS.text}">${escapeXml(lang[0])}</text>
     <rect x="140" y="${y}" width="${barW}" height="${barH}" rx="3" fill="${color}" opacity="0.85"/>
-    <text x="148 + ${barW}" y="${y + barH / 2 + 4}" font-family="${DS.mono}" font-size="10" fill="${DS.muted}" dx="8">${pct}%</text>`;
+    <text x="${148 + barW + 8}" y="${y + barH / 2 + 4}" font-family="${DS.mono}" font-size="10" fill="${DS.muted}">${pct}%</text>`;
     })
     .join("");
 
@@ -488,12 +488,9 @@ function generateRepoCard(repo, catSlug) {
   const updated = formatDate(repo.updatedAt);
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <title>${escapeXml(repo.name)} — ${escapeXml(repo.description || "No description")}</title>
   <rect width="${w}" height="${h}" rx="8" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
   <rect x="0" y="0" width="4" height="${h}" rx="2" fill="${color}"/>
-  <text x="16" y="28" font-family="${DS.font}" font-size="14" font-weight="700" fill="#ffffff">
-    <a xlink:href="${repo.url}" style="fill:#ffffff">${escapeXml(repo.name)}</a>
-  </text>
+  <text x="16" y="28" font-family="${DS.font}" font-size="14" font-weight="700" fill="#ffffff">${escapeXml(repo.name)}</text>
   <text x="16" y="50" font-family="${DS.font}" font-size="11" fill="${DS.muted}">${escapeXml(desc)}</text>
   <circle cx="24" cy="78" r="5" fill="${langColorVal}"/>
   <text x="34" y="82" font-family="${DS.font}" font-size="11" fill="${DS.text}">${escapeXml(langName)}</text>

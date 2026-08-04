@@ -5,33 +5,33 @@
     <circle cx="24" cy="59" r="4" fill="#3572A5"/>
     <text x="36" y="62" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">Python</text>
     <rect x="140" y="50" width="200" height="16" rx="3" fill="#3572A5" opacity="0.85"/>
-    <text x="148 + 200" y="62" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e" dx="8">70.0%</text>
+    <text x="356" y="62" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">70.0%</text>
     <circle cx="24" cy="81" r="4" fill="#198CE7"/>
     <text x="36" y="84" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">R</text>
     <rect x="140" y="72" width="21.428571428571427" height="16" rx="3" fill="#198CE7" opacity="0.85"/>
-    <text x="148 + 21.428571428571427" y="84" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e" dx="8">7.5%</text>
+    <text x="177.42857142857142" y="84" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">7.5%</text>
     <circle cx="24" cy="103" r="4" fill="#3D6117"/>
     <text x="36" y="106" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">TeX</text>
     <rect x="140" y="94" width="14.285714285714285" height="16" rx="3" fill="#3D6117" opacity="0.85"/>
-    <text x="148 + 14.285714285714285" y="106" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e" dx="8">5.0%</text>
+    <text x="170.28571428571428" y="106" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">5.0%</text>
     <circle cx="24" cy="125" r="4" fill="#f34b7d"/>
     <text x="36" y="128" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">C++</text>
     <rect x="140" y="116" width="14.285714285714285" height="16" rx="3" fill="#f34b7d" opacity="0.85"/>
-    <text x="148 + 14.285714285714285" y="128" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e" dx="8">5.0%</text>
+    <text x="170.28571428571428" y="128" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">5.0%</text>
     <circle cx="24" cy="147" r="4" fill="#e34c26"/>
     <text x="36" y="150" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">HTML</text>
     <rect x="140" y="138" width="8" height="16" rx="3" fill="#e34c26" opacity="0.85"/>
-    <text x="148 + 8" y="150" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e" dx="8">2.5%</text>
+    <text x="164" y="150" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">2.5%</text>
     <circle cx="24" cy="169" r="4" fill="#f1e05a"/>
     <text x="36" y="172" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">JavaScript</text>
     <rect x="140" y="160" width="8" height="16" rx="3" fill="#f1e05a" opacity="0.85"/>
-    <text x="148 + 8" y="172" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e" dx="8">2.5%</text>
+    <text x="164" y="172" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">2.5%</text>
     <circle cx="24" cy="191" r="4" fill="#DA5B0B"/>
     <text x="36" y="194" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">Jupyter Notebook</text>
     <rect x="140" y="182" width="8" height="16" rx="3" fill="#DA5B0B" opacity="0.85"/>
-    <text x="148 + 8" y="194" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e" dx="8">2.5%</text>
+    <text x="164" y="194" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">2.5%</text>
     <circle cx="24" cy="213" r="4" fill="#e16737"/>
     <text x="36" y="216" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">MATLAB</text>
     <rect x="140" y="204" width="8" height="16" rx="3" fill="#e16737" opacity="0.85"/>
-    <text x="148 + 8" y="216" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e" dx="8">2.5%</text>
+    <text x="164" y="216" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">2.5%</text>
 </svg>
