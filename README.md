@@ -149,6 +149,16 @@
 <tr>
 <td width="100%" colspan="2">
   <h3 align="center">
+    <a href="https://github.com/twomathematicians-code/paix">
+      🐍 paix — Python AI eXperimental
+    </a>
+  </h3>
+  <p align="center">Natural language → Python code. Multi-backend (OpenAI / Anthropic / Ollama). Code generation, execution, exercise mode, file loading with context injection. 75 tests.</p>
+</td>
+</tr>
+<tr>
+<td width="100%" colspan="2">
+  <h3 align="center">
     <a href="https://github.com/twomathematicians-code/raix">
       ⚡ raix — R + AI + eXperience
     </a>
@@ -164,13 +174,18 @@
 </table>
 
 <details>
-<summary><b>🧠 ML Portfolio — 11 Production repos</b></summary>
+<summary><b>🧠 ML Portfolio — 14+ Production repos</b></summary>
 <br/>
 <table>
 <tr>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/financial-forecasting"><b>📈 Financial Forecasting</b></a><br/><sub>LSTM • Prophet • WebSocket streaming</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/customer-analytics"><b>👥 Customer Analytics</b></a><br/><sub>Churn • RFM • SHAP • CLV</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/sentiment-analysis-suite"><b>💬 Sentiment Suite</b></a><br/><sub>Emotions • Aspect-based • NLP</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/paix"><b>🐍 paix</b></a><br/><sub>NL→Python · OpenAI/Claude/Ollama</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/archon"><b>🏗️ Archon</b></a><br/><sub>AI/ML Meta-Platform · YAML/DSL</sub></td>
+  <td width="33%"><a href="https://github.com/twomathematicians-code/CausalInference-Toolkit"><b>🔬 Causal Inference</b></a><br/><sub>DoWhy · EconML · DAGs</sub></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/twomathematicians-code/financial-forecasting"><b>📈 Financial Forecasting</b></a><br/><sub>LSTM • Prophet • WebSocket streaming</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/customer-analytics"><b>👥 Customer Analytics</b></a><br/><sub>Churn • RFM • SHAP • CLV</sub></td>
+  <td><a href="https://github.com/twomathematicians-code/sentiment-analysis-suite"><b>💬 Sentiment Suite</b></a><br/><sub>Emotions • Aspect-based • NLP</sub></td>
 </tr>
 <tr>
   <td><a href="https://github.com/twomathematicians-code/recommender-systems"><b>🎯 Recommender Systems</b></a><br/><sub>FAISS • Hybrid • A/B testing</sub></td>
@@ -181,7 +196,13 @@
   <td colspan="3"><a href="https://github.com/twomathematicians-code/fingraph-sentinel"><b>🔷 FinGraph Sentinel</b></a> — Neo4j · Graph RAG · GNN · LangChain Agent · AML/Credit/Insurance/KYC</td>
 </tr>
 <tr>
-  <td colspan="3"><a href="https://github.com/twomathematicians-code/demand-forecasting"><b>📊 Demand Forecasting</b></a> — Supply chain: LightGBM + Prophet + SARIMA</td>
+  <td colspan="3"><a href="https://github.com/twomathematicians-code/demand-forecasting"><b>📊 Demand Forecasting</b></a> — Supply chain: LightGBM + Prophet + SARIMA · 10% MAPE · TimescaleDB</td>
+</tr>
+<tr>
+  <td colspan="3"><a href="https://github.com/twomathematicians-code/engineer-credit-risk"><b>🏦 Credit Risk Pipeline</b></a> — End-to-end MLOps: FastAPI · PostgreSQL · MLflow · DVC · CI/CD · 380+ tests</td>
+</tr>
+<tr>
+  <td colspan="3"><a href="https://github.com/twomathematicians-code/fraud-detection"><b>🛡️ Fraud Detection</b></a> — Real-time scoring: XGBoost + Isolation Forest · Redis · SMOTE · &lt;20ms</td>
 </tr>
 </table>
 </details>
