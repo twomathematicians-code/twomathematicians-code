@@ -566,6 +566,7 @@ function assembleReadme(repos, categories) {
   lines.push(`## Unified Intelligence`);
   lines.push(``);
   lines.push("```mermaid");
+  lines.push("%%{init: {'theme':'base','themeVariables': {'background':'#ffffff','mainBkg':'#000000','secondBkg':'#1f2937','tertiaryBkg':'#374151','primaryColor':'#000000','primaryTextColor':'#ffffff','primaryBorderColor':'#000000','secondaryColor':'#1f2937','secondaryTextColor':'#ffffff','tertiaryColor':'#374151','tertiaryTextColor':'#ffffff','textColor':'#1f2937','lineColor':'#9ca3af','fontFamily':'Inter,system-ui,-apple-system,sans-serif','fontSize':'14px','cScale0':'#000000','cScale1':'#1f2937','cScale2':'#374151','cScale3':'#4b5563','cScale4':'#6b7280','cScale5':'#9ca3af','cScale6':'#d1d5db','cScale7':'#e5e7eb'}}}%%");
   lines.push("mindmap");
   lines.push("  root((Unified Intelligence))");
   lines.push("    ML Engineering");
