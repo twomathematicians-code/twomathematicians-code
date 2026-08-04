@@ -29,36 +29,81 @@ const REPOS_DIR = path.join(ASSETS_DIR, "repos");
 const README_PATH = path.join(ROOT, "README.md");
 
 // ──────────────────────────────────────────────
-// Design System — GitHub Dark Theme
+// Design System — Light Futuristic Theme
 // ──────────────────────────────────────────────
 const DS = {
-  bg: "#0d1117",
-  cardBg: "#161b22",
-  border: "#30363d",
-  text: "#c9d1d9",
-  muted: "#8b949e",
-  accent: "#58a6ff",
-  green: "#3fb950",
-  orange: "#f78166",
-  purple: "#bc8cff",
+  bg: "#f8fafc",
+  cardBg: "#ffffff",
+  border: "#e2e8f0",
+  text: "#1e293b",
+  muted: "#64748b",
+  accent: "#06b6d4",
+  green: "#10b981",
+  orange: "#f59e0b",
+  purple: "#8b5cf6",
   indigo: "#6366f1",
-  font: "Segoe UI,system-ui,sans-serif",
+  font: "Inter,system-ui,sans-serif",
   mono: "SF Mono,Consolas,monospace",
+  shadowColor: "#94a3b8",
+  radius: 12,
 };
 
-// Category accent colors (left bar + category header)
+// Category accent colors (vivid, futuristic)
 const CAT_COLORS = {
-  "ai-infrastructure": DS.accent,
-  "ml-engineering": DS.green,
-  "nlp-ai": DS.purple,
-  analytics: DS.orange,
-  "domain-ml": "#f78166",
-  research: "#79c0ff",
-  "systems-tools": "#d2a8ff",
-  mathematics: "#ffa657",
-  experimental: "#7ee787",
+  "ai-infrastructure": "#06b6d4",
+  "ml-engineering": "#10b981",
+  "nlp-ai": "#8b5cf6",
+  analytics: "#f59e0b",
+  "domain-ml": "#ec4899",
+  research: "#0ea5e9",
+  "systems-tools": "#a78bfa",
+  mathematics: "#f97316",
+  experimental: "#14b8a6",
   uncategorized: DS.muted,
 };
+
+// ──────────────────────────────────────────────
+// SVG Gradient Definitions (shared across components)
+// ──────────────────────────────────────────────
+const SVG_GRADIENTS = {
+  accent: `<linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="${DS.accent}"/>
+    <stop offset="100%" stop-color="${DS.indigo}"/>
+  </linearGradient>`,
+  header: `<linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="${DS.indigo}"/>
+    <stop offset="50%" stop-color="${DS.accent}"/>
+    <stop offset="100%" stop-color="${DS.purple}"/>
+  </linearGradient>`,
+};
+
+// Category gradient pairs for left bars
+const CAT_GRADIENTS = {
+  "ai-infrastructure": ["#06b6d4", "#0ea5e9"],
+  "ml-engineering": ["#10b981", "#06b6d4"],
+  "nlp-ai": ["#8b5cf6", "#a855f7"],
+  analytics: ["#f59e0b", "#f97316"],
+  "domain-ml": ["#ec4899", "#f472b6"],
+  research: ["#0ea5e9", "#3b82f6"],
+  "systems-tools": ["#a78bfa", "#c4b5fd"],
+  mathematics: ["#f97316", "#fb923c"],
+  experimental: ["#14b8a6", "#2dd4bf"],
+  uncategorized: ["#64748b", "#94a3b8"],
+};
+
+function makeCatGrad(catSlug) {
+  const pair = CAT_GRADIENTS[catSlug] || CAT_GRADIENTS.uncategorized;
+  const id = `catGrad-${catSlug.replace(/[^a-z0-9]/g, "")}`;
+  return `<linearGradient id="${id}" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="${pair[0]}"/>
+    <stop offset="100%" stop-color="${pair[1]}"/>
+  </linearGradient>`;
+}
+
+// Shadow rect helper — simulates box-shadow behind a card
+function shadowRect(w, h, rx, dx, dy) {
+  return `<rect x="${dx}" y="${dy}" width="${w}" height="${h}" rx="${rx}" fill="${DS.shadowColor}" opacity="0.18"/>`;
+}
 
 // Category display names + emojis
 const CAT_META = {
@@ -312,14 +357,16 @@ function categorizeRepos(repos) {
 function generateHeader() {
   const w = 800, h = 130;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <rect width="${w}" height="${h}" rx="12" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
-  <rect x="0" y="0" width="${w}" height="4" rx="2" fill="${DS.indigo}"/>
-  <text x="32" y="52" font-family="${DS.font}" font-size="28" font-weight="700" fill="#ffffff">Mahesh Solanki</text>
-  <text x="32" y="82" font-family="${DS.font}" font-size="16" fill="${DS.accent}">Unified Intelligence Engineer</text>
+  <defs>${SVG_GRADIENTS.header}</defs>
+  ${shadowRect(w, h, DS.radius, 2, 2)}
+  <rect width="${w}" height="${h}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
+  <rect x="0" y="0" width="${w}" height="4" rx="2" fill="url(#headerGrad)"/>
+  <text x="32" y="52" font-family="${DS.font}" font-size="28" font-weight="700" fill="${DS.text}">Mahesh Solanki</text>
+  <text x="32" y="82" font-family="${DS.font}" font-size="16" fill="${DS.indigo}">Unified Intelligence Engineer</text>
   <text x="32" y="108" font-family="${DS.font}" font-size="12" fill="${DS.muted}">\u{1F4CD} Ghent, Belgium  \u00B7  Mathematician \u2192 Computational Expert</text>
-  <circle cx="720" cy="65" r="35" fill="none" stroke="${DS.indigo}" stroke-width="1" opacity="0.3"/>
-  <circle cx="720" cy="65" r="22" fill="none" stroke="${DS.accent}" stroke-width="1" opacity="0.3"/>
-  <circle cx="720" cy="65" r="10" fill="${DS.accent}" opacity="0.4"/>
+  <circle cx="720" cy="65" r="35" fill="none" stroke="${DS.indigo}" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="720" cy="65" r="22" fill="none" stroke="${DS.accent}" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="720" cy="65" r="10" fill="url(#accentGrad)" opacity="0.35"/>
   <line x1="640" y1="85" x2="680" y2="65" stroke="${DS.border}" stroke-width="1"/>
   <line x1="680" y1="65" x2="690" y2="45" stroke="${DS.border}" stroke-width="1"/>
 </svg>`;
@@ -354,11 +401,13 @@ function generateStats(repos) {
       return `
     <circle cx="${cx - 40}" cy="40" r="4" fill="${s.color}"/>
     <text x="${cx - 30}" y="34" font-family="${DS.font}" font-size="11" fill="${DS.muted}">${s.label}</text>
-    <text x="${cx - 30}" y="54" font-family="${DS.mono}" font-size="16" font-weight="600" fill="#ffffff">${String(s.value)}</text>`;
+    <text x="${cx - 30}" y="54" font-family="${DS.mono}" font-size="16" font-weight="600" fill="${DS.text}">${String(s.value)}</text>`;
     })
     .join("");
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+  <defs>${SVG_GRADIENTS.accent}</defs>
+  ${shadowRect(w, h, 10, 2, 2)}
   <rect width="${w}" height="${h}" rx="10" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
   ${statBlocks}
 </svg>`;
@@ -385,6 +434,16 @@ function generateLanguages(repos) {
 </svg>`;
   }
 
+  // Build per-language gradients
+  const langGrads = top.map((lang, i) => {
+    const c = langColor(lang[0]);
+    const id = `langGrad${i}`;
+    return `<linearGradient id="${id}" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="${c}"/>
+    <stop offset="100%" stop-color="${c}" stop-opacity="0.6"/>
+  </linearGradient>`;
+  }).join("\n    ");
+
   const barY0 = 50;
   const barH = 16;
   const barGap = 6;
@@ -399,14 +458,18 @@ function generateLanguages(repos) {
       return `
     <circle cx="24" cy="${y + barH / 2 + 1}" r="4" fill="${color}"/>
     <text x="36" y="${y + barH / 2 + 4}" font-family="${DS.font}" font-size="11" fill="${DS.text}">${escapeXml(lang[0])}</text>
-    <rect x="140" y="${y}" width="${barW}" height="${barH}" rx="3" fill="${color}" opacity="0.85"/>
+    <rect x="140" y="${y}" width="${barW}" height="${barH}" rx="3" fill="url(#langGrad${i})"/>
     <text x="${148 + barW + 8}" y="${y + barH / 2 + 4}" font-family="${DS.mono}" font-size="10" fill="${DS.muted}">${pct}%</text>`;
     })
     .join("");
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+  <defs>${SVG_GRADIENTS.accent}
+    ${langGrads}
+  </defs>
+  ${shadowRect(w, h, 10, 2, 2)}
   <rect width="${w}" height="${h}" rx="10" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
-  <text x="20" y="32" font-family="${DS.font}" font-size="13" font-weight="600" fill="#ffffff">Languages</text>
+  <text x="20" y="32" font-family="${DS.font}" font-size="13" font-weight="600" fill="${DS.text}">Languages</text>
   ${bars}
 </svg>`;
   return svg;
@@ -414,15 +477,23 @@ function generateLanguages(repos) {
 
 function generatePipelineSvg() {
   const w = 800, h = 200;
-  // Pipeline stages: left-to-right flow with connected nodes
+  // Pipeline stages with gradient pairs
   const stages = [
-    { label: "Math", color: "#ffa657", items: ["Stats", "LinAlg", "Optim"] },
-    { label: "Data", color: "#79c0ff", items: ["SQL", "ETL", "VecDB"] },
-    { label: "ML", color: "#533483", items: ["XGBoost", "PyTorch", "NLP/CV"] },
-    { label: "AI", color: "#6366f1", items: ["RAG", "Agents", "LLM"] },
-    { label: "Prod", color: "#818cf8", items: ["FastAPI", "Docker", "MLOps"] },
-    { label: "Impact", color: "#3fb950", items: ["BFSI", "Health", "Supply"] },
+    { label: "Math", colors: ["#06b6d4", "#0ea5e9"], items: ["Stats", "LinAlg", "Optim"] },
+    { label: "Data", colors: ["#3b82f6", "#6366f1"], items: ["SQL", "ETL", "VecDB"] },
+    { label: "ML", colors: ["#8b5cf6", "#a855f7"], items: ["XGBoost", "PyTorch", "NLP/CV"] },
+    { label: "AI", colors: ["#6366f1", "#818cf8"], items: ["RAG", "Agents", "LLM"] },
+    { label: "Prod", colors: ["#06b6d4", "#10b981"], items: ["FastAPI", "Docker", "MLOps"] },
+    { label: "Impact", colors: ["#10b981", "#34d399"], items: ["BFSI", "Health", "Supply"] },
   ];
+
+  // Build gradient defs for each stage
+  const gradDefs = stages.map((s, i) => {
+    return `<linearGradient id="pipeGrad${i}" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="${s.colors[0]}"/>
+    <stop offset="100%" stop-color="${s.colors[1]}"/>
+  </linearGradient>`;
+  }).join("\n  ");
 
   const gap = 20;
   const totalGaps = (stages.length - 1) * gap;
@@ -434,32 +505,38 @@ function generatePipelineSvg() {
   const nodes = stages.map((stage, i) => {
     const x = startX + i * (nodeW + gap);
     // Main box
-    let svg = `<rect x="${x}" y="${startY}" width="${nodeW}" height="${nodeH}" rx="8" fill="${DS.cardBg}" stroke="${stage.color}" stroke-width="1.5"/>`;
-    // Top accent bar
-    svg += `<rect x="${x}" y="${startY}" width="${nodeW}" height="3" rx="2" fill="${stage.color}"/>`;
+    let svg = `${shadowRect(nodeW, nodeH, 8, x + 2, startY + 2)}`;
+    svg += `<rect x="${x}" y="${startY}" width="${nodeW}" height="${nodeH}" rx="8" fill="${DS.cardBg}" stroke="${stage.colors[0]}" stroke-width="1.5"/>`;
+    // Top accent bar (gradient)
+    svg += `<rect x="${x}" y="${startY}" width="${nodeW}" height="3" rx="2" fill="url(#pipeGrad${i})"/>`;
     // Stage label
-    svg += `<text x="${x + nodeW / 2}" y="${startY + 24}" text-anchor="middle" font-family="${DS.font}" font-size="13" font-weight="700" fill="${stage.color}">${stage.label}</text>`;
+    svg += `<text x="${x + nodeW / 2}" y="${startY + 24}" text-anchor="middle" font-family="${DS.font}" font-size="13" font-weight="700" fill="${stage.colors[0]}">${stage.label}</text>`;
     // Separator line
     svg += `<line x1="${x + 12}" y1="${startY + 34}" x2="${x + nodeW - 12}" y2="${startY + 34}" stroke="${DS.border}" stroke-width="0.5"/>`;
     // Items
     stage.items.forEach((item, j) => {
       const iy = startY + 54 + j * 26;
-      svg += `<circle cx="${x + 20}" cy="${iy}" r="3" fill="${stage.color}" opacity="0.7"/>`;
+      svg += `<circle cx="${x + 20}" cy="${iy}" r="3" fill="url(#pipeGrad${i})" opacity="0.7"/>`;
       svg += `<text x="${x + 30}" y="${iy + 4}" font-family="${DS.font}" font-size="11" fill="${DS.text}">${item}</text>`;
     });
     return svg;
   });
 
-  // Arrows between stages
-  const arrows = stages.slice(0, -1).map((_, i) => {
+  // Arrows between stages (gradient)
+  const arrows = stages.slice(0, -1).map((s, i) => {
     const x1 = startX + (i + 1) * (nodeW + gap) - gap + 2;
     const x2 = x1 + gap - 4;
     const y = startY + nodeH / 2;
+    const c1 = s.colors[1];
+    const c2 = stages[i + 1].colors[0];
     return `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="${DS.muted}" stroke-width="1.5" stroke-dasharray="3,3"/>` +
-           `<polygon points="${x2},${y - 4} ${x2 + 6},${y} ${x2},${y + 4}" fill="${DS.muted}"/>`;
+           `<polygon points="${x2},${y - 4} ${x2 + 6},${y} ${x2},${y + 4}" fill="${c2}" opacity="0.6"/>`;
   });
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+  <defs>
+  ${gradDefs}
+  </defs>
   ${nodes.join("\n  ")}
   ${arrows.join("\n  ")}
 </svg>`;
@@ -469,11 +546,14 @@ function generateCategoryHeader(catSlug, count) {
   const meta = CAT_META[catSlug] || CAT_META.uncategorized;
   const color = CAT_COLORS[catSlug] || DS.muted;
   const w = 600, h = 36;
+  const gradId = `catGrad-${catSlug.replace(/[^a-z0-9]/g, "")}`;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+  <defs>${makeCatGrad(catSlug)}</defs>
+  ${shadowRect(w, h, 8, 2, 2)}
   <rect width="${w}" height="${h}" rx="8" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
-  <rect x="0" y="0" width="4" height="${h}" rx="2" fill="${color}"/>
-  <text x="16" y="24" font-family="${DS.font}" font-size="13" font-weight="600" fill="#ffffff">${meta.emoji}  ${meta.label}</text>
-  <rect x="${w - 80}" y="8" width="32" height="20" rx="10" fill="${color}" opacity="0.2"/>
+  <rect x="0" y="0" width="4" height="${h}" rx="2" fill="url(#${gradId})"/>
+  <text x="16" y="24" font-family="${DS.font}" font-size="13" font-weight="600" fill="${DS.text}">${meta.emoji}  ${meta.label}</text>
+  <rect x="${w - 80}" y="8" width="32" height="20" rx="10" fill="${color}" opacity="0.15"/>
   <text x="${w - 64}" y="23" font-family="${DS.mono}" font-size="11" fill="${color}">${count}</text>
 </svg>`;
   return svg;
@@ -486,11 +566,14 @@ function generateRepoCard(repo, catSlug) {
   const langName = repo.language || "N/A";
   const langColorVal = repo.language ? langColor(repo.language) : DS.muted;
   const updated = formatDate(repo.updatedAt);
+  const gradId = `catGrad-${catSlug.replace(/[^a-z0-9]/g, "")}`;
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <rect width="${w}" height="${h}" rx="8" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
-  <rect x="0" y="0" width="4" height="${h}" rx="2" fill="${color}"/>
-  <text x="16" y="28" font-family="${DS.font}" font-size="14" font-weight="700" fill="#ffffff">${escapeXml(repo.name)}</text>
+  <defs>${makeCatGrad(catSlug)}</defs>
+  ${shadowRect(w, h, DS.radius, 2, 2)}
+  <rect width="${w}" height="${h}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
+  <rect x="0" y="0" width="4" height="${h}" rx="2" fill="url(#${gradId})"/>
+  <text x="16" y="28" font-family="${DS.font}" font-size="14" font-weight="700" fill="${DS.text}">${escapeXml(repo.name)}</text>
   <text x="16" y="50" font-family="${DS.font}" font-size="11" fill="${DS.muted}">${escapeXml(desc)}</text>
   <circle cx="24" cy="78" r="5" fill="${langColorVal}"/>
   <text x="34" y="82" font-family="${DS.font}" font-size="11" fill="${DS.text}">${escapeXml(langName)}</text>
@@ -531,7 +614,7 @@ function assembleReadme(repos, categories) {
     `  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>`
   );
   lines.push(
-    `  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=6366f1&style=flat-square" alt="Profile Views" />`
+    `  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=06b6d4&style=flat-square" alt="Profile Views" />`
   );
   lines.push(`</p>`);
   lines.push(``);
@@ -550,7 +633,7 @@ function assembleReadme(repos, categories) {
   lines.push(`    <tr>`);
   lines.push(`      <td width="48%" align="center"><img src="assets/languages.svg" alt="Language breakdown" width="100%" /></td>`);
   lines.push(
-    `      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="100%" /></td>`
+    `      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" width="100%" /></td>`
   );
   lines.push(`    </tr>`);
   lines.push(`  </table>`);
@@ -562,10 +645,10 @@ function assembleReadme(repos, categories) {
   lines.push(`  <table>`);
   lines.push(`    <tr>`);
   lines.push(
-    `      <td width="48%" align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=twomathematicians-code&theme=tokyonight&hide_border=true" width="100%" /></td>`
+    `      <td width="48%" align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=twomathematicians-code&theme=radical&hide_border=true" width="100%" /></td>`
   );
   lines.push(
-    `      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&hide=html,css,tex" width="100%" /></td>`
+    `      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&theme=radical&hide_border=true&langs_count=8&hide=html,css,tex" width="100%" /></td>`
   );
   lines.push(`    </tr>`);
   lines.push(`  </table>`);
@@ -573,7 +656,7 @@ function assembleReadme(repos, categories) {
   lines.push(``);
   lines.push(`<p align="center">`);
   lines.push(
-    `  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=tokyonight&no-frame=true&column=7&margin-w=8" width="100%" />`
+    `  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=radical&no-frame=true&column=7&margin-w=8" width="100%" />`
   );
   lines.push(`</p>`);
   lines.push(``);
@@ -653,7 +736,7 @@ function assembleReadme(repos, categories) {
     for (let j = 0; j < 2 && i + j < featured.length; j++) {
       const r = featured[i + j];
       lines.push(
-        `      <td width="48%" align="center"><a href="${r.url}"><img src="https://github-readme-stats.vercel.app/api/pin/?username=${USERNAME}&repo=${r.name}&theme=tokyonight&hide_border=true" width="100%" /></a></td>`
+        `      <td width="48%" align="center"><a href="${r.url}"><img src="https://github-readme-stats.vercel.app/api/pin/?username=${USERNAME}&repo=${r.name}&theme=radical&hide_border=true" width="100%" /></a></td>`
       );
     }
     lines.push(`    </tr>`);

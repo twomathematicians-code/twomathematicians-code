@@ -12,7 +12,7 @@
   <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
   <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
-  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=6366f1&style=flat-square" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=06b6d4&style=flat-square" alt="Profile Views" />
 </p>
 
 ---
@@ -25,7 +25,7 @@
   <table>
     <tr>
       <td width="48%" align="center"><img src="assets/languages.svg" alt="Language breakdown" width="100%" /></td>
-      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="100%" /></td>
+      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" width="100%" /></td>
     </tr>
   </table>
 </p>
@@ -33,14 +33,14 @@
 <p align="center">
   <table>
     <tr>
-      <td width="48%" align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=twomathematicians-code&theme=tokyonight&hide_border=true" width="100%" /></td>
-      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&hide=html,css,tex" width="100%" /></td>
+      <td width="48%" align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=twomathematicians-code&theme=radical&hide_border=true" width="100%" /></td>
+      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&theme=radical&hide_border=true&langs_count=8&hide=html,css,tex" width="100%" /></td>
     </tr>
   </table>
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=tokyonight&no-frame=true&column=7&margin-w=8" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=radical&no-frame=true&column=7&margin-w=8" width="100%" />
 </p>
 
 ---
@@ -110,12 +110,12 @@ mindmap
 <p align="center">
   <table>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/demand-forecasting"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=demand-forecasting&theme=tokyonight&hide_border=true" width="100%" /></a></td>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/archon"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=archon&theme=tokyonight&hide_border=true" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/demand-forecasting"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=demand-forecasting&theme=radical&hide_border=true" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/archon"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=archon&theme=radical&hide_border=true" width="100%" /></a></td>
     </tr>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/raix"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=raix&theme=tokyonight&hide_border=true" width="100%" /></a></td>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/Hybrid_Game_Recommendation"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=Hybrid_Game_Recommendation&theme=tokyonight&hide_border=true" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/raix"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=raix&theme=radical&hide_border=true" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/Hybrid_Game_Recommendation"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=Hybrid_Game_Recommendation&theme=radical&hide_border=true" width="100%" /></a></td>
     </tr>
   </table>
 </p>

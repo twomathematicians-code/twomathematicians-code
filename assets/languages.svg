@@ -1,37 +1,75 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
-  <rect width="400" height="220" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <text x="20" y="32" font-family="Segoe UI,system-ui,sans-serif" font-size="13" font-weight="600" fill="#ffffff">Languages</text>
+  <defs><linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#06b6d4"/>
+    <stop offset="100%" stop-color="#6366f1"/>
+  </linearGradient>
+    <linearGradient id="langGrad0" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#3572A5"/>
+    <stop offset="100%" stop-color="#3572A5" stop-opacity="0.6"/>
+  </linearGradient>
+    <linearGradient id="langGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#198CE7"/>
+    <stop offset="100%" stop-color="#198CE7" stop-opacity="0.6"/>
+  </linearGradient>
+    <linearGradient id="langGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#3D6117"/>
+    <stop offset="100%" stop-color="#3D6117" stop-opacity="0.6"/>
+  </linearGradient>
+    <linearGradient id="langGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#f34b7d"/>
+    <stop offset="100%" stop-color="#f34b7d" stop-opacity="0.6"/>
+  </linearGradient>
+    <linearGradient id="langGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#e34c26"/>
+    <stop offset="100%" stop-color="#e34c26" stop-opacity="0.6"/>
+  </linearGradient>
+    <linearGradient id="langGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#f1e05a"/>
+    <stop offset="100%" stop-color="#f1e05a" stop-opacity="0.6"/>
+  </linearGradient>
+    <linearGradient id="langGrad6" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#DA5B0B"/>
+    <stop offset="100%" stop-color="#DA5B0B" stop-opacity="0.6"/>
+  </linearGradient>
+    <linearGradient id="langGrad7" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#e16737"/>
+    <stop offset="100%" stop-color="#e16737" stop-opacity="0.6"/>
+  </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="400" height="220" rx="10" fill="#94a3b8" opacity="0.18"/>
+  <rect width="400" height="220" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="20" y="32" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#1e293b">Languages</text>
   
     <circle cx="24" cy="59" r="4" fill="#3572A5"/>
-    <text x="36" y="62" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">Python</text>
-    <rect x="140" y="50" width="200" height="16" rx="3" fill="#3572A5" opacity="0.85"/>
-    <text x="356" y="62" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">70.0%</text>
+    <text x="36" y="62" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#1e293b">Python</text>
+    <rect x="140" y="50" width="200" height="16" rx="3" fill="url(#langGrad0)"/>
+    <text x="356" y="62" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#64748b">70.0%</text>
     <circle cx="24" cy="81" r="4" fill="#198CE7"/>
-    <text x="36" y="84" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">R</text>
-    <rect x="140" y="72" width="21.428571428571427" height="16" rx="3" fill="#198CE7" opacity="0.85"/>
-    <text x="177.42857142857142" y="84" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">7.5%</text>
+    <text x="36" y="84" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#1e293b">R</text>
+    <rect x="140" y="72" width="21.428571428571427" height="16" rx="3" fill="url(#langGrad1)"/>
+    <text x="177.42857142857142" y="84" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#64748b">7.5%</text>
     <circle cx="24" cy="103" r="4" fill="#3D6117"/>
-    <text x="36" y="106" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">TeX</text>
-    <rect x="140" y="94" width="14.285714285714285" height="16" rx="3" fill="#3D6117" opacity="0.85"/>
-    <text x="170.28571428571428" y="106" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">5.0%</text>
+    <text x="36" y="106" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#1e293b">TeX</text>
+    <rect x="140" y="94" width="14.285714285714285" height="16" rx="3" fill="url(#langGrad2)"/>
+    <text x="170.28571428571428" y="106" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#64748b">5.0%</text>
     <circle cx="24" cy="125" r="4" fill="#f34b7d"/>
-    <text x="36" y="128" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">C++</text>
-    <rect x="140" y="116" width="14.285714285714285" height="16" rx="3" fill="#f34b7d" opacity="0.85"/>
-    <text x="170.28571428571428" y="128" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">5.0%</text>
+    <text x="36" y="128" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#1e293b">C++</text>
+    <rect x="140" y="116" width="14.285714285714285" height="16" rx="3" fill="url(#langGrad3)"/>
+    <text x="170.28571428571428" y="128" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#64748b">5.0%</text>
     <circle cx="24" cy="147" r="4" fill="#e34c26"/>
-    <text x="36" y="150" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">HTML</text>
-    <rect x="140" y="138" width="8" height="16" rx="3" fill="#e34c26" opacity="0.85"/>
-    <text x="164" y="150" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">2.5%</text>
+    <text x="36" y="150" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#1e293b">HTML</text>
+    <rect x="140" y="138" width="8" height="16" rx="3" fill="url(#langGrad4)"/>
+    <text x="164" y="150" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#64748b">2.5%</text>
     <circle cx="24" cy="169" r="4" fill="#f1e05a"/>
-    <text x="36" y="172" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">JavaScript</text>
-    <rect x="140" y="160" width="8" height="16" rx="3" fill="#f1e05a" opacity="0.85"/>
-    <text x="164" y="172" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">2.5%</text>
+    <text x="36" y="172" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#1e293b">JavaScript</text>
+    <rect x="140" y="160" width="8" height="16" rx="3" fill="url(#langGrad5)"/>
+    <text x="164" y="172" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#64748b">2.5%</text>
     <circle cx="24" cy="191" r="4" fill="#DA5B0B"/>
-    <text x="36" y="194" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">Jupyter Notebook</text>
-    <rect x="140" y="182" width="8" height="16" rx="3" fill="#DA5B0B" opacity="0.85"/>
-    <text x="164" y="194" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">2.5%</text>
+    <text x="36" y="194" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#1e293b">Jupyter Notebook</text>
+    <rect x="140" y="182" width="8" height="16" rx="3" fill="url(#langGrad6)"/>
+    <text x="164" y="194" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#64748b">2.5%</text>
     <circle cx="24" cy="213" r="4" fill="#e16737"/>
-    <text x="36" y="216" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">MATLAB</text>
-    <rect x="140" y="204" width="8" height="16" rx="3" fill="#e16737" opacity="0.85"/>
-    <text x="164" y="216" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">2.5%</text>
+    <text x="36" y="216" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#1e293b">MATLAB</text>
+    <rect x="140" y="204" width="8" height="16" rx="3" fill="url(#langGrad7)"/>
+    <text x="164" y="216" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#64748b">2.5%</text>
 </svg>
