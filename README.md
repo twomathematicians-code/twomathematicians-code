@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-  <a href="https://readme-typing-svg.demolab.com/demo/"><img src="https://readme-typing-svg.demolab.com/?lines=Unified+Intelligence+Engineer;ML+Systems+%C2%B7+Production+AI;Mathematics+%E2%8A%95+Code;First+Principles+%C2%B7+End-to-End+ML;Building+AI-Powered+Products&font=Fira+Code&center=true&width=520&height=45&color=6366f1&vCenter=true&pause=2000&size=20" alt="Typing SVG" /></a>
+  <a href="https://readme-typing-svg.demolab.com/demo/"><img src="https://readme-typing-svg.demolab.com/?lines=Unified+Intelligence+Engineer;ML+Systems+%C2%B7+Production+AI;Mathematics+%E2%8A%95+Code;First+Principles+%C2%B7+End-to-End+ML;Building+AI-Powered+Products&font=Fira+Code&center=true&width=520&height=45&color=000000&vCenter=true&pause=2000&size=20" alt="Typing SVG" /></a>
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
-  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
-  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=06b6d4&style=flat-square" alt="Profile Views" />
+  <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-000000?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-000000?style=flat-square&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=white" /></a>
+  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=000000&style=flat-square" alt="Profile Views" />
 </p>
 
 ---
@@ -27,7 +27,7 @@
 
 ---
 
-## 🧠 Unified Intelligence
+## Unified Intelligence
 
 ```mermaid
 mindmap
@@ -87,7 +87,7 @@ mindmap
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 <p align="center">
   <table>
@@ -104,7 +104,7 @@ mindmap
 
 ---
 
-## 📦 Repository Components
+## Repository Components
 
 > Each repository is a unique SVG component, auto-generated from live GitHub data.
 
@@ -275,7 +275,7 @@ mindmap
 
 ---
 
-## 🔧 Tech Pipeline
+## Tech Pipeline
 
 <p align="center">
   <img src="assets/pipeline.svg" alt="Tech Pipeline — Math → Data → ML → AI → Prod → Impact" width="100%" />
@@ -284,7 +284,7 @@ mindmap
 ---
 
 <p align="center">
-  <a href="https://github.com/twomathematicians-code?tab=repositories"><img src="https://img.shields.io/badge/View_All_Repos_→-6366f1?style=for-the-badge" alt="View all repositories" /></a>
+  <a href="https://github.com/twomathematicians-code?tab=repositories"><img src="https://img.shields.io/badge/View_All_Repos_→-000000?style=for-the-badge" alt="View all repositories" /></a>
 </p>
 
 <p align="center">

@@ -1,16 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="380" height="120" viewBox="0 0 380 120">
-  <defs><linearGradient id="catGrad-experimental" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%" stop-color="#14b8a6"/>
-    <stop offset="100%" stop-color="#2dd4bf"/>
-  </linearGradient></defs>
-  <rect x="2" y="2" width="380" height="120" rx="12" fill="#94a3b8" opacity="0.18"/>
-  <rect width="380" height="120" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-  <rect x="0" y="0" width="4" height="120" rx="2" fill="url(#catGrad-experimental)"/>
-  <text x="16" y="28" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700" fill="#1e293b">Hybrid_Game_Recommendation</text>
-  <text x="16" y="50" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#64748b">Hybrid Game Recommendation System with Semantic Search and BM25</text>
-  <circle cx="24" cy="78" r="5" fill="#3572A5"/>
-  <text x="34" y="82" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#1e293b">Python</text>
-  <text x="16" y="102" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#64748b">
-    ⭐ 1  📅 Jul 2026
-  </text>
+  <rect x="2" y="2" width="380" height="120" rx="3" fill="#000000" opacity="0.05"/>
+  <rect width="380" height="120" rx="3" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="0" y="0" width="3" height="120" fill="#000000"/>
+  <text x="16" y="30" font-family="Inter,system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" letter-spacing="-0.2" fill="#000000">Hybrid_Game_Recommendation</text>
+  <text x="16" y="52" font-family="Inter,system-ui,-apple-system,sans-serif" font-size="11" fill="#6b7280">Hybrid Game Recommendation System with Semantic Search and BM25</text>
+  <line x1="16" y1="66" x2="364" y2="66" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="16" y="76" width="4" height="4" fill="#6b7280"/>
+  <text x="26" y="82" font-family="'SF Mono',Consolas,'Roboto Mono',monospace" font-size="10" fill="#6b7280">PYTHON</text>
+  <text x="16" y="104" font-family="'SF Mono',Consolas,'Roboto Mono',monospace" font-size="10" fill="#6b7280">★ 1  ·  Jul 2026</text>
 </svg>

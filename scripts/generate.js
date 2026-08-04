@@ -29,80 +29,45 @@ const REPOS_DIR = path.join(ASSETS_DIR, "repos");
 const README_PATH = path.join(ROOT, "README.md");
 
 // ──────────────────────────────────────────────
-// Design System — Light Futuristic Theme
+// Design System — Monochrome (SpaceX industrial aesthetic)
 // ──────────────────────────────────────────────
 const DS = {
-  bg: "#f8fafc",
-  cardBg: "#ffffff",
-  border: "#e2e8f0",
-  text: "#1e293b",
-  muted: "#64748b",
-  accent: "#06b6d4",
-  green: "#10b981",
-  orange: "#f59e0b",
-  purple: "#8b5cf6",
-  indigo: "#6366f1",
-  font: "Inter,system-ui,sans-serif",
-  mono: "SF Mono,Consolas,monospace",
-  shadowColor: "#94a3b8",
-  radius: 12,
+  bg: "#ffffff",           // pure white
+  cardBg: "#ffffff",       // pure white
+  border: "#e5e7eb",       // light gray hairline
+  text: "#000000",         // pure black
+  dark: "#1f2937",         // dark slate — bars, dots, fills
+  muted: "#6b7280",        // neutral gray
+  faint: "#f3f4f6",        // very light gray — badge backgrounds
+  accent: "#000000",       // black is the only accent
+  // Legacy keys collapsed to monochrome (kept for stray references)
+  green: "#1f2937",
+  orange: "#1f2937",
+  purple: "#1f2937",
+  indigo: "#000000",
+  font: "Inter,system-ui,-apple-system,sans-serif",
+  mono: "'SF Mono',Consolas,'Roboto Mono',monospace",
+  shadowColor: "#000000",
+  radius: 3,               // sharp industrial corners
 };
 
-// Category accent colors (vivid, futuristic)
+// Category accent colors — all monochrome; differentiation via typography
 const CAT_COLORS = {
-  "ai-infrastructure": "#06b6d4",
-  "ml-engineering": "#10b981",
-  "nlp-ai": "#8b5cf6",
-  analytics: "#f59e0b",
-  "domain-ml": "#ec4899",
-  research: "#0ea5e9",
-  "systems-tools": "#a78bfa",
-  mathematics: "#f97316",
-  experimental: "#14b8a6",
-  uncategorized: DS.muted,
+  "ai-infrastructure": DS.text,
+  "ml-engineering": DS.text,
+  "nlp-ai": DS.text,
+  analytics: DS.text,
+  "domain-ml": DS.text,
+  research: DS.text,
+  "systems-tools": DS.text,
+  mathematics: DS.text,
+  experimental: DS.text,
+  uncategorized: DS.text,
 };
 
-// ──────────────────────────────────────────────
-// SVG Gradient Definitions (shared across components)
-// ──────────────────────────────────────────────
-const SVG_GRADIENTS = {
-  accent: `<linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="${DS.accent}"/>
-    <stop offset="100%" stop-color="${DS.indigo}"/>
-  </linearGradient>`,
-  header: `<linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="${DS.indigo}"/>
-    <stop offset="50%" stop-color="${DS.accent}"/>
-    <stop offset="100%" stop-color="${DS.purple}"/>
-  </linearGradient>`,
-};
-
-// Category gradient pairs for left bars
-const CAT_GRADIENTS = {
-  "ai-infrastructure": ["#06b6d4", "#0ea5e9"],
-  "ml-engineering": ["#10b981", "#06b6d4"],
-  "nlp-ai": ["#8b5cf6", "#a855f7"],
-  analytics: ["#f59e0b", "#f97316"],
-  "domain-ml": ["#ec4899", "#f472b6"],
-  research: ["#0ea5e9", "#3b82f6"],
-  "systems-tools": ["#a78bfa", "#c4b5fd"],
-  mathematics: ["#f97316", "#fb923c"],
-  experimental: ["#14b8a6", "#2dd4bf"],
-  uncategorized: ["#64748b", "#94a3b8"],
-};
-
-function makeCatGrad(catSlug) {
-  const pair = CAT_GRADIENTS[catSlug] || CAT_GRADIENTS.uncategorized;
-  const id = `catGrad-${catSlug.replace(/[^a-z0-9]/g, "")}`;
-  return `<linearGradient id="${id}" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%" stop-color="${pair[0]}"/>
-    <stop offset="100%" stop-color="${pair[1]}"/>
-  </linearGradient>`;
-}
-
-// Shadow rect helper — simulates box-shadow behind a card
+// Shadow rect helper — ghost-subtle shadow behind a card
 function shadowRect(w, h, rx, dx, dy) {
-  return `<rect x="${dx}" y="${dy}" width="${w}" height="${h}" rx="${rx}" fill="${DS.shadowColor}" opacity="0.18"/>`;
+  return `<rect x="${dx}" y="${dy}" width="${w}" height="${h}" rx="${rx}" fill="${DS.shadowColor}" opacity="0.05"/>`;
 }
 
 // Category display names + emojis
@@ -355,20 +320,15 @@ function categorizeRepos(repos) {
 // ──────────────────────────────────────────────
 
 function generateHeader() {
-  const w = 800, h = 130;
+  const w = 800, h = 140;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>${SVG_GRADIENTS.header}${SVG_GRADIENTS.accent}</defs>
   ${shadowRect(w, h, DS.radius, 2, 2)}
   <rect width="${w}" height="${h}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
-  <rect x="0" y="0" width="${w}" height="4" rx="2" fill="url(#headerGrad)"/>
-  <text x="32" y="52" font-family="${DS.font}" font-size="28" font-weight="700" fill="${DS.text}">Mahesh Solanki</text>
-  <text x="32" y="82" font-family="${DS.font}" font-size="16" fill="${DS.indigo}">Unified Intelligence Engineer</text>
-  <text x="32" y="108" font-family="${DS.font}" font-size="12" fill="${DS.muted}">\u{1F4CD} Ghent, Belgium  \u00B7  Mathematician \u2192 Computational Expert</text>
-  <circle cx="720" cy="65" r="35" fill="none" stroke="${DS.indigo}" stroke-width="1.5" opacity="0.25"/>
-  <circle cx="720" cy="65" r="22" fill="none" stroke="${DS.accent}" stroke-width="1.5" opacity="0.25"/>
-  <circle cx="720" cy="65" r="10" fill="url(#accentGrad)" opacity="0.35"/>
-  <line x1="640" y1="85" x2="680" y2="65" stroke="${DS.border}" stroke-width="1"/>
-  <line x1="680" y1="65" x2="690" y2="45" stroke="${DS.border}" stroke-width="1"/>
+  <rect x="0" y="0" width="${w}" height="3" fill="${DS.text}"/>
+  <text x="40" y="64" font-family="${DS.font}" font-size="34" font-weight="800" letter-spacing="-0.5" fill="${DS.text}">Mahesh Solanki</text>
+  <text x="42" y="94" font-family="${DS.font}" font-size="11" font-weight="600" letter-spacing="2.5" fill="${DS.muted}">UNIFIED INTELLIGENCE ENGINEER</text>
+  <line x1="42" y1="108" x2="120" y2="108" stroke="${DS.text}" stroke-width="1.5"/>
+  <text x="42" y="128" font-family="${DS.font}" font-size="12" fill="${DS.muted}">Ghent, Belgium  \u00B7  Mathematician \u2192 Computational Expert</text>
 </svg>`;
   return svg;
 }
@@ -387,10 +347,10 @@ function generateStats(repos) {
   const topLang = Object.entries(langCount).sort((a, b) => b[1] - a[1])[0];
 
   const stats = [
-    { label: "Repos", value: totalRepos, color: DS.accent },
-    { label: "Stars", value: totalStars, color: "#e3b341" },
-    { label: "Forks", value: totalForks, color: DS.green },
-    { label: "Top Lang", value: topLang ? topLang[0] : "N/A", color: langColor(topLang ? topLang[0] : "") },
+    { label: "REPOS", value: totalRepos },
+    { label: "STARS", value: totalStars },
+    { label: "FORKS", value: totalForks },
+    { label: "TOP LANGUAGE", value: topLang ? topLang[0] : "N/A" },
   ];
 
   const slotW = w / stats.length;
@@ -399,16 +359,14 @@ function generateStats(repos) {
     .map((s, i) => {
       const cx = slotW * i + slotW / 2;
       return `
-    <circle cx="${cx - 40}" cy="40" r="4" fill="${s.color}"/>
-    <text x="${cx - 30}" y="34" font-family="${DS.font}" font-size="11" fill="${DS.muted}">${s.label}</text>
-    <text x="${cx - 30}" y="54" font-family="${DS.mono}" font-size="16" font-weight="600" fill="${DS.text}">${String(s.value)}</text>`;
+    <text x="${cx - 30}" y="32" font-family="${DS.font}" font-size="9" font-weight="600" letter-spacing="1.5" fill="${DS.muted}">${s.label}</text>
+    <text x="${cx - 30}" y="58" font-family="${DS.mono}" font-size="20" font-weight="600" fill="${DS.text}">${String(s.value).toUpperCase()}</text>`;
     })
     .join("");
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>${SVG_GRADIENTS.accent}</defs>
-  ${shadowRect(w, h, 10, 2, 2)}
-  <rect width="${w}" height="${h}" rx="10" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
+  ${shadowRect(w, h, DS.radius, 2, 2)}
+  <rect width="${w}" height="${h}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
   ${statBlocks}
 </svg>`;
   return svg;
@@ -416,60 +374,46 @@ function generateStats(repos) {
 
 function generateLanguages(repos) {
   const w = 400, h = 220;
-  const langBytes = {};
-  let totalBytes = 0;
+  const langCount = {};
+  let total = 0;
   repos.forEach((r) => {
     if (r.language) {
-      langBytes[r.language] = (langBytes[r.language] || 0) + 1;
-      totalBytes += 1;
+      langCount[r.language] = (langCount[r.language] || 0) + 1;
+      total += 1;
     }
   });
 
-  const sorted = Object.entries(langBytes).sort((a, b) => b[1] - a[1]);
+  const sorted = Object.entries(langCount).sort((a, b) => b[1] - a[1]);
   const top = sorted.slice(0, 8);
   if (top.length === 0) {
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="60" viewBox="0 0 ${w} 60">
-  <rect width="${w}" height="60" rx="10" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
+  <rect width="${w}" height="60" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
   <text x="20" y="38" font-family="${DS.font}" font-size="13" fill="${DS.muted}">No language data</text>
 </svg>`;
   }
 
-  // Build per-language gradients
-  const langGrads = top.map((lang, i) => {
-    const c = langColor(lang[0]);
-    const id = `langGrad${i}`;
-    return `<linearGradient id="${id}" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="${c}"/>
-    <stop offset="100%" stop-color="${c}" stop-opacity="0.6"/>
-  </linearGradient>`;
-  }).join("\n    ");
-
-  const barY0 = 50;
-  const barH = 16;
-  const barGap = 6;
+  const barY0 = 54;
+  const barH = 14;
+  const barGap = 8;
   const barMaxW = 200;
 
   const bars = top
     .map((lang, i) => {
-      const pct = ((lang[1] / totalBytes) * 100).toFixed(1);
+      const pct = ((lang[1] / total) * 100).toFixed(1);
       const barW = Math.max(8, (lang[1] / top[0][1]) * barMaxW);
       const y = barY0 + i * (barH + barGap);
-      const color = langColor(lang[0]);
       return `
-    <circle cx="24" cy="${y + barH / 2 + 1}" r="4" fill="${color}"/>
-    <text x="36" y="${y + barH / 2 + 4}" font-family="${DS.font}" font-size="11" fill="${DS.text}">${escapeXml(lang[0])}</text>
-    <rect x="140" y="${y}" width="${barW}" height="${barH}" rx="3" fill="url(#langGrad${i})"/>
+    <text x="20" y="${y + barH / 2 + 4}" font-family="${DS.font}" font-size="11" font-weight="500" fill="${DS.text}">${escapeXml(lang[0])}</text>
+    <rect x="140" y="${y}" width="${barW}" height="${barH}" fill="${DS.dark}"/>
     <text x="${148 + barW + 8}" y="${y + barH / 2 + 4}" font-family="${DS.mono}" font-size="10" fill="${DS.muted}">${pct}%</text>`;
     })
     .join("");
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>${SVG_GRADIENTS.accent}
-    ${langGrads}
-  </defs>
-  ${shadowRect(w, h, 10, 2, 2)}
-  <rect width="${w}" height="${h}" rx="10" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
-  <text x="20" y="32" font-family="${DS.font}" font-size="13" font-weight="600" fill="${DS.text}">Languages</text>
+  ${shadowRect(w, h, DS.radius, 2, 2)}
+  <rect width="${w}" height="${h}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
+  <text x="20" y="30" font-family="${DS.font}" font-size="10" font-weight="600" letter-spacing="1.5" fill="${DS.muted}">LANGUAGES</text>
+  <line x1="20" y1="40" x2="${w - 20}" y2="40" stroke="${DS.border}" stroke-width="1"/>
   ${bars}
 </svg>`;
   return svg;
@@ -477,23 +421,14 @@ function generateLanguages(repos) {
 
 function generatePipelineSvg() {
   const w = 800, h = 200;
-  // Pipeline stages with gradient pairs
   const stages = [
-    { label: "Math", colors: ["#06b6d4", "#0ea5e9"], items: ["Stats", "LinAlg", "Optim"] },
-    { label: "Data", colors: ["#3b82f6", "#6366f1"], items: ["SQL", "ETL", "VecDB"] },
-    { label: "ML", colors: ["#8b5cf6", "#a855f7"], items: ["XGBoost", "PyTorch", "NLP/CV"] },
-    { label: "AI", colors: ["#6366f1", "#818cf8"], items: ["RAG", "Agents", "LLM"] },
-    { label: "Prod", colors: ["#06b6d4", "#10b981"], items: ["FastAPI", "Docker", "MLOps"] },
-    { label: "Impact", colors: ["#10b981", "#34d399"], items: ["BFSI", "Health", "Supply"] },
+    { label: "MATH", items: ["Stats", "LinAlg", "Optim"] },
+    { label: "DATA", items: ["SQL", "ETL", "VecDB"] },
+    { label: "ML", items: ["XGBoost", "PyTorch", "NLP/CV"] },
+    { label: "AI", items: ["RAG", "Agents", "LLM"] },
+    { label: "PROD", items: ["FastAPI", "Docker", "MLOps"] },
+    { label: "IMPACT", items: ["BFSI", "Health", "Supply"] },
   ];
-
-  // Build gradient defs for each stage
-  const gradDefs = stages.map((s, i) => {
-    return `<linearGradient id="pipeGrad${i}" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%" stop-color="${s.colors[0]}"/>
-    <stop offset="100%" stop-color="${s.colors[1]}"/>
-  </linearGradient>`;
-  }).join("\n  ");
 
   const gap = 20;
   const totalGaps = (stages.length - 1) * gap;
@@ -504,39 +439,33 @@ function generatePipelineSvg() {
 
   const nodes = stages.map((stage, i) => {
     const x = startX + i * (nodeW + gap);
-    // Main box
-    let svg = `${shadowRect(nodeW, nodeH, 8, x + 2, startY + 2)}`;
-    svg += `<rect x="${x}" y="${startY}" width="${nodeW}" height="${nodeH}" rx="8" fill="${DS.cardBg}" stroke="${stage.colors[0]}" stroke-width="1.5"/>`;
-    // Top accent bar (gradient)
-    svg += `<rect x="${x}" y="${startY}" width="${nodeW}" height="3" rx="2" fill="url(#pipeGrad${i})"/>`;
-    // Stage label
-    svg += `<text x="${x + nodeW / 2}" y="${startY + 24}" text-anchor="middle" font-family="${DS.font}" font-size="13" font-weight="700" fill="${stage.colors[0]}">${stage.label}</text>`;
+    let svg = `${shadowRect(nodeW, nodeH, DS.radius, x + 2, startY + 2)}`;
+    svg += `<rect x="${x}" y="${startY}" width="${nodeW}" height="${nodeH}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>`;
+    // Top accent bar — solid black
+    svg += `<rect x="${x}" y="${startY}" width="${nodeW}" height="2" fill="${DS.text}"/>`;
+    // Stage label — uppercase tracked
+    svg += `<text x="${x + nodeW / 2}" y="${startY + 24}" text-anchor="middle" font-family="${DS.font}" font-size="11" font-weight="700" letter-spacing="1.5" fill="${DS.text}">${stage.label}</text>`;
     // Separator line
-    svg += `<line x1="${x + 12}" y1="${startY + 34}" x2="${x + nodeW - 12}" y2="${startY + 34}" stroke="${DS.border}" stroke-width="0.5"/>`;
+    svg += `<line x1="${x + 12}" y1="${startY + 34}" x2="${x + nodeW - 12}" y2="${startY + 34}" stroke="${DS.border}" stroke-width="1"/>`;
     // Items
     stage.items.forEach((item, j) => {
       const iy = startY + 54 + j * 26;
-      svg += `<circle cx="${x + 20}" cy="${iy}" r="3" fill="url(#pipeGrad${i})" opacity="0.7"/>`;
+      svg += `<rect x="${x + 18}" y="${iy - 3}" width="4" height="4" fill="${DS.dark}"/>`;
       svg += `<text x="${x + 30}" y="${iy + 4}" font-family="${DS.font}" font-size="11" fill="${DS.text}">${item}</text>`;
     });
     return svg;
   });
 
-  // Arrows between stages (gradient)
+  // Arrows between stages — monochrome
   const arrows = stages.slice(0, -1).map((s, i) => {
     const x1 = startX + (i + 1) * (nodeW + gap) - gap + 2;
     const x2 = x1 + gap - 4;
     const y = startY + nodeH / 2;
-    const c1 = s.colors[1];
-    const c2 = stages[i + 1].colors[0];
     return `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="${DS.muted}" stroke-width="1.5" stroke-dasharray="3,3"/>` +
-           `<polygon points="${x2},${y - 4} ${x2 + 6},${y} ${x2},${y + 4}" fill="${c2}" opacity="0.6"/>`;
+           `<polygon points="${x2},${y - 4} ${x2 + 6},${y} ${x2},${y + 4}" fill="${DS.muted}" opacity="0.6"/>`;
   });
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>
-  ${gradDefs}
-  </defs>
   ${nodes.join("\n  ")}
   ${arrows.join("\n  ")}
 </svg>`;
@@ -544,42 +473,40 @@ function generatePipelineSvg() {
 
 function generateCategoryHeader(catSlug, count) {
   const meta = CAT_META[catSlug] || CAT_META.uncategorized;
-  const color = CAT_COLORS[catSlug] || DS.muted;
-  const w = 600, h = 36;
-  const gradId = `catGrad-${catSlug.replace(/[^a-z0-9]/g, "")}`;
+  const w = 600, h = 44;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>${makeCatGrad(catSlug)}</defs>
-  ${shadowRect(w, h, 8, 2, 2)}
-  <rect width="${w}" height="${h}" rx="8" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
-  <rect x="0" y="0" width="4" height="${h}" rx="2" fill="url(#${gradId})"/>
-  <text x="16" y="24" font-family="${DS.font}" font-size="13" font-weight="600" fill="${DS.text}">${meta.emoji}  ${meta.label}</text>
-  <rect x="${w - 80}" y="8" width="32" height="20" rx="10" fill="${color}" opacity="0.15"/>
-  <text x="${w - 64}" y="23" font-family="${DS.mono}" font-size="11" fill="${color}">${count}</text>
+  ${shadowRect(w, h, DS.radius, 2, 2)}
+  <rect width="${w}" height="${h}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
+  <rect x="0" y="0" width="3" height="${h}" fill="${DS.text}"/>
+  <text x="18" y="28" font-family="${DS.font}" font-size="12" font-weight="600" letter-spacing="1.5" fill="${DS.text}">${meta.label.toUpperCase()}</text>
+  <rect x="${w - 64}" y="12" width="36" height="20" rx="${DS.radius}" fill="${DS.faint}"/>
+  <text x="${w - 46}" y="26" text-anchor="middle" font-family="${DS.mono}" font-size="11" font-weight="600" fill="${DS.text}">${count}</text>
 </svg>`;
   return svg;
 }
 
 function generateRepoCard(repo, catSlug) {
   const w = 380, h = 120;
-  const color = CAT_COLORS[catSlug] || DS.muted;
   const desc = truncate(repo.description || "No description", 65);
   const langName = repo.language || "N/A";
-  const langColorVal = repo.language ? langColor(repo.language) : DS.muted;
   const updated = formatDate(repo.updatedAt);
-  const gradId = `catGrad-${catSlug.replace(/[^a-z0-9]/g, "")}`;
+
+  const footerParts = [];
+  if (repo.stars > 0) footerParts.push(`\u2605 ${repo.stars}`);
+  if (repo.forks > 0) footerParts.push(`\u2442 ${repo.forks}`);
+  if (updated) footerParts.push(updated);
+  const footer = footerParts.join("  \u00B7  ");
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>${makeCatGrad(catSlug)}</defs>
   ${shadowRect(w, h, DS.radius, 2, 2)}
   <rect width="${w}" height="${h}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
-  <rect x="0" y="0" width="4" height="${h}" rx="2" fill="url(#${gradId})"/>
-  <text x="16" y="28" font-family="${DS.font}" font-size="14" font-weight="700" fill="${DS.text}">${escapeXml(repo.name)}</text>
-  <text x="16" y="50" font-family="${DS.font}" font-size="11" fill="${DS.muted}">${escapeXml(desc)}</text>
-  <circle cx="24" cy="78" r="5" fill="${langColorVal}"/>
-  <text x="34" y="82" font-family="${DS.font}" font-size="11" fill="${DS.text}">${escapeXml(langName)}</text>
-  <text x="16" y="102" font-family="${DS.mono}" font-size="10" fill="${DS.muted}">
-    ${repo.stars > 0 ? `\u2B50 ${repo.stars}  ` : ""}${repo.forks > 0 ? `\u{1F374} ${repo.forks}  ` : ""}${updated ? `\u{1F4C5} ${updated}` : ""}
-  </text>
+  <rect x="0" y="0" width="3" height="${h}" fill="${DS.text}"/>
+  <text x="16" y="30" font-family="${DS.font}" font-size="15" font-weight="700" letter-spacing="-0.2" fill="${DS.text}">${escapeXml(repo.name)}</text>
+  <text x="16" y="52" font-family="${DS.font}" font-size="11" fill="${DS.muted}">${escapeXml(desc)}</text>
+  <line x1="16" y1="66" x2="${w - 16}" y2="66" stroke="${DS.border}" stroke-width="1"/>
+  <rect x="16" y="76" width="4" height="4" fill="${DS.muted}"/>
+  <text x="26" y="82" font-family="${DS.mono}" font-size="10" fill="${DS.muted}">${escapeXml(langName).toUpperCase()}</text>
+  <text x="16" y="104" font-family="${DS.mono}" font-size="10" fill="${DS.muted}">${footer}</text>
 </svg>`;
   return svg;
 }
@@ -599,22 +526,22 @@ function assembleReadme(repos, categories) {
   lines.push(``);
   lines.push(`<p align="center">`);
   lines.push(
-    `  <a href="https://readme-typing-svg.demolab.com/demo/"><img src="https://readme-typing-svg.demolab.com/?lines=Unified+Intelligence+Engineer;ML+Systems+%C2%B7+Production+AI;Mathematics+%E2%8A%95+Code;First+Principles+%C2%B7+End-to-End+ML;Building+AI-Powered+Products&font=Fira+Code&center=true&width=520&height=45&color=6366f1&vCenter=true&pause=2000&size=20" alt="Typing SVG" /></a>`
+    `  <a href="https://readme-typing-svg.demolab.com/demo/"><img src="https://readme-typing-svg.demolab.com/?lines=Unified+Intelligence+Engineer;ML+Systems+%C2%B7+Production+AI;Mathematics+%E2%8A%95+Code;First+Principles+%C2%B7+End-to-End+ML;Building+AI-Powered+Products&font=Fira+Code&center=true&width=520&height=45&color=000000&vCenter=true&pause=2000&size=20" alt="Typing SVG" /></a>`
   );
   lines.push(`</p>`);
   lines.push(``);
   lines.push(`<p align="center">`);
   lines.push(
-    `  <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>`
+    `  <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-000000?style=flat-square&logo=linkedin&logoColor=white" /></a>`
   );
   lines.push(
-    `  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>`
+    `  <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-000000?style=flat-square&logo=gmail&logoColor=white" /></a>`
   );
   lines.push(
-    `  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>`
+    `  <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=white" /></a>`
   );
   lines.push(
-    `  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=06b6d4&style=flat-square" alt="Profile Views" />`
+    `  <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=000000&style=flat-square" alt="Profile Views" />`
   );
   lines.push(`</p>`);
   lines.push(``);
@@ -636,7 +563,7 @@ function assembleReadme(repos, categories) {
   lines.push(``);
 
   // Mermaid mindmap
-  lines.push(`## \u{1F9E0} Unified Intelligence`);
+  lines.push(`## Unified Intelligence`);
   lines.push(``);
   lines.push("```mermaid");
   lines.push("mindmap");
@@ -699,7 +626,7 @@ function assembleReadme(repos, categories) {
 
   // Featured projects (top 4 by stars) — self-hosted repo cards
   const featured = [...repos].sort((a, b) => b.stars - a.stars).slice(0, 4);
-  lines.push(`## \u{1F680} Featured Projects`);
+  lines.push(`## Featured Projects`);
   lines.push(``);
   lines.push(`<p align="center">`);
   lines.push(`  <table>`);
@@ -720,7 +647,7 @@ function assembleReadme(repos, categories) {
   lines.push(``);
 
   // Repository categories
-  lines.push(`## \u{1F4E6} Repository Components`);
+  lines.push(`## Repository Components`);
   lines.push(``);
   lines.push(`> Each repository is a unique SVG component, auto-generated from live GitHub data.`);
   lines.push(``);
@@ -771,7 +698,7 @@ function assembleReadme(repos, categories) {
   lines.push(``);
 
   // Tech Pipeline — SVG (no Mermaid = no loading issues)
-  lines.push(`## \u{1F527} Tech Pipeline`);
+  lines.push(`## Tech Pipeline`);
   lines.push(``);
   lines.push(`<p align="center">`);
   lines.push(`  <img src="assets/pipeline.svg" alt="Tech Pipeline — Math \u2192 Data \u2192 ML \u2192 AI \u2192 Prod \u2192 Impact" width="100%" />`);
@@ -783,7 +710,7 @@ function assembleReadme(repos, categories) {
   // View all repos badge
   lines.push(`<p align="center">`);
   lines.push(
-    `  <a href="https://github.com/${USERNAME}?tab=repositories"><img src="https://img.shields.io/badge/View_All_Repos_\u2192-6366f1?style=for-the-badge" alt="View all repositories" /></a>`
+    `  <a href="https://github.com/${USERNAME}?tab=repositories"><img src="https://img.shields.io/badge/View_All_Repos_\u2192-000000?style=for-the-badge" alt="View all repositories" /></a>`
   );
   lines.push(`</p>`);
   lines.push(``);
