@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="120" viewBox="0 0 380 120">
+  <title>archon — AI/ML Meta-Platform: YAML/DSL-driven compiler for AI intent. Describe data → models → pipelines → policies. 6-layer architecture with code generation, guardrails, GenAI, and causal ML.</title>
+  <rect width="380" height="120" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="0" y="0" width="4" height="120" rx="2" fill="#58a6ff"/>
+  <text x="16" y="28" font-family="Segoe UI,system-ui,sans-serif" font-size="14" font-weight="700" fill="#ffffff">
+    <a xlink:href="https://github.com/twomathematicians-code/archon" style="fill:#ffffff">archon</a>
+  </text>
+  <text x="16" y="50" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#8b949e">AI/ML Meta-Platform: YAML/DSL-driven compiler for AI intent. Desc…</text>
+  <circle cx="24" cy="78" r="5" fill="#3572A5"/>
+  <text x="34" y="82" font-family="Segoe UI,system-ui,sans-serif" font-size="11" fill="#c9d1d9">Python</text>
+  <text x="16" y="102" font-family="SF Mono,Consolas,monospace" font-size="10" fill="#8b949e">
+    ⭐ 1  📅 Aug 2026
+  </text>
+</svg>
