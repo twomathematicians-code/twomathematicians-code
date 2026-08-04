@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Mahesh Solanki — FDE" width="100%" />
+  <img src="assets/banner.svg" alt="Mahesh Solanki — Unified Intelligence Engineer" width="100%" />
 </p>
 
 <p align="center">
