@@ -3,6 +3,9 @@
     <stop offset="0%" stop-color="#6366f1"/>
     <stop offset="50%" stop-color="#06b6d4"/>
     <stop offset="100%" stop-color="#8b5cf6"/>
+  </linearGradient><linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#06b6d4"/>
+    <stop offset="100%" stop-color="#6366f1"/>
   </linearGradient></defs>
   <rect x="2" y="2" width="800" height="130" rx="12" fill="#94a3b8" opacity="0.18"/>
   <rect width="800" height="130" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>

@@ -357,7 +357,7 @@ function categorizeRepos(repos) {
 function generateHeader() {
   const w = 800, h = 130;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>${SVG_GRADIENTS.header}</defs>
+  <defs>${SVG_GRADIENTS.header}${SVG_GRADIENTS.accent}</defs>
   ${shadowRect(w, h, DS.radius, 2, 2)}
   <rect width="${w}" height="${h}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
   <rect x="0" y="0" width="${w}" height="4" rx="2" fill="url(#headerGrad)"/>
@@ -621,43 +621,15 @@ function assembleReadme(repos, categories) {
   lines.push(`---`);
   lines.push(``);
 
-  // Stats bar
+  // Stats bar (self-hosted — no external dependency)
   lines.push(`<p align="center">`);
   lines.push(`  <img src="assets/stats.svg" alt="Repository statistics" width="100%" />`);
   lines.push(`</p>`);
   lines.push(``);
 
-  // Languages + Stats side by side (using table)
+  // Languages (self-hosted)
   lines.push(`<p align="center">`);
-  lines.push(`  <table>`);
-  lines.push(`    <tr>`);
-  lines.push(`      <td width="48%" align="center"><img src="assets/languages.svg" alt="Language breakdown" width="100%" /></td>`);
-  lines.push(
-    `      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" width="100%" /></td>`
-  );
-  lines.push(`    </tr>`);
-  lines.push(`  </table>`);
-  lines.push(`</p>`);
-  lines.push(``);
-
-  // Trophies + Streak side by side
-  lines.push(`<p align="center">`);
-  lines.push(`  <table>`);
-  lines.push(`    <tr>`);
-  lines.push(
-    `      <td width="48%" align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=twomathematicians-code&theme=radical&hide_border=true" width="100%" /></td>`
-  );
-  lines.push(
-    `      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&theme=radical&hide_border=true&langs_count=8&hide=html,css,tex" width="100%" /></td>`
-  );
-  lines.push(`    </tr>`);
-  lines.push(`  </table>`);
-  lines.push(`</p>`);
-  lines.push(``);
-  lines.push(`<p align="center">`);
-  lines.push(
-    `  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=radical&no-frame=true&column=7&margin-w=8" width="100%" />`
-  );
+  lines.push(`  <img src="assets/languages.svg" alt="Language breakdown" width="60%" />`);
   lines.push(`</p>`);
   lines.push(``);
   lines.push(`---`);
@@ -725,7 +697,7 @@ function assembleReadme(repos, categories) {
   lines.push(`---`);
   lines.push(``);
 
-  // Featured projects (top 4 by stars)
+  // Featured projects (top 4 by stars) — self-hosted repo cards
   const featured = [...repos].sort((a, b) => b.stars - a.stars).slice(0, 4);
   lines.push(`## \u{1F680} Featured Projects`);
   lines.push(``);
@@ -736,7 +708,7 @@ function assembleReadme(repos, categories) {
     for (let j = 0; j < 2 && i + j < featured.length; j++) {
       const r = featured[i + j];
       lines.push(
-        `      <td width="48%" align="center"><a href="${r.url}"><img src="https://github-readme-stats.vercel.app/api/pin/?username=${USERNAME}&repo=${r.name}&theme=radical&hide_border=true" width="100%" /></a></td>`
+        `      <td width="48%" align="center"><a href="${r.url}"><img src="assets/repos/repo-${r.name}.svg" alt="${escapeXml(r.name)}" width="100%" /></a></td>`
       );
     }
     lines.push(`    </tr>`);
@@ -817,11 +789,11 @@ function assembleReadme(repos, categories) {
   lines.push(``);
   lines.push(`<p align="center">`);
   lines.push(`  <samp>`);
-  lines.push(`    <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5" style="color:#c9d1d9">linkedin</a>`);
+  lines.push(`    <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5">linkedin</a>`);
   lines.push(`    &nbsp;\u00B7&nbsp;`);
-  lines.push(`    <a href="mailto:maheshsinh1910@gmail.com" style="color:#c9d1d9">email</a>`);
+  lines.push(`    <a href="mailto:maheshsinh1910@gmail.com">email</a>`);
   lines.push(`    &nbsp;\u00B7&nbsp;`);
-  lines.push(`    <a href="https://github.com/${USERNAME}" style="color:#c9d1d9">github</a>`);
+  lines.push(`    <a href="https://github.com/${USERNAME}">github</a>`);
   lines.push(`  </samp>`);
   lines.push(`</p>`);
   lines.push(``);

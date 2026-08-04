@@ -22,25 +22,7 @@
 </p>
 
 <p align="center">
-  <table>
-    <tr>
-      <td width="48%" align="center"><img src="assets/languages.svg" alt="Language breakdown" width="100%" /></td>
-      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" width="100%" /></td>
-    </tr>
-  </table>
-</p>
-
-<p align="center">
-  <table>
-    <tr>
-      <td width="48%" align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=twomathematicians-code&theme=radical&hide_border=true" width="100%" /></td>
-      <td width="48%" align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&theme=radical&hide_border=true&langs_count=8&hide=html,css,tex" width="100%" /></td>
-    </tr>
-  </table>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=radical&no-frame=true&column=7&margin-w=8" width="100%" />
+  <img src="assets/languages.svg" alt="Language breakdown" width="60%" />
 </p>
 
 ---
@@ -110,12 +92,12 @@ mindmap
 <p align="center">
   <table>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/demand-forecasting"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=demand-forecasting&theme=radical&hide_border=true" width="100%" /></a></td>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/archon"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=archon&theme=radical&hide_border=true" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/demand-forecasting"><img src="assets/repos/repo-demand-forecasting.svg" alt="demand-forecasting" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/archon"><img src="assets/repos/repo-archon.svg" alt="archon" width="100%" /></a></td>
     </tr>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/raix"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=raix&theme=radical&hide_border=true" width="100%" /></a></td>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/Hybrid_Game_Recommendation"><img src="https://github-readme-stats.vercel.app/api/pin/?username=twomathematicians-code&repo=Hybrid_Game_Recommendation&theme=radical&hide_border=true" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/raix"><img src="assets/repos/repo-raix.svg" alt="raix" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/Hybrid_Game_Recommendation"><img src="assets/repos/repo-Hybrid_Game_Recommendation.svg" alt="Hybrid_Game_Recommendation" width="100%" /></a></td>
     </tr>
   </table>
 </p>
@@ -307,11 +289,11 @@ mindmap
 
 <p align="center">
   <samp>
-    <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5" style="color:#c9d1d9">linkedin</a>
+    <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5">linkedin</a>
     &nbsp;·&nbsp;
-    <a href="mailto:maheshsinh1910@gmail.com" style="color:#c9d1d9">email</a>
+    <a href="mailto:maheshsinh1910@gmail.com">email</a>
     &nbsp;·&nbsp;
-    <a href="https://github.com/twomathematicians-code" style="color:#c9d1d9">github</a>
+    <a href="https://github.com/twomathematicians-code">github</a>
   </samp>
 </p>
 
