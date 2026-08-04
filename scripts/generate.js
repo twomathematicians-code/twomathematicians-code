@@ -478,7 +478,7 @@ function generateCategoryHeader(catSlug, count) {
   ${shadowRect(w, h, DS.radius, 2, 2)}
   <rect width="${w}" height="${h}" rx="${DS.radius}" fill="${DS.cardBg}" stroke="${DS.border}" stroke-width="1"/>
   <rect x="0" y="0" width="3" height="${h}" fill="${DS.text}"/>
-  <text x="18" y="28" font-family="${DS.font}" font-size="12" font-weight="600" letter-spacing="1.5" fill="${DS.text}">${meta.label.toUpperCase()}</text>
+  <text x="18" y="28" font-family="${DS.font}" font-size="12" font-weight="600" letter-spacing="1.5" fill="${DS.text}">${escapeXml(meta.label.toUpperCase())}</text>
   <rect x="${w - 64}" y="12" width="36" height="20" rx="${DS.radius}" fill="${DS.faint}"/>
   <text x="${w - 46}" y="26" text-anchor="middle" font-family="${DS.mono}" font-size="11" font-weight="600" fill="${DS.text}">${count}</text>
 </svg>`;
