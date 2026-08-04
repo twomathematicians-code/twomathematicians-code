@@ -21,6 +21,84 @@
 
 ---
 
+## 🧠 Unified Intelligence Architecture
+
+```mermaid
+flowchart TB
+    subgraph FOUNDATIONS["📐 Mathematical Foundations"]
+        STAT["Statistics & Probability"]
+        LA["Linear Algebra"]
+        OPT["Optimization"]
+        CALC["Calculus"]
+    end
+
+    subgraph DATA["📊 Data Engineering"]
+        SQL["SQL / TimescaleDB"]
+        PIPES["ETL Pipelines"]
+        VECTOR["Vector DBs"]
+        WAREHOUSE["Data Warehousing"]
+    end
+
+    subgraph ML["🤖 Machine Learning"]
+        CLASSIC["XGBoost / LightGBM / RF"]
+        DL["PyTorch / TensorFlow"]
+        NLP["Transformers / spaCy / LangChain"]
+        CV["YOLO / OpenCV"]
+        TS["Prophet / LSTM / ARIMA"]
+        CAUSAL["DoWhy / EconML / DAGs"]
+    end
+
+    subgraph AI["🧬 AI Systems"]
+        AGENT["AI Agents & RAG"]
+        GRAPH["Graph RAG / Neo4j / GNN"]
+        GENAI["GenAI / LLM Orchestration"]
+        CODEGEN["NL→Code (paix / raix)"]
+    end
+
+    subgraph PROD["🚀 Production"]
+        API["FastAPI / Flask"]
+        CICD["CI/CD / Docker / Git"]
+        MLOPS["MLflow / DVC / Alembic"]
+        MONITOR["Monitoring / Alerts"]
+    end
+
+    subgraph IMPACT["💡 Impact Domains"]
+        FSI["Banking & Finance"]
+        HEALTH["Healthcare"]
+        SUPPLY["Supply Chain"]
+        RISK["Risk & Fraud"]
+    end
+
+    FOUNDATIONS --> ML
+    DATA --> ML
+    ML --> AI
+    ML --> PROD
+    AI --> PROD
+    PROD --> IMPACT
+
+    style FOUNDATIONS fill:#1a1a2e,stroke:#16213e,color:#e0e0e0
+    style DATA fill:#16213e,stroke:#0f3460,color:#e0e0e0
+    style ML fill:#0f3460,stroke:#533483,color:#e0e0e0
+    style AI fill:#533483,stroke:#e94560,color:#e0e0e0
+    style PROD fill:#e94560,stroke:#ff6b6b,color:#fff
+    style IMPACT fill:#1a1a2e,stroke:#e94560,color:#e0e0e0
+```
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="49%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=twomathematicians-code&theme=tokyonight&hide_border=true" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=twomathematicians-code&layout=compact&theme=tokyonight&hide_border=true&langs_count=10&hide=html,css" width="60%" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=twomathematicians-code&theme=tokyonight&no-frame=true&column=7&margin-w=8" width="100%" />
+</p>
+
+---
+
 <p align="center">
   <img src="assets/section-notebook.svg" alt="The Notebook section header" width="65%" />
 </p>
@@ -74,17 +152,17 @@
 
 <p align="center">
   <img src="assets/label-core.svg" alt="Core label" width="32%" /><br/>
-  <img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,git,linux&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,git,linux,redis,kafka&theme=dark" />
 </p>
 
 <p align="center">
   <img src="assets/label-ml.svg" alt="ML & Data label" width="32%" /><br/>
-  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,anaconda&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv,anaconda,r,matlab&theme=dark" />
 </p>
 
 <p align="center">
   <img src="assets/label-tooling.svg" alt="Tooling label" width="32%" /><br/>
-  <img src="https://skillicons.dev/icons?i=vscode,latex,stackoverflow,regex&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=vscode,latex,githubactions,aws,nginx,bash,regex&theme=dark" />
 </p>
 
 ---
@@ -97,67 +175,13 @@
 <tr>
 <td width="50%">
   <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/engineer-credit-risk">
-      🏦 Credit Risk Pipeline
+    <a href="https://github.com/twomathematicians-code/archon">
+      🏗️ Archon — AI/ML Meta-Platform
     </a>
   </h3>
-  <p align="center">End-to-end MLOps — FastAPI • PostgreSQL • MLflow • DVC • Alembic • 380+ lines of tests</p>
+  <p align="center">YAML/DSL-driven compiler for AI intent. 6-layer architecture: data → models → pipelines → policies.</p>
 </td>
 <td width="50%">
-  <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/fraud-detection">
-      🛡️ Fraud Detection Engine
-    </a>
-  </h3>
-  <p align="center">Real-time scoring — XGBoost + Isolation Forest • Redis • SMOTE • &lt;20ms latency</p>
-</td>
-</tr>
-<tr>
-<td width="50%">
-  <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/chatbot-deployment">
-      🤖 Chatbot + RAG Platform
-    </a>
-  </h3>
-  <p align="center">LangChain • ChromaDB • Telegram & WhatsApp webhooks • Intent classification</p>
-</td>
-<td width="50%">
-  <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/computer-vision">
-      👁️ Computer Vision API
-    </a>
-  </h3>
-  <p align="center">YOLO detection • Face recognition • Classification • Segmentation • OpenCV</p>
-</td>
-</tr>
-<tr>
-<td width="100%" colspan="2">
-  <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/fingraph-sentinel">
-      🔷 FinGraph Sentinel — Graph Engineering + GenAI Agent
-    </a>
-  </h3>
-  <p align="center">
-    <img src="https://img.shields.io/badge/Neo4j-5.x-4581C3?style=flat-square&logo=neo4j&logoColor=white" />
-    <img src="https://img.shields.io/badge/LangChain-Agent-blue?style=flat-square" />
-    <img src="https://img.shields.io/badge/GNN-GraphSAGE%2FRGCN-FF6F00?style=flat-square" />
-    <img src="https://img.shields.io/badge/BFSI-AML%7CCredit%7CInsurance%7CKYC-6366F1?style=flat-square" />
-  </p>
-  <p align="center">Neo4j · LangChain · Graph RAG · GNN · AML · credit risk · insurance claims · KYC</p>
-</td>
-</tr>
-<tr>
-<td width="100%" colspan="2">
-  <h3 align="center">
-    <a href="https://github.com/twomathematicians-code/paix">
-      🐍 paix — Python AI eXperimental
-    </a>
-  </h3>
-  <p align="center">Natural language → Python code. Multi-backend (OpenAI / Anthropic / Ollama). Code generation, execution, exercise mode, file loading with context injection. 75 tests.</p>
-</td>
-</tr>
-<tr>
-<td width="100%" colspan="2">
   <h3 align="center">
     <a href="https://github.com/twomathematicians-code/raix">
       ⚡ raix — R + AI + eXperience
@@ -166,63 +190,80 @@
   <p align="center">
     <img src="https://img.shields.io/badge/R_Package-42_functions-276DC3?style=flat-square&logo=r" />
     <img src="https://img.shields.io/badge/AI-13+_providers-6366F1?style=flat-square" />
-    <img src="https://img.shields.io/github/v/release/twomathematicians-code/raix?style=flat-square&color=22c55e" />
   </p>
-  <p align="center">AI coding assistant for RStudio — chat, debug, generate code, run Python, compile C++, simulate. 42 functions. Self-configuring dashboard.</p>
+  <p align="center">AI coding assistant for RStudio — chat, debug, generate code, run Python, compile C++, simulate.</p>
+</td>
+</tr>
+<tr>
+<td width="50%">
+  <h3 align="center">
+    <a href="https://github.com/twomathematicians-code/paix">
+      🐍 paix — Python AI eXperimental
+    </a>
+  </h3>
+  <p align="center">Natural language → Python code. OpenAI/Anthropic/Ollama. Code gen + execution + file loading.</p>
+</td>
+<td width="50%">
+  <h3 align="center">
+    <a href="https://github.com/twomathematicians-code/fingraph-sentinel">
+      🔷 FinGraph Sentinel
+    </a>
+  </h3>
+  <p align="center">GenAI Graph Engineering Agent — Neo4j · Graph RAG · GNN · AML · KYC</p>
 </td>
 </tr>
 </table>
 
-<details>
-<summary><b>🧠 ML Portfolio — 14+ Production repos</b></summary>
-<br/>
-<table>
-<tr>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/paix"><b>🐍 paix</b></a><br/><sub>NL→Python · OpenAI/Claude/Ollama</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/archon"><b>🏗️ Archon</b></a><br/><sub>AI/ML Meta-Platform · YAML/DSL</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/CausalInference-Toolkit"><b>🔬 Causal Inference</b></a><br/><sub>DoWhy · EconML · DAGs</sub></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/twomathematicians-code/financial-forecasting"><b>📈 Financial Forecasting</b></a><br/><sub>LSTM • Prophet • WebSocket streaming</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/customer-analytics"><b>👥 Customer Analytics</b></a><br/><sub>Churn • RFM • SHAP • CLV</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/sentiment-analysis-suite"><b>💬 Sentiment Suite</b></a><br/><sub>Emotions • Aspect-based • NLP</sub></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/twomathematicians-code/recommender-systems"><b>🎯 Recommender Systems</b></a><br/><sub>FAISS • Hybrid • A/B testing</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/nlp-toolkit"><b>🧠 NLP Toolkit</b></a><br/><sub>NER • Summarize • Translate</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/healthcare-analytics"><b>🏥 Healthcare ML</b></a><br/><sub>Heart • Cancer • HIPAA</sub></td>
-</tr>
-<tr>
-  <td colspan="3"><a href="https://github.com/twomathematicians-code/fingraph-sentinel"><b>🔷 FinGraph Sentinel</b></a> — Neo4j · Graph RAG · GNN · LangChain Agent · AML/Credit/Insurance/KYC</td>
-</tr>
-<tr>
-  <td colspan="3"><a href="https://github.com/twomathematicians-code/demand-forecasting"><b>📊 Demand Forecasting</b></a> — Supply chain: LightGBM + Prophet + SARIMA · 10% MAPE · TimescaleDB</td>
-</tr>
-<tr>
-  <td colspan="3"><a href="https://github.com/twomathematicians-code/engineer-credit-risk"><b>🏦 Credit Risk Pipeline</b></a> — End-to-end MLOps: FastAPI · PostgreSQL · MLflow · DVC · CI/CD · 380+ tests</td>
-</tr>
-<tr>
-  <td colspan="3"><a href="https://github.com/twomathematicians-code/fraud-detection"><b>🛡️ Fraud Detection</b></a> — Real-time scoring: XGBoost + Isolation Forest · Redis · SMOTE · &lt;20ms</td>
-</tr>
-</table>
-</details>
+---
 
-<details>
-<summary><b>🔭 Other Projects</b></summary>
-<br/>
-<table>
-<tr>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/mantis_optimization"><b>Hybrid AI Optimizer</b></a><br/><sub>TypeScript • Next.js • Ollama</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/EcoDrive-Net_finalized"><b>EcoDrive-Net ADAS</b></a><br/><sub>MATLAB • Deep Learning • ADAS</sub></td>
-  <td width="33%"><a href="https://github.com/twomathematicians-code/bartlett-correction-sem"><b>Bartlett Correction</b></a><br/><sub>R • Statistics • SEM</sub></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/twomathematicians-code/chen"><b>CHEN Theory</b></a><br/><sub>Python • Distributed AI • Research</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/post-quantum-computations"><b>Post-Quantum Crypto</b></a><br/><sub>Python • Cryptography</sub></td>
-  <td><a href="https://github.com/twomathematicians-code/maisuclaw"><b>MAISUCLAW</b></a><br/><sub>Python • LLM Swarm</sub></td>
-</tr>
-</table>
-</details>
+## 📦 Full Portfolio
+
+### AI/ML Infrastructure & Tools
+
+| Project | Description |
+|---|---|
+| **[archon](https://github.com/twomathematicians-code/archon)** | AI/ML Meta-Platform: YAML/DSL-driven compiler for AI intent. 6-layer architecture: data → models → pipelines → policies. Code generation, guardrails, GenAI, causal ML. |
+| **[raix](https://github.com/twomathematicians-code/raix)** | AI coding assistant for RStudio. Chat, explain, debug, generate code with any model — OpenAI, Ollama, Claude, Groq, Mistral, DeepSeek, and more. |
+| **[paix](https://github.com/twomathematicians-code/paix)** | Python AI eXperimental — natural language to Python code. Multi-backend (OpenAI, Anthropic, Ollama). Code generation, execution, exercise mode, file loading with context injection. |
+
+### ML Engineering & MLOps
+
+| Project | Description |
+|---|---|
+| **[demand-forecasting](https://github.com/twomathematicians-code/demand-forecasting)** | Production-grade demand forecasting: Prophet + LightGBM + SARIMA ensemble (10% MAPE). 36-feature engineering, TimescaleDB, FastAPI, Docker-ready. |
+| **[engineer-credit-risk](https://github.com/twomathematicians-code/engineer-credit-risk)** | End-to-end production ML pipeline: credit risk scoring with FastAPI, PostgreSQL, MLflow, DVC, Alembic migrations, CI/CD. 380+ lines of tests. |
+| **[CausalInference-Toolkit](https://github.com/twomathematicians-code/CausalInference-Toolkit)** | Comprehensive causal inference framework: MSc-level statistical foundations + practical ML integration. DoWhy, EconML, DAGs, counterfactuals, A/B testing. |
+| **[fraud-detection](https://github.com/twomathematicians-code/fraud-detection)** | Real-time fraud detection engine: XGBoost + Isolation Forest ensemble, Redis caching, SMOTE imbalance handling, sub-20ms transaction scoring. |
+
+### NLP & Conversational AI
+
+| Project | Description |
+|---|---|
+| **[nlp-toolkit](https://github.com/twomathematicians-code/nlp-toolkit)** | NLP microservices: NER, text summarization, keyword extraction, language detection, translation via spaCy and transformers. |
+| **[chatbot-deployment](https://github.com/twomathematicians-code/chatbot-deployment)** | RAG conversational AI: LangChain, ChromaDB, Telegram + WhatsApp webhook connectors for production chatbot deployment. |
+| **[sentiment-analysis-suite](https://github.com/twomathematicians-code/sentiment-analysis-suite)** | Multi-source sentiment analysis with emotion detection, aspect-based NLP, VADER + rule engine, batch processing. |
+
+### Analytics & Business Intelligence
+
+| Project | Description |
+|---|---|
+| **[customer-analytics](https://github.com/twomathematicians-code/customer-analytics)** | Customer churn prediction, RFM segmentation, CLV estimation with XGBoost + SHAP explainability. |
+| **[recommender-systems](https://github.com/twomathematicians-code/recommender-systems)** | Hybrid recommender: collaborative filtering, content-based, FAISS vector search, A/B testing framework. |
+
+### Domain-Specific ML
+
+| Project | Description |
+|---|---|
+| **[fingraph-sentinel](https://github.com/twomathematicians-code/fingraph-sentinel)** | FinGraph Sentinel — GenAI Graph Engineering Agent for BFSI: Neo4j, Graph RAG, GNNs, AML, credit risk, insurance claims, KYC compliance. |
+| **[healthcare-analytics](https://github.com/twomathematicians-code/healthcare-analytics)** | Healthcare diagnostics ML: heart disease, cancer, diabetes, pneumonia detection + survival analysis with HIPAA logging. |
+| **[financial-forecasting](https://github.com/twomathematicians-code/financial-forecasting)** | Multi-model time series forecasting: LSTM, Prophet, ARIMA for stocks, crypto, commodities with WebSocket live streaming. |
+| **[computer-vision](https://github.com/twomathematicians-code/computer-vision)** | Computer vision API: YOLO object detection, face recognition, image classification, landmark detection, segmentation. |
+
+### Academic
+
+| Project | Description |
+|---|---|
+| **[bartlett-correction-sem](https://github.com/twomathematicians-code/bartlett-correction-sem)** | A Bartlett correction for a likelihood ratio test in structural equation modeling — Master's thesis, Ghent University, supervised by Prof. Dr. Yves Rosseel. |
 
 ---
 
@@ -276,8 +317,6 @@
 | [fraud-detection](https://github.com/twomathematicians-code/fraud-detection) | Python | 2026-07-29 |
 
 > Last auto-sync: **2026-07-30 02:46 UTC**
-
-
 
 ---
 
