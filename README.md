@@ -333,38 +333,43 @@ sequenceDiagram
 
 | Metric | Live Value |
 |:--|--:|
-| Public Repositories | 32 |
-| Non-Fork Projects | 32 |
-| Total Stars | 1 |
+| Public Repositories | 44 |
+| Non-Fork Projects | 44 |
+| Total Stars | 12 |
 | Total Forks | 0 |
-| Total Watchers | 1 |
+| Total Watchers | 12 |
 | Open Issues Across Projects | 5 |
 | Open Pull Requests Tracker | 5 |
-| Top Languages by Repo Count | Python (21), TeX (2), R (2), C++ (2), Jupyter Notebook (1), MATLAB (1) |
-| Domain Signals | Gen AI (1), ML (5), Data (4), Deployment (2) |
+| Top Languages by Repo Count | Python (28), R (3), JavaScript (2), TeX (2), C++ (2), HTML (1) |
+| Domain Signals | Gen AI (4), ML (9), Data (7), Deployment (3) |
 
 #### Most Starred Repositories
 
 | Repository | Stars | Last Push |
 |:--|--:|:--|
+| [demand-forecasting](https://github.com/twomathematicians-code/demand-forecasting) | 3 | 2026-08-04 |
+| [archon](https://github.com/twomathematicians-code/archon) | 1 | 2026-08-03 |
+| [raix](https://github.com/twomathematicians-code/raix) | 1 | 2026-07-31 |
 | [Manifold-DB-Repo](https://github.com/twomathematicians-code/Manifold-DB-Repo) | 1 | 2026-06-02 |
-| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | 0 | 2026-07-30 |
-| [recommender-systems](https://github.com/twomathematicians-code/recommender-systems) | 0 | 2026-07-29 |
-| [nlp-toolkit](https://github.com/twomathematicians-code/nlp-toolkit) | 0 | 2026-07-29 |
-| [healthcare-analytics](https://github.com/twomathematicians-code/healthcare-analytics) | 0 | 2026-07-29 |
+| [Hybrid_Game_Recommendation](https://github.com/twomathematicians-code/Hybrid_Game_Recommendation) | 1 | 2026-04-27 |
 
 #### Latest Updated Repositories
 
 | Repository | Primary Language | Last Push |
 |:--|:--|:--|
-| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | Python | 2026-07-30 |
-| [recommender-systems](https://github.com/twomathematicians-code/recommender-systems) | Python | 2026-07-29 |
-| [nlp-toolkit](https://github.com/twomathematicians-code/nlp-toolkit) | Python | 2026-07-29 |
-| [healthcare-analytics](https://github.com/twomathematicians-code/healthcare-analytics) | Python | 2026-07-29 |
-| [fraud-detection](https://github.com/twomathematicians-code/fraud-detection) | Python | 2026-07-29 |
+| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | JavaScript | 2026-08-04 |
+| [demand-forecasting](https://github.com/twomathematicians-code/demand-forecasting) | Python | 2026-08-04 |
+| [archon](https://github.com/twomathematicians-code/archon) | Python | 2026-08-03 |
+| [raix](https://github.com/twomathematicians-code/raix) | R | 2026-07-31 |
+| [universe](https://github.com/twomathematicians-code/universe) | N/A | 2026-07-31 |
 
-> Last auto-sync: **2026-07-30 02:46 UTC**
+> Last auto-sync: **2026-08-04 09:43 UTC**
 
+#### Deep Learning & Neural Networks Number Streams
+
+<p align="center"><img src="assets/deep-learning-numbers.gif" alt="Black and white floating numbers for deep learning" width="420" /> <img src="assets/neural-networks-numbers.gif" alt="Black and white floating numbers for neural networks" width="420" /></p>
+
+> Powered by `/scripts/update_profile_readme.py` and GitHub Actions for @twomathematicians-code.
 <!-- AUTO-STATS:END -->
 
 ---
