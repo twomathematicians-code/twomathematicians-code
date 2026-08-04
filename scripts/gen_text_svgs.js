@@ -1,151 +1,177 @@
-// Generates hand-drawn graph-paper text SVGs for the profile README.
-// Run: node scripts/gen_text_svgs.js  (writes into ../assets/)
-const fs = require("fs");
-const path = require("path");
+// gen_text_svgs.js — Minimal SVG generator for GitHub Profile README
+// Design system: clean sans-serif, no filters, no grid paper, no decorative elements
+// Run: node scripts/gen_text_svgs.js
 
-const OUT = path.join(__dirname, "..", "assets");
+var fs = require("fs");
+var path = require("path");
 
-// ---- shared helpers (plain string concat to avoid template-literal escaping traps) ----
-function paper(w, h, idSuf) {
-  return (
-    '<defs>' +
-    '<pattern id="g' + idSuf + '" width="22" height="22" patternUnits="userSpaceOnUse">' +
-    '<path d="M22 0 L0 0 0 22" fill="none" stroke="#c9d6e8" stroke-width="0.6" opacity="0.5"/>' +
-    '</pattern>' +
-    '<pattern id="G' + idSuf + '" width="110" height="110" patternUnits="userSpaceOnUse">' +
-    '<path d="M110 0 L0 0 0 110" fill="none" stroke="#a9bdd6" stroke-width="0.9" opacity="0.4"/>' +
-    '</pattern>' +
-    '<filter id="ink' + idSuf + '" x="-3%" y="-3%" width="106%" height="112%">' +
-    '<feTurbulence type="turbulence" baseFrequency="0.013 0.019" numOctaves="2" seed="' + idSuf + '" result="t"/>' +
-    '<feDisplacementMap in="SourceGraphic" in2="t" scale="2.1"/>' +
-    '</filter>' +
-    '</defs>' +
-    '<rect width="' + w + '" height="' + h + '" fill="#f7f5ef"/>' +
-    '<rect width="' + w + '" height="' + h + '" fill="url(#g' + idSuf + ')"/>' +
-    '<rect width="' + w + '" height="' + h + '" fill="url(#G' + idSuf + ')"/>'
-  );
-}
+var OUT = path.join(__dirname, "..", "assets");
 
-const FF = "font-family=\"'Caveat','Comic Sans MS','Segoe Script',cursive\"";
+// --- Color palette ---
+var INDIGO  = "#6366F1";
+var SLATE   = "#1e293b";
+var MUTED   = "#64748b";
+var CARD_BG = "#f8fafc";
+var BORDER  = "#e2e8f0";
+var GREEN   = "#22c55e";
+var BLUE    = "#3b82f6";
+var PURPLE  = "#8b5cf6";
+var RED     = "#ef4444";
+var YELLOW  = "#eab308";
+var DARK_BG = "#0f172a";
+var WHITE   = "#ffffff";
 
+// --- Font stacks ---
+var SANS = "'Inter','Segoe UI',system-ui,-apple-system,sans-serif";
+var MONO = "'JetBrains Mono','Fira Code','SF Mono','Consolas',monospace";
+
+// --- Helpers ---
 function svgOpen(w, h, label) {
-  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + w + " " + h +
-    '" ' + FF + ' role="img" aria-label="' + label + '">';
+  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '
+    + w + " " + h
+    + '" font-family="' + SANS + '" role="img" aria-label="' + label + '">';
 }
-const svgClose = "</svg>";
 
 function write(name, content) {
   fs.writeFileSync(path.join(OUT, name), content, "utf8");
-  console.log("wrote " + name);
+  console.log("  wrote " + name);
 }
 
+
 // ============================================================
-// 1. ABOUT ME — handwritten note card (the blockquote)
+//  1. BANNER  (800 x 200)
 // ============================================================
-(function aboutMe() {
-  const w = 820, h = 190;
-  let s = svgOpen(w, h, "About me, hand-written note") + paper(w, h, "1");
-  // left red margin line (notebook style)
-  s += '<line x1="70" y1="20" x2="70" y2="' + (h - 20) + '" stroke="#e6a8a8" stroke-width="1.4" opacity="0.7"/>';
-  // heading
-  s += '<text x="96" y="52" fill="#c0392b" font-size="30" filter="url(#ink1)">' + "About Me" + "</text>";
-  // body lines (wrapped manually)
-  const lines = [
-    { t: "I build production ML systems the way a mathematician", c: "#2b3a55", sz: 25 },
-    { t: "solves a problem \u2014 from first principles.", c: "#2b3a55", sz: 25 },
-    { t: "Python \u00b7 FastAPI \u00b7 Docker \u00b7 PostgreSQL, wired into CI/CD", c: "#3b5998", sz: 25 },
-    { t: "pipelines that ship.", c: "#3b5998", sz: 25 },
-    { t: "My notebooks move between calculus, probability,", c: "#1e6b3a", sz: 25 },
-    { t: "and deployed inference APIs.", c: "#1e6b3a", sz: 25 },
+function generateBanner() {
+  var s = svgOpen(800, 200, "Banner — Mahesh Solanki, Unified Intelligence Engineer");
+
+  // accent bar at top
+  s += '<rect width="800" height="4" fill="' + INDIGO + '"/>';
+
+  // name
+  s += '<text x="48" y="80" font-size="36" font-weight="700" fill="'
+    + SLATE + '" letter-spacing="-0.5">Mahesh Solanki</text>';
+
+  // subtitle
+  s += '<text x="48" y="116" font-size="18" font-weight="400" fill="'
+    + INDIGO + '" letter-spacing="0.5">Unified Intelligence Engineer</text>';
+
+  // thin accent line
+  s += '<line x1="48" y1="136" x2="280" y2="136" stroke="'
+    + INDIGO + '" stroke-width="2" stroke-linecap="round"/>';
+
+  // location
+  s += '<text x="48" y="160" font-size="14" fill="' + MUTED + '">Ghent, Belgium</text>';
+
+  // geometric accent — concentric circles
+  s += '<circle cx="740" cy="100" r="32" fill="' + INDIGO + '" opacity="0.12"/>';
+  s += '<circle cx="740" cy="100" r="18" fill="' + INDIGO + '" opacity="0.20"/>';
+  s += '<circle cx="740" cy="100" r="4" fill="' + INDIGO + '" opacity="0.60"/>';
+
+  s += "</svg>";
+  write("banner.svg", s);
+}
+
+
+// ============================================================
+//  2. ABOUT ME  (720 x 160)
+// ============================================================
+function generateAboutMe() {
+  var s = svgOpen(720, 160, "About Mahesh Solanki — ML Engineer building AI systems");
+
+  // card background
+  s += '<rect x="0" y="0" width="720" height="160" rx="12" fill="'
+    + CARD_BG + '" stroke="' + BORDER + '" stroke-width="1"/>';
+
+  // label
+  s += '<text x="32" y="36" font-size="11" font-weight="600" fill="'
+    + INDIGO + '" letter-spacing="2">ABOUT</text>';
+
+  // description — three lines
+  var lines = [
+    "Mathematician turned ML Engineer. I build production AI systems",
+    "where mathematical rigor meets scalable engineering.",
+    "Focused on end-to-end ML — from first principles to production."
   ];
-  let y = 92;
-  s += '<g filter="url(#ink1)">';
-  for (const ln of lines) {
-    s += '<text x="96" y="' + y + '" fill="' + ln.c + '" font-size="' + ln.sz + '">' + ln.t + "</text>";
-    y += 16;
+
+  for (var i = 0; i < lines.length; i++) {
+    s += '<text x="32" y="' + (62 + i * 24) + '" font-size="15" fill="'
+      + SLATE + '">' + lines[i] + "</text>";
   }
-  s += "</g>";
-  // corner coffee stain
-  s += '<ellipse cx="' + (w - 50) + '" cy="40" rx="40" ry="26" fill="#d9c08a" opacity="0.10"/>';
-  s += svgClose;
+
+  // subtle accent bar on left
+  s += '<rect x="0" y="0" width="4" height="160" rx="2" fill="' + INDIGO + '"/>';
+
+  s += "</svg>";
   write("about-me.svg", s);
-})();
+}
+
 
 // ============================================================
-// 2. CODE CARD — the Python class, hand-written on paper
+//  3. CODE CARD  (500 x 280)
 // ============================================================
-(function codeCard() {
-  const w = 560, h = 360;
-  let s = svgOpen(w, h, "Hand-written Python class") + paper(w, h, "2");
-  // tape at top (washi-tape look)
-  s += '<rect x="230" y="-8" width="100" height="30" fill="#bcd9c6" opacity="0.7" transform="rotate(-3 280 7)"/>';
-  const code = [
-    { t: "class Mahesh:", c: "#7c5cff", sz: 26, x: 40 },
-    { t: 'name     = "Mahesh Solanki"', c: "#2b3a55", sz: 23, x: 70 },
-    { t: 'role     = "ML Engineer"', c: "#2b3a55", sz: 23, x: 70 },
-    { t: 'location = "Ghent, Belgium"', c: "#2b3a55", sz: 23, x: 70 },
-    { t: "", c: "#2b3a55", sz: 23, x: 70 },
-    { t: "def focus(self) -> list[str]:", c: "#7c5cff", sz: 23, x: 70 },
-    { t: 'return [', c: "#2b3a55", sz: 23, x: 100 },
-    { t: '"Containerization & Docker Compose",', c: "#1e6b3a", sz: 22, x: 130 },
-    { t: '"CI/CD \u2014 GitLab CI & GitHub Actions",', c: "#1e6b3a", sz: 22, x: 130 },
-    { t: '"Advanced Python \u2014 async, Pydantic",', c: "#1e6b3a", sz: 22, x: 130 },
-    { t: '"PostgreSQL & SQLAlchemy async ORM",', c: "#1e6b3a", sz: 22, x: 130 },
-    { t: '"MLOps \u2014 MLflow, DVC, tracking",', c: "#1e6b3a", sz: 22, x: 130 },
-    { t: '"Deep Learning \u2014 PyTorch, XGBoost",', c: "#1e6b3a", sz: 22, x: 130 },
-    { t: "]", c: "#2b3a55", sz: 23, x: 100 },
+function generateCodeCard() {
+  var s = svgOpen(500, 280, "Python code card showing class Mahesh with ML focus areas");
+
+  // dark card background
+  s += '<rect x="0" y="0" width="500" height="280" rx="10" fill="'
+    + DARK_BG + '" stroke="#334155" stroke-width="1"/>';
+
+  // window dots
+  s += '<circle cx="20" cy="18" r="5" fill="' + RED + '"/>';
+  s += '<circle cx="38" cy="18" r="5" fill="' + YELLOW + '"/>';
+  s += '<circle cx="56" cy="18" r="5" fill="' + GREEN + '"/>';
+  // title bar text
+  s += '<text x="80" y="22" font-size="11" fill="' + MUTED
+    + '" font-family="' + MONO + '">mahesh.py</text>';
+
+  // separator line
+  s += '<line x1="0" y1="34" x2="500" y2="34" stroke="#334155" stroke-width="1"/>';
+
+  // code lines
+  var lines = [
+    { indent: 1, tokens: [{ text: "class ", color: PURPLE }, { text: "Mahesh", color: BLUE }, { text: ":", color: WHITE }] },
+    { indent: 2, tokens: [{ text: "def ", color: PURPLE }, { text: "focus", color: BLUE }, { text: "(self):", color: WHITE }] },
+    { indent: 3, tokens: [{ text: "return ", color: PURPLE }, { text: "[", color: WHITE }] },
+    { indent: 4, tokens: [{ text: '"Docker · CI/CD"', color: GREEN }] },
+    { indent: 4, tokens: [{ text: '"MLOps · MLflow"', color: GREEN }] },
+    { indent: 4, tokens: [{ text: '"PostgreSQL"', color: GREEN }] },
+    { indent: 4, tokens: [{ text: '"PyTorch · XGBoost"', color: GREEN }] },
+    { indent: 3, tokens: [{ text: "]", color: WHITE }] },
   ];
-  let y = 50;
-  s += '<g filter="url(#ink2)">';
-  for (const ln of code) {
-    s += '<text x="' + ln.x + '" y="' + y + '" fill="' + ln.c + '" font-size="' + ln.sz + '">' + ln.t + "</text>";
-    y += 22;
+
+  var yBase = 58;
+  var lineH = 22;
+  var xBase = 24;
+  var indentW = 16;
+
+  for (var i = 0; i < lines.length; i++) {
+    var ln = lines[i];
+    var xPos = xBase + ln.indent * indentW;
+    var yPos = yBase + i * lineH;
+
+    var textEl = '<text x="' + xPos + '" y="' + yPos + '" font-family="'
+      + MONO + '" font-size="13">';
+    for (var j = 0; j < ln.tokens.length; j++) {
+      var tk = ln.tokens[j];
+      textEl += '<tspan fill="' + tk.color + '">' + tk.text + "</tspan>";
+    }
+    textEl += "</text>";
+    s += textEl;
   }
-  // little doodle: a function box f(x) in corner
-  s += '<text x="' + (w - 90) + '" y="' + (h - 20) + '" fill="#7a8699" font-size="22">f(x) = \u03c3(Wx+b)</text>';
-  s += "</g>";
-  s += svgClose;
+
+  // subtle accent bar on left
+  s += '<rect x="0" y="0" width="4" height="280" rx="2" fill="' + INDIGO + '"/>';
+
+  s += "</svg>";
   write("code-card.svg", s);
-})();
-
-// ============================================================
-// 3. SECTION HEADERS — handwritten notebook tabs
-// ============================================================
-function sectionHeader(name, emoji, title, seed) {
-  const w = 520, h = 80;
-  let s = svgOpen(w, h, "Section: " + title) + paper(w, h, seed);
-  // tab shape on left
-  s += '<g filter="url(#ink' + seed + ')">';
-  s += '<path d="M30 18 L30 ' + (h - 18) + ' L70 ' + (h - 26) + ' L70 26 Z" fill="#fff3d6" stroke="#c8922a" stroke-width="1.6" opacity="0.85"/>';
-  s += '<text x="44" y="48" font-size="26">' + emoji + "</text>";
-  s += '<text x="96" y="52" fill="#2b3a55" font-size="34" font-weight="bold">' + title + "</text>";
-  // underline scribble
-  s += '<path d="M96 62 q 80 -7 160 0 t 150 0" fill="none" stroke="#ff8a3d" stroke-width="2.4" opacity="0.8"/>';
-  s += "</g>";
-  s += svgClose;
-  write(name, s);
 }
-sectionHeader("section-notebook.svg", "\u{1F4D0}", "The Notebook", "3");
-sectionHeader("section-tech.svg", "\u{1F6E0}\uFE0F", "Tech Stack", "4");
-sectionHeader("section-projects.svg", "\u{1F680}", "Featured Projects", "5");
-sectionHeader("section-telemetry.svg", "\u{1F4E1}", "Live Telemetry", "6");
+
 
 // ============================================================
-// 4. TECH-STACK CATEGORY LABELS — small handwritten chips
+//  MAIN
 // ============================================================
-function label(name, txt, color, seed) {
-  const w = 300, h = 56;
-  let s = svgOpen(w, h, "Label: " + txt) + paper(w, h, seed);
-  s += '<g filter="url(#ink' + seed + ')">';
-  s += '<rect x="14" y="10" width="' + (w - 28) + '" height="36" rx="10" fill="#fff" stroke="' + color + '" stroke-width="2"/>';
-  s += '<circle cx="34" cy="28" r="5" fill="' + color + '"/>';
-  s += '<text x="54" y="35" fill="' + color + '" font-size="25" font-weight="bold">' + txt + "</text>";
-  s += "</g>";
-  s += svgClose;
-  write(name, s);
-}
-label("label-core.svg", "Core", "#3b5998", "7");
-label("label-ml.svg", "ML & Data", "#7c5cff", "8");
-label("label-tooling.svg", "Tooling", "#1e6b3a", "9");
-
-console.log("\nAll text SVGs generated.");
+console.log("Generating minimal SVGs ...");
+generateBanner();
+generateAboutMe();
+generateCodeCard();
+console.log("Done. 3 SVGs written to assets/");

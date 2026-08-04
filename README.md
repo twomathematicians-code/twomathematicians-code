@@ -1,9 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner.svg" />
-    <img src="assets/banner.svg" alt="Mahesh Solanki — Unified Intelligence Engineer" width="100%" />
-  </picture>
+  <img src="assets/banner.svg" alt="Mahesh Solanki — Unified Intelligence Engineer" width="100%" />
 </p>
 
 <p align="center">
@@ -22,18 +18,16 @@
 ---
 
 <p align="center">
-  <img src="assets/about-me.svg" alt="About me — hand-written note" width="90%" />
+  <img src="assets/about-me.svg" alt="About me" width="75%" />
 </p>
 
 <p align="center">
-  <img src="assets/code-card.svg" alt="Focus areas — hand-written Python class" width="60%" />
+  <img src="assets/code-card.svg" alt="Focus areas — Python class" width="50%" />
 </p>
 
 ---
 
-<p align="center">
-  <img src="assets/section-dashboard.svg" alt="Dashboard section header" width="60%" />
-</p>
+## 📊 Dashboard
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=twomathematicians-code&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="49%" />
@@ -191,56 +185,26 @@ sequenceDiagram
 
 ---
 
-<p align="center">
-  <img src="assets/section-notebook.svg" alt="The Notebook section header" width="65%" />
-</p>
+## 📓 Notebook
+
 <p align="center"><i>math, models &amp; learning in motion</i></p>
 
 <p align="center">
-  <img src="assets/equations.svg" alt="Equations cycling: Bayes, gradient descent, attention, normal distribution" width="100%" />
-</p>
-
-<table align="center">
-<tr>
-<td width="33%" align="center">
-  <b>perceptron</b><br/>
-  <img src="assets/perceptron.svg" width="100%" />
-</td>
-<td width="33%" align="center">
-  <b>neural network — forward pass</b><br/>
-  <img src="assets/nn-firing.svg" width="100%" />
-</td>
-<td width="33%" align="center">
-  <b>backpropagation</b><br/>
-  <img src="assets/backprop.svg" width="100%" />
-</td>
-</tr>
-<tr>
-<td width="33%" align="center">
-  <b>training loss</b><br/>
-  <img src="assets/loss-curve.svg" width="100%" />
-</td>
-<td width="33%" align="center">
-  <b>decision boundary</b><br/>
-  <img src="assets/decision-boundary.svg" width="100%" />
-</td>
-<td width="33%" align="center">
-  <b>distribution</b><br/>
-  <img src="assets/distribution.svg" width="100%" />
-</td>
-</tr>
-</table>
-
-<p align="center">
-  <b>large language model — attention mechanism</b><br/>
-  <img src="assets/llm-attention.svg" alt="LLM attention flow with token embeddings" width="100%" />
+  <table>
+  <tr>
+    <td width="48%" align="center">
+      <img src="assets/perceptron.svg" alt="The perceptron" width="100%" />
+    </td>
+    <td width="48%" align="center">
+      <img src="assets/llm-attention.svg" alt="Attention mechanism" width="100%" />
+    </td>
+  </tr>
+  </table>
 </p>
 
 ---
 
-<p align="center">
-  <img src="assets/section-projects.svg" alt="Projects section header" width="60%" />
-</p>
+## 🚀 Featured Projects
 
 <p align="center">
   <a href="https://github.com/twomathematicians-code/archon">
@@ -261,9 +225,7 @@ sequenceDiagram
 
 ---
 
-<p align="center">
-  <img src="assets/section-portfolio.svg" alt="Full Portfolio section header" width="55%" />
-</p>
+## 📁 Portfolio
 
 ### 🤖 AI/ML Infrastructure & Tools
 
@@ -325,65 +287,11 @@ sequenceDiagram
 ---
 
 <p align="center">
-  <img src="assets/section-telemetry.svg" alt="Live Telemetry section header" width="60%" />
-</p>
-
-<!-- AUTO-STATS:START -->
-<p align="center"><img src="https://img.shields.io/badge/AUTO%20SYNC-ACTIVE-black?style=for-the-badge&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/DATA%20SOURCE-GitHub%20API-white?style=for-the-badge&logo=github&logoColor=black&labelColor=black&color=white" /></p>
-
-| Metric | Live Value |
-|:--|--:|
-| Public Repositories | 44 |
-| Non-Fork Projects | 44 |
-| Total Stars | 12 |
-| Total Forks | 0 |
-| Total Watchers | 12 |
-| Open Issues Across Projects | 5 |
-| Open Pull Requests Tracker | 5 |
-| Top Languages by Repo Count | Python (28), R (3), JavaScript (2), TeX (2), C++ (2), HTML (1) |
-| Domain Signals | Gen AI (4), ML (9), Data (7), Deployment (3) |
-
-#### Most Starred Repositories
-
-| Repository | Stars | Last Push |
-|:--|--:|:--|
-| [demand-forecasting](https://github.com/twomathematicians-code/demand-forecasting) | 3 | 2026-08-04 |
-| [archon](https://github.com/twomathematicians-code/archon) | 1 | 2026-08-03 |
-| [raix](https://github.com/twomathematicians-code/raix) | 1 | 2026-07-31 |
-| [Manifold-DB-Repo](https://github.com/twomathematicians-code/Manifold-DB-Repo) | 1 | 2026-06-02 |
-| [Hybrid_Game_Recommendation](https://github.com/twomathematicians-code/Hybrid_Game_Recommendation) | 1 | 2026-04-27 |
-
-#### Latest Updated Repositories
-
-| Repository | Primary Language | Last Push |
-|:--|:--|:--|
-| [twomathematicians-code](https://github.com/twomathematicians-code/twomathematicians-code) | JavaScript | 2026-08-04 |
-| [demand-forecasting](https://github.com/twomathematicians-code/demand-forecasting) | Python | 2026-08-04 |
-| [archon](https://github.com/twomathematicians-code/archon) | Python | 2026-08-03 |
-| [raix](https://github.com/twomathematicians-code/raix) | R | 2026-07-31 |
-| [universe](https://github.com/twomathematicians-code/universe) | N/A | 2026-07-31 |
-
-> Last auto-sync: **2026-08-04 09:43 UTC**
-
-#### Deep Learning & Neural Networks Number Streams
-
-<p align="center"><img src="assets/deep-learning-numbers.gif" alt="Black and white floating numbers for deep learning" width="420" /> <img src="assets/neural-networks-numbers.gif" alt="Black and white floating numbers for neural networks" width="420" /></p>
-
-> Powered by `/scripts/update_profile_readme.py` and GitHub Actions for @twomathematicians-code.
-<!-- AUTO-STATS:END -->
-
----
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/twomathematicians-code/twomathematicians-code/output/snake.svg" alt="Contribution Snake" />
-</p>
-
-<p align="center">
   <samp>
     <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5">linkedin</a>
-    &nbsp;•&nbsp;
+    &nbsp;·&nbsp;
     <a href="mailto:maheshsinh1910@gmail.com">email</a>
-    &nbsp;•&nbsp;
+    &nbsp;·&nbsp;
     <a href="https://github.com/twomathematicians-code">github</a>
   </samp>
 </p>
