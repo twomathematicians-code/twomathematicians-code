@@ -295,64 +295,9 @@ mindmap
 
 ## 🔧 Tech Pipeline
 
-```mermaid
-flowchart TB
-    subgraph FOUND["\u{1F4D0} Math Foundations"]
-        STAT["Statistics"]
-        LA["Linear Algebra"]
-        OPT["Optimization"]
-    end
-
-    subgraph DATA["\u{1F4CA} Data"]
-        SQL["PostgreSQL / TimescaleDB"]
-        PIPES["ETL / Streams"]
-        VECTOR["Vector DBs"]
-    end
-
-    subgraph ML["\u{1F916} Machine Learning"]
-        CLASSIC["XGBoost \u00B7 LightGBM"]
-        DL["PyTorch \u00B7 TensorFlow"]
-        NLP["Transformers \u00B7 spaCy"]
-        CV["YOLO \u00B7 OpenCV"]
-        TS["Prophet \u00B7 LSTM \u00B7 SARIMA"]
-        CAUSAL["DoWhy \u00B7 EconML"]
-    end
-
-    subgraph AI["\u{1F9EC} AI Systems"]
-        AGENT["Autonomous Agents"]
-        RAG["RAG \u00B7 Graph RAG"]
-        LLM["LLM Orchestration"]
-        CODEGEN["NL\u2192Code (paix/raix)"]
-    end
-
-    subgraph PROD["\u{1F680} Production"]
-        API["FastAPI"]
-        CICD["Docker \u00B7 CI/CD"]
-        MLOPS["MLflow \u00B7 DVC"]
-        MONITOR["Observability"]
-    end
-
-    subgraph IMPACT["\u{1F4A1} Impact"]
-        FSI["BFSI"]
-        HEALTH["Healthcare"]
-        SUPPLY["Supply Chain"]
-        RISK["Fraud & Risk"]
-    end
-
-    FOUND ==> ML
-    DATA ==> ML
-    ML ==> AI
-    ML ==> PROD
-    AI ==> PROD
-    PROD ==> IMPACT
-
-    style FOUND fill:#1a1a2e,stroke:#16213e,color:#e0e0e0
-    style DATA fill:#16213e,stroke:#0f3460,color:#e0e0e0
-    style ML fill:#0f3460,stroke:#533483,color:#e0e0e0
-    style AI fill:#533483,stroke:#6366f1,color:#e0e0e0
-    style PROD fill:#6366f1,stroke:#818cf8,color:#fff
-    style IMPACT fill:#1a1a2e,stroke:#6366f1,color:#e0e0e0
-```
+<p align="center">
+  <img src="assets/pipeline.svg" alt="Tech Pipeline — Math → Data → ML → AI → Prod → Impact" width="100%" />
+</p>
 
 ---
 

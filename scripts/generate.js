@@ -412,6 +412,59 @@ function generateLanguages(repos) {
   return svg;
 }
 
+function generatePipelineSvg() {
+  const w = 800, h = 200;
+  // Pipeline stages: left-to-right flow with connected nodes
+  const stages = [
+    { label: "Math", color: "#ffa657", items: ["Stats", "LinAlg", "Optim"] },
+    { label: "Data", color: "#79c0ff", items: ["SQL", "ETL", "VecDB"] },
+    { label: "ML", color: "#533483", items: ["XGBoost", "PyTorch", "NLP/CV"] },
+    { label: "AI", color: "#6366f1", items: ["RAG", "Agents", "LLM"] },
+    { label: "Prod", color: "#818cf8", items: ["FastAPI", "Docker", "MLOps"] },
+    { label: "Impact", color: "#3fb950", items: ["BFSI", "Health", "Supply"] },
+  ];
+
+  const gap = 20;
+  const totalGaps = (stages.length - 1) * gap;
+  const nodeW = Math.floor((w - 60 - totalGaps) / stages.length);
+  const nodeH = 130;
+  const startY = 50;
+  const startX = 30;
+
+  const nodes = stages.map((stage, i) => {
+    const x = startX + i * (nodeW + gap);
+    // Main box
+    let svg = `<rect x="${x}" y="${startY}" width="${nodeW}" height="${nodeH}" rx="8" fill="${DS.cardBg}" stroke="${stage.color}" stroke-width="1.5"/>`;
+    // Top accent bar
+    svg += `<rect x="${x}" y="${startY}" width="${nodeW}" height="3" rx="2" fill="${stage.color}"/>`;
+    // Stage label
+    svg += `<text x="${x + nodeW / 2}" y="${startY + 24}" text-anchor="middle" font-family="${DS.font}" font-size="13" font-weight="700" fill="${stage.color}">${stage.label}</text>`;
+    // Separator line
+    svg += `<line x1="${x + 12}" y1="${startY + 34}" x2="${x + nodeW - 12}" y2="${startY + 34}" stroke="${DS.border}" stroke-width="0.5"/>`;
+    // Items
+    stage.items.forEach((item, j) => {
+      const iy = startY + 54 + j * 26;
+      svg += `<circle cx="${x + 20}" cy="${iy}" r="3" fill="${stage.color}" opacity="0.7"/>`;
+      svg += `<text x="${x + 30}" y="${iy + 4}" font-family="${DS.font}" font-size="11" fill="${DS.text}">${item}</text>`;
+    });
+    return svg;
+  });
+
+  // Arrows between stages
+  const arrows = stages.slice(0, -1).map((_, i) => {
+    const x1 = startX + (i + 1) * (nodeW + gap) - gap + 2;
+    const x2 = x1 + gap - 4;
+    const y = startY + nodeH / 2;
+    return `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="${DS.muted}" stroke-width="1.5" stroke-dasharray="3,3"/>` +
+           `<polygon points="${x2},${y - 4} ${x2 + 6},${y} ${x2},${y + 4}" fill="${DS.muted}"/>`;
+  });
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+  ${nodes.join("\n  ")}
+  ${arrows.join("\n  ")}
+</svg>`;
+}
+
 function generateCategoryHeader(catSlug, count) {
   const meta = CAT_META[catSlug] || CAT_META.uncategorized;
   const color = CAT_COLORS[catSlug] || DS.muted;
@@ -665,67 +718,12 @@ function assembleReadme(repos, categories) {
   lines.push(`---`);
   lines.push(``);
 
-  // Mermaid tech flowchart
+  // Tech Pipeline — SVG (no Mermaid = no loading issues)
   lines.push(`## \u{1F527} Tech Pipeline`);
   lines.push(``);
-  lines.push("```mermaid");
-  lines.push("flowchart TB");
-  lines.push('    subgraph FOUND["\\u{1F4D0} Math Foundations"]');
-  lines.push('        STAT["Statistics"]');
-  lines.push('        LA["Linear Algebra"]');
-  lines.push('        OPT["Optimization"]');
-  lines.push("    end");
-  lines.push("");
-  lines.push('    subgraph DATA["\\u{1F4CA} Data"]');
-  lines.push('        SQL["PostgreSQL / TimescaleDB"]');
-  lines.push('        PIPES["ETL / Streams"]');
-  lines.push('        VECTOR["Vector DBs"]');
-  lines.push("    end");
-  lines.push("");
-  lines.push('    subgraph ML["\\u{1F916} Machine Learning"]');
-  lines.push('        CLASSIC["XGBoost \\u00B7 LightGBM"]');
-  lines.push('        DL["PyTorch \\u00B7 TensorFlow"]');
-  lines.push('        NLP["Transformers \\u00B7 spaCy"]');
-  lines.push('        CV["YOLO \\u00B7 OpenCV"]');
-  lines.push('        TS["Prophet \\u00B7 LSTM \\u00B7 SARIMA"]');
-  lines.push('        CAUSAL["DoWhy \\u00B7 EconML"]');
-  lines.push("    end");
-  lines.push("");
-  lines.push('    subgraph AI["\\u{1F9EC} AI Systems"]');
-  lines.push('        AGENT["Autonomous Agents"]');
-  lines.push('        RAG["RAG \\u00B7 Graph RAG"]');
-  lines.push('        LLM["LLM Orchestration"]');
-  lines.push('        CODEGEN["NL\\u2192Code (paix/raix)"]');
-  lines.push("    end");
-  lines.push("");
-  lines.push('    subgraph PROD["\\u{1F680} Production"]');
-  lines.push('        API["FastAPI"]');
-  lines.push('        CICD["Docker \\u00B7 CI/CD"]');
-  lines.push('        MLOPS["MLflow \\u00B7 DVC"]');
-  lines.push('        MONITOR["Observability"]');
-  lines.push("    end");
-  lines.push("");
-  lines.push('    subgraph IMPACT["\\u{1F4A1} Impact"]');
-  lines.push('        FSI["BFSI"]');
-  lines.push('        HEALTH["Healthcare"]');
-  lines.push('        SUPPLY["Supply Chain"]');
-  lines.push('        RISK["Fraud & Risk"]');
-  lines.push("    end");
-  lines.push("");
-  lines.push("    FOUND ==> ML");
-  lines.push("    DATA ==> ML");
-  lines.push("    ML ==> AI");
-  lines.push("    ML ==> PROD");
-  lines.push("    AI ==> PROD");
-  lines.push("    PROD ==> IMPACT");
-  lines.push("");
-  lines.push('    style FOUND fill:#1a1a2e,stroke:#16213e,color:#e0e0e0');
-  lines.push('    style DATA fill:#16213e,stroke:#0f3460,color:#e0e0e0');
-  lines.push('    style ML fill:#0f3460,stroke:#533483,color:#e0e0e0');
-  lines.push('    style AI fill:#533483,stroke:#6366f1,color:#e0e0e0');
-  lines.push('    style PROD fill:#6366f1,stroke:#818cf8,color:#fff');
-  lines.push('    style IMPACT fill:#1a1a2e,stroke:#6366f1,color:#e0e0e0');
-  lines.push("```");
+  lines.push(`<p align="center">`);
+  lines.push(`  <img src="assets/pipeline.svg" alt="Tech Pipeline — Math \u2192 Data \u2192 ML \u2192 AI \u2192 Prod \u2192 Impact" width="100%" />`);
+  lines.push(`</p>`);
   lines.push(``);
   lines.push(`---`);
   lines.push(``);
@@ -777,6 +775,8 @@ async function main() {
   console.log(`   assets/stats.svg`);
   writeSvg(path.join(ASSETS_DIR, "languages.svg"), generateLanguages(repos));
   console.log(`   assets/languages.svg`);
+  writeSvg(path.join(ASSETS_DIR, "pipeline.svg"), generatePipelineSvg());
+  console.log(`   assets/pipeline.svg`);
 
   // Generate category headers
   console.log(`\u{1F4CB} Generating category headers...`);
