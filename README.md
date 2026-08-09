@@ -203,10 +203,10 @@ mindmap
   <table>
     <tr>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/ViVAE-Research-Project"><img src="assets/repos/repo-ViVAE-Research-Project.svg" alt="ViVAE-Research-Project" width="100%" /></a></td>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/mathematical-research-collection"><img src="assets/repos/repo-mathematical-research-collection.svg" alt="mathematical-research-collection" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/mahesh-portfolio"><img src="assets/repos/repo-mahesh-portfolio.svg" alt="mahesh-portfolio" width="100%" /></a></td>
     </tr>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/mahesh-portfolio"><img src="assets/repos/repo-mahesh-portfolio.svg" alt="mahesh-portfolio" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/mathematical-research-collection"><img src="assets/repos/repo-mathematical-research-collection.svg" alt="mathematical-research-collection" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/bartlett-correction-sem"><img src="assets/repos/repo-bartlett-correction-sem.svg" alt="bartlett-correction-sem" width="100%" /></a></td>
     </tr>
   </table>
@@ -270,6 +270,18 @@ mindmap
     <tr>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/maisuclaw"><img src="assets/repos/repo-maisuclaw.svg" alt="maisuclaw" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/agnblue-vyakarana"><img src="assets/repos/repo-agnblue-vyakarana.svg" alt="agnblue-vyakarana" width="100%" /></a></td>
+    </tr>
+  </table>
+</p>
+
+<p align="center">
+  <img src="assets/category-uncategorized.svg" alt="Other Projects" width="75%" />
+</p>
+
+<p align="center">
+  <table>
+    <tr>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/unified-intelligence-website"><img src="assets/repos/repo-unified-intelligence-website.svg" alt="unified-intelligence-website" width="100%" /></a></td>
     </tr>
   </table>
 </p>
