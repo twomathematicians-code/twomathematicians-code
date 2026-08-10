@@ -93,12 +93,12 @@ mindmap
 <p align="center">
   <table>
     <tr>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/raix"><img src="assets/repos/repo-raix.svg" alt="raix" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/demand-forecasting"><img src="assets/repos/repo-demand-forecasting.svg" alt="demand-forecasting" width="100%" /></a></td>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/archon"><img src="assets/repos/repo-archon.svg" alt="archon" width="100%" /></a></td>
     </tr>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/raix"><img src="assets/repos/repo-raix.svg" alt="raix" width="100%" /></a></td>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/Hybrid_Game_Recommendation"><img src="assets/repos/repo-Hybrid_Game_Recommendation.svg" alt="Hybrid_Game_Recommendation" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/archon"><img src="assets/repos/repo-archon.svg" alt="archon" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/Manifold-DB-Repo"><img src="assets/repos/repo-Manifold-DB-Repo.svg" alt="Manifold-DB-Repo" width="100%" /></a></td>
     </tr>
   </table>
 </p>
@@ -116,8 +116,8 @@ mindmap
 <p align="center">
   <table>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/archon"><img src="assets/repos/repo-archon.svg" alt="archon" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/raix"><img src="assets/repos/repo-raix.svg" alt="raix" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/archon"><img src="assets/repos/repo-archon.svg" alt="archon" width="100%" /></a></td>
     </tr>
     <tr>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/deep-computational-research-lab"><img src="assets/repos/repo-deep-computational-research-lab.svg" alt="deep-computational-research-lab" width="100%" /></a></td>
@@ -202,11 +202,10 @@ mindmap
 <p align="center">
   <table>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/ViVAE-Research-Project"><img src="assets/repos/repo-ViVAE-Research-Project.svg" alt="ViVAE-Research-Project" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/mahesh-portfolio"><img src="assets/repos/repo-mahesh-portfolio.svg" alt="mahesh-portfolio" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/mathematical-research-collection"><img src="assets/repos/repo-mathematical-research-collection.svg" alt="mathematical-research-collection" width="100%" /></a></td>
     </tr>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/mathematical-research-collection"><img src="assets/repos/repo-mathematical-research-collection.svg" alt="mathematical-research-collection" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/bartlett-correction-sem"><img src="assets/repos/repo-bartlett-correction-sem.svg" alt="bartlett-correction-sem" width="100%" /></a></td>
     </tr>
   </table>
@@ -236,14 +235,15 @@ mindmap
 <p align="center">
   <table>
     <tr>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/riemann-hypothesis"><img src="assets/repos/repo-riemann-hypothesis.svg" alt="riemann-hypothesis" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/CDL-Monograph-Markdown"><img src="assets/repos/repo-CDL-Monograph-Markdown.svg" alt="CDL-Monograph-Markdown" width="100%" /></a></td>
+    </tr>
+    <tr>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/Python-Advanced-Calculus-Analysis"><img src="assets/repos/repo-Python-Advanced-Calculus-Analysis.svg" alt="Python-Advanced-Calculus-Analysis" width="100%" /></a></td>
-    </tr>
-    <tr>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/python_numerical_methods"><img src="assets/repos/repo-python_numerical_methods.svg" alt="python_numerical_methods" width="100%" /></a></td>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/ccp_numerical_methods"><img src="assets/repos/repo-ccp_numerical_methods.svg" alt="ccp_numerical_methods" width="100%" /></a></td>
     </tr>
     <tr>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/ccp_numerical_methods"><img src="assets/repos/repo-ccp_numerical_methods.svg" alt="ccp_numerical_methods" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/matric-space"><img src="assets/repos/repo-matric-space.svg" alt="matric-space" width="100%" /></a></td>
     </tr>
   </table>
@@ -281,6 +281,7 @@ mindmap
 <p align="center">
   <table>
     <tr>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/inside-airbnb-amsterdam-dashboard"><img src="assets/repos/repo-inside-airbnb-amsterdam-dashboard.svg" alt="inside-airbnb-amsterdam-dashboard" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/unified-intelligence-website"><img src="assets/repos/repo-unified-intelligence-website.svg" alt="unified-intelligence-website" width="100%" /></a></td>
     </tr>
   </table>
