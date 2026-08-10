@@ -3,9 +3,9 @@
   <rect width="800" height="80" rx="3" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
   
     <text x="70" y="32" font-family="Inter,system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#6b7280">REPOS</text>
-    <text x="70" y="58" font-family="'SF Mono',Consolas,'Roboto Mono',monospace" font-size="20" font-weight="600" fill="#000000">41</text>
+    <text x="70" y="58" font-family="'SF Mono',Consolas,'Roboto Mono',monospace" font-size="20" font-weight="600" fill="#000000">42</text>
     <text x="270" y="32" font-family="Inter,system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#6b7280">STARS</text>
-    <text x="270" y="58" font-family="'SF Mono',Consolas,'Roboto Mono',monospace" font-size="20" font-weight="600" fill="#000000">11</text>
+    <text x="270" y="58" font-family="'SF Mono',Consolas,'Roboto Mono',monospace" font-size="20" font-weight="600" fill="#000000">16</text>
     <text x="470" y="32" font-family="Inter,system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#6b7280">FORKS</text>
     <text x="470" y="58" font-family="'SF Mono',Consolas,'Roboto Mono',monospace" font-size="20" font-weight="600" fill="#000000">0</text>
     <text x="670" y="32" font-family="Inter,system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#6b7280">TOP LANGUAGE</text>
