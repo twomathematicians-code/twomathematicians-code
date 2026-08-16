@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/company/14448169"><img src="https://img.shields.io/badge/LinkedIn-000000?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/maheshsolanki-16b9a6a5"><img src="https://img.shields.io/badge/LinkedIn-000000?style=flat-square&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:maheshsinh1910@gmail.com"><img src="https://img.shields.io/badge/Gmail-000000?style=flat-square&logo=gmail&logoColor=white" /></a>
   <a href="https://github.com/twomathematicians-code"><img src="https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github&logoColor=white" /></a>
   <img src="https://komarev.com/ghpvc/?username=twomathematicians-code&label=PROFILE+VIEWS&color=000000&style=flat-square" alt="Profile Views" />
@@ -97,8 +97,8 @@ mindmap
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/demand-forecasting"><img src="assets/repos/repo-demand-forecasting.svg" alt="demand-forecasting" width="100%" /></a></td>
     </tr>
     <tr>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/archon"><img src="assets/repos/repo-archon.svg" alt="archon" width="100%" /></a></td>
-      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/Manifold-DB-Repo"><img src="assets/repos/repo-Manifold-DB-Repo.svg" alt="Manifold-DB-Repo" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/leibniz"><img src="assets/repos/repo-leibniz.svg" alt="leibniz" width="100%" /></a></td>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/inside-airbnb-amsterdam-dashboard"><img src="assets/repos/repo-inside-airbnb-amsterdam-dashboard.svg" alt="inside-airbnb-amsterdam-dashboard" width="100%" /></a></td>
     </tr>
   </table>
 </p>
@@ -281,7 +281,11 @@ mindmap
 <p align="center">
   <table>
     <tr>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/leibniz"><img src="assets/repos/repo-leibniz.svg" alt="leibniz" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/inside-airbnb-amsterdam-dashboard"><img src="assets/repos/repo-inside-airbnb-amsterdam-dashboard.svg" alt="inside-airbnb-amsterdam-dashboard" width="100%" /></a></td>
+    </tr>
+    <tr>
+      <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/controlled-credit-risk-mlops"><img src="assets/repos/repo-controlled-credit-risk-mlops.svg" alt="controlled-credit-risk-mlops" width="100%" /></a></td>
       <td width="48%" align="center"><a href="https://github.com/twomathematicians-code/unified-intelligence-website"><img src="assets/repos/repo-unified-intelligence-website.svg" alt="unified-intelligence-website" width="100%" /></a></td>
     </tr>
   </table>
